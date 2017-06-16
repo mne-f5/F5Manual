@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="F5">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>F5</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/linearicons.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/ui-kit.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+</head>
+<body>
+
+    <div ng-controller="MainController">
+        <header ng-if="logged">
+            <div class="logo" ng-click="toHome('/home')">
+                <img class="center-block" src="images/logo.png" alt="" />
+            </div>
+            <div class="header-wrapper ">
+                <h3>Design Guidelines</h3>
+            </div>
+        </header>
+
+
+        <aside class="navigation-menu" ng-controller="MenuController" ng-if="logged">
+            <div class="menu-holder">
+                <div class="fill">
+                    <div class="btn-holder">
+                        <div class="menu-btn" ng-click="showMenu('fill')">
+                            <span></span>
+                        </div>
+                        <div class="fill-element"></div>
+                    </div>
+                    <div class="menu-items">
+                        <div data-ng-include="'scripts/menu/menuPartial.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+
+        <section ng-view></section>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="scripts/MainController.js"></script>
+    <script src="scripts/login/LoginService.js"></script>
+    <script src="scripts/login/LoginController.js"></script>
+    <script src="scripts/menu/MenuService.js"></script>
+    <script src="scripts/menu/MenuController.js"></script>
+    <script src="scripts/brand/gallery/GalleryService.js"></script>
+    <script src="scripts/brand/gallery/GalleryController.js"></script>
+    <script src="scripts/kit/KitController.js"></script>
+</body>
+</html>

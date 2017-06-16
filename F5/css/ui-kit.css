@@ -1,0 +1,247 @@
+﻿ .ui-kit .top-section {
+        background-image: url('../images/wall-kit.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+        right: 35px;
+        left: 35px;
+        text-align: center;
+    }
+
+        .ui-kit .top-section .holder {
+            margin-top: calc(650px/3);
+        }
+
+            .ui-kit .top-section .holder h1,
+            .ui-kit .top-section .holder h2 {
+                color: #fff;
+            }
+
+        .ui-kit .top-section button {
+            margin-top: 15px;
+        }
+
+        .ui-kit .top-section .btn-negative {
+            color: #fff;
+            border-color: #fff;
+            background-color: transparent;
+            margin-left: 10px;
+        }
+
+        .ui-kit .top-section .btn-primary {
+            margin-right: 10px;
+        }
+
+        .ui-kit .top-section .btn-negative:hover {
+            color: #000;
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+    .ui-kit .main-container {
+        padding: 650px 10% 0 10%;
+    }
+
+    .ui-kit .code-holder {
+        background-color: #e1f5fe;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        width: 85%;
+        margin: 40px auto;
+    }
+
+    .ui-kit code {
+        display: none;
+    }
+
+    .ui-kit .mb {
+        margin-bottom: 30px;
+    }
+
+    .ui-kit .headings {
+        margin-bottom: 50px;
+        margin-top: 70px;
+    }
+
+    .ui-kit .wrapper {
+        margin-top: 50px;
+    }
+
+    .ui-kit .buttons p {
+        color: #000002;
+    }
+
+    .ui-kit .buttons button {
+        margin-bottom: 50px;
+        min-width: 366px;
+        padding: 16px 120px;
+    }
+
+    .ui-kit .buttons .hover button {
+        -webkit-box-shadow: 0 6px 5px -6px #000002 inset;
+        -moz-box-shadow: 0 6px 5px -6px #000002 inset;
+        box-shadow: 0 6px 5px -6px #000002 inset;
+    }
+
+    .ui-kit .buttons .hover .btn-primary {
+        background-color: #0189ff;
+        border-color: #0189ff;
+    }
+
+    .ui-kit .buttons .hover .btn-secondary {
+        background-color: #4e4e50;
+        border-color: #4e4e50;
+    }
+
+    .ui-kit .buttons .hover .btn-negative {
+        background-color: #4e4e50;
+        border-color: #4e4e50;
+        color: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .ui-kit .buttons .active .btn-primary,
+    .ui-kit .buttons .active .btn-primary:hover {
+        background-color: #0070ce;
+        border-color: #0070ce;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .ui-kit .buttons .active .btn-secondary {
+        background-color: #010101;
+        border-color: #010101;
+    }
+
+    .ui-kit .buttons .active .btn-negative {
+        background-color: #f2f7fd;
+        border: 2px solid #4e4f53;
+        color: #4d4e50;
+    }
+
+    .ui-kit .input-fields {
+        background-color: #fff;
+        padding: 10px 20px 20px 20px;
+        border-radius: 4px;
+        /*-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);*/
+    }
+
+        .ui-kit .input-fields .holder {
+            padding: 30px;
+        }
+
+            .ui-kit .input-fields .holder .active .form-control {
+                border-color: #87a6bf;
+                pointer-events: none;
+            }
+
+                .ui-kit .input-fields .holder .active .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: #454545;
+                }
+
+                .ui-kit .input-fields .holder .active .form-control::-moz-placeholder { /* Firefox 19+ */
+                    color: #454545;
+                }
+
+                .ui-kit .input-fields .holder .active .form-control:-ms-input-placeholder { /* IE 10+ */
+                    color: #454545;
+                }
+
+                .ui-kit .input-fields .holder .active .form-control:-moz-placeholder { /* Firefox 18- */
+                    color: #454545;
+                }
+
+            .ui-kit .input-fields .holder .error .form-control {
+                pointer-events: none;
+            }
+
+                .ui-kit .input-fields .holder .error .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: #ff5d5e;
+                }
+
+                .ui-kit .input-fields .holder .error .form-control::-moz-placeholder { /* Firefox 19+ */
+                    color: #ff5d5e;
+                }
+
+                .ui-kit .input-fields .holder .error .form-control:-ms-input-placeholder { /* IE 10+ */
+                    color: #ff5d5e;
+                }
+
+                .ui-kit .input-fields .holder .error .form-control:-moz-placeholder { /* Firefox 18- */
+                    color: #ff5d5e;
+                }
+
+    .ui-kit .checkboxes h3 {
+        margin-top: 0;
+    }
+
+    .ui-kit .mt {
+        margin-top: 30px!important;
+    }
+
+
+
+
+
+@media all and (max-width: 768px) {
+     .ui-kit .buttons button {
+        width: 100%;
+        min-width: 100%;
+        padding: 16px;
+     }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+     .ui-kit .buttons button {
+        width: 100%;
+        min-width: 100%;
+        padding: 8px;
+        font-size: 12px;
+     }
+}
+
+@media all and (min-width: 992px) and (max-width: 1400px) {
+     .ui-kit .buttons button {
+        width: 100%;
+        min-width: 100%;
+        padding: 11px;
+        font-size: 12px;
+     }
+}
+
+@media all and (min-width: 1400px) and (max-width: 1700px) {
+     .ui-kit .buttons button {
+        width: 100%;
+        min-width: 100%;
+        padding: 16px;
+        font-size: 13px;
+     }
+}
+
+@media all and (max-width: 1200px) {
+    .ui-kit .checkboxes {
+        display: inline-block;
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 620px) {
+     .ui-kit .checkboxes {
+        display: block;
+        margin-right: 0;
+        float: none;
+     }
+}

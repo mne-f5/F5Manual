@@ -1,0 +1,115 @@
+﻿<div class="main-wrapper container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <h2>The 8pt Grid</h2>
+                <div class="box negative">
+                    <h3>
+                        The Grid
+                    </h3>
+                    <p>
+                        This grid guide is meant to help designers and developers to have a common language with the purpose of laying out UI designs quick and consisten.
+                        It is very helpful for mobile designs.
+                    </p>
+                </div>
+
+                <h3>Theory</h3>
+                <p>
+                    App designs (prototypes and design files) is the main way to portray how the UI could like like and it`s the easiest way to communicate a proposal to the clients and developers,
+                    but in the end only what the developers can reproduce in code will make it to productions.
+
+                    There are severals concerns regarding the fact that even though tehnology allows the developers to fully implement almost everything from a design file in most cases it doesn`t.
+                    And this is caused by reasons like : - deadlines , the design might not be practical to build , developer prioritising functionality rather than design work.
+                </p>
+
+                <h2>Getting Started</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="mt">Box Model</h3>
+                        <p>Box model consists of 4 elements : margin , border , padding and element size. </p>
+
+                        <p>
+                            <b>Border:</b> the thickness of the stroke around the edges of an element. Most design tools do not allow this to affect overall spacing and dimensions.
+                        </p>
+
+                        <p>
+                            <b>Padding:</b> the space between the bounds of an element and its child elements
+                        </p>
+
+                        <p>
+                            <b>Margin:</b> the space between the bounds of an element and neighboring objects
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-holder">
+                            <img src="images/manual-content/box-model.png">
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3>Principles</h3>
+                <p>
+                    The 8pt grid consists of placing elements while maintaining a 8pt increment in sizing and othe box model elements.
+                </p>
+                <p>
+                    The point (pt) is a measurement unit for space that depends on screen resolutions.
+                    For example at @1X resolution 1pt = 1px.
+                </p>
+                <p> @2px 1pt = 4px (because 2x means double resolution)</p>
+
+
+                <p>Multiples of 8 are used to establish sizing around an app. Sizing like margin , padding , borders and element size.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/8ptgrid.png">
+                </div>
+
+               
+                
+                <h3>
+                    Typography
+                </h3>
+
+                <p>
+                    Most of the time text size and line-height will not conform to the UI grid .
+                    To align text to the UI grid combine the 8pt grid with a 4pt grid .
+                    Set the text to a consistent size then use padding to create the block element in such a way that is divisible by 8.
+
+
+                </p>
+
+
+                <h3>Method</h3>
+                <p>
+                    There are two ways to apply the 8 pt grid.
+                    The Hard Grid method (incrementing everything in a 8point) and a Soft Grid method that measures 8point increment between individual elements.
+
+                    Most of the times the soft grid is used because it`s faster to implement and you can reach a high quality without spending additional time on it.
+                </p>
+
+                <div class="img-holder">
+                    <img src="images/manual-content/grid.png">
+                </div>
+
+                <h2>Why use the 8pt Grid</h2>
+                <p>
+                    Using an even number will ensure scaling for a wide variety of devices.
+                    The majority of screen sizes are divisible by 8.
+                </p>
+
+                <h3>Value</h3>
+                <p>
+                    When scaling follow a certain rule the result is a more consistent UI.
+                </p><p><b>For designers:</b> Efficient , less time spend on decisions on how to mantain consistency between elements</p>
+                <p>
+                    <b>For developers:</b> This eases communication between designer and developer , eliminating friction related to the "pixel perfect". Developers can easily identify 8 pixels increments instead of
+                    constant need for measurements.
+                </p>
+                <p>
+                    <b>For end client:</b> Consistent UI and experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

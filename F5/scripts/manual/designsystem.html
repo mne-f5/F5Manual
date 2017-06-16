@@ -1,0 +1,130 @@
+﻿<div class="main-wrapper container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <h2>Defining a design system</h2>
+                <div class="box negative">
+                    <h3>Design System</h3>
+                    <p>A design system is ruleset governing the composition of a product. Meaning a blend of framework , components and UI toolkits.</p>
+                </div>
+
+                <h2>Theory</h2>
+                <p>Design systems are largely used by big companies to define company guidelines around design. Knowing what rules to follow from the beggining of a software product design wise can shorten design implementation a lot</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/0211.jpg" alt="" />
+                </div>
+
+                <h2>Getting Started</h2>
+                <h3>Style pattern</h3>
+                <p>To begin we have to break a design into it`s components.</p>
+                <p>For example the heading title carries a collection of styles like :</p>
+                <ul>
+                    <li>Typeface</li>
+                    <li>Weight</li>
+                    <li>Letter Spacing</li>
+                    <li>Size</li>
+                    <li>Color</li>
+                </ul>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/header style.png" alt="" />
+                </div>
+                <p>These properties needs to be broken down to their bare-bone form. These will be the values that will define our global style pattern than can be used to design and build every aspect of our products. This eliminates uncertainties on the developers side.</p>
+
+                <h3>Colours</h3>
+                <p>As we are building software for different customers we will have to study the colors and company culture and mission or any other design languages. The most obvious style that can be choosed is the colour. We need to establish the primary colour and a secondary colour usually a complementary one or accent color.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/complementary-colours.png" alt="" />
+                </div>
+                <p>Second colours to be taken in consideration are Success and Failure colours. Most of the time Green and Red.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/success-failure.png" alt="" />
+                </div>
+                <p>Example of colour usage:</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/example-color.jpg" alt="" />
+                </div>
+                <p>At the end we need grey colors. Modern UI uses at least 3 grey colours.</p>
+                <ul>
+                    <li>Light grey for background (#f1f1f1)</li>
+                    <li>Slight darker grey for borders</li>
+                    <li>Medium grey for font , subheading </li>
+                    <li>Dark grey for headings , backgrounds, body</li>
+                </ul>
+                <p>More grey variations can be used , different stroke or border shades etc. But the point is to define them from the start.</p>
+                <p>We also need tint and shades of the colours we choosed. This is mainly because we can use them to create light backgrounds , dark strokes, add depth to elements.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/colour-variations.png" alt="" />
+                </div>
+
+                <h3>Shadows</h3>
+                <p>Shadows are commonly used among most of UIs. Shadows are used to create perspective to components and even lift effects. 4 Shadow types inside the app should be enough to cover component needs.</p>
+                <ul>
+                    <li>Subtle Shadow</li>
+                    <li>Hover effect shadow</li>
+                    <li>Strong shadow for popovers or dropdowns </li>
+                    <li>Distant shadow for modals</li>
+                </ul>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/shadows.png" alt="" />
+                    <p>Animation simulation. Hovering the mouse on the container at the bottom results in an lift animation as in the container above.</p>
+                </div>
+
+                <h3>Typography</h3>
+                <p>To obtain a visual hierarchy inside the app we need to devine various font sizes and a font family for the entire app. Although 1 font family should be sufficient for an app a maximum of two fonts can be used on the app.</p>
+                <p>First step is to select the font family and then the needed headings. In theory "em" unit is the new standard for font sizes but in practice percentage has proven to be more efficient for scaling.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/em-font-size.png" alt="" />
+                </div>
+
+
+                <h3>Border radius</h3>
+                <p>
+                    Border radius is used among different components from buttons to containers to modals.
+                    So it`s best to adopt 3 border size units . 2px , 4px and 7px.
+                </p>
+                <ul>
+                    <li>Small border radius can be used for checkboxes and labels.</li>
+                    <li>Medium border radius for buttons and inputs</li>
+                    <li>Large border radius for cards , modals and containers</li>
+                </ul>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/border-radius.png"/>
+                </div>
+
+                <h3>Scaling - grid alignment.</h3>
+                <p>For spacing and scaling please refer to Next Chapter - Grid.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/grid-scaling.png" />
+                </div>
+
+                <h3>Component library</h3>
+                <p>After defining a global style , using this we can start building a component library , mapping styles to components.</p>
+                <p>Defining the component library for global use is essential rather than while developing having to modify a component in a specific part of the product.</p>
+                <p>Avoid overriding a global component because it can erode consistency.</p>
+
+                <h3>Button</h3>
+                <p>Example of building a button component (Using only predefined styles in the above part.) and applying the styles</p>
+                <p>Small border radius (2px) , Medium font ( 1.25em) , Height (Grid article - 32px) , Small Shadow (Subtle shadow) , Background color (Primary company color)</p>
+                <p>Simply put we will no longer need to overthink each aspect during developing rather we pick defined elements and add them to an component.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/button.png" />
+                </div>
+
+                <h3>Easy component building</h3>
+                <p>Repeating the button example simply plucking values from the style pallete we can define beautiful and consistent components.</p>
+                <p>Dropdown - Composed of a container with a Strong shadow A light colored border (defined in the first chapter) 3 Font sizes - 1.25 em for title , 0.8em for "view profile text" , and 1 em for the list elements and hover effect obtained from a shade from the primary color.</p>
+                <p>Using this method we can design an entire component library.</p>
+                <div class="img-holder">
+                    <img src="images/manual-content/design-system/dropdown.png" />
+                </div>
+
+                <div class="box negative">
+                    <h3>Conclusions</h3>
+                    <p>Components should only have defined the styles that will appear uniform in every instance. Do not add margins directly to a component ( buttons , inputs , headings etc.) as this will differ from case to case .</p>
+                    <p>There will components that you will not be defined and other times these values will be arbitrary and not reusable. But the keypoint is to reuse as much as possible.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -275,14 +275,16 @@
     <Content Include="scripts\brand\gallery\GalleryController.js" />
     <Content Include="scripts\brand\gallery\GalleryService.js" />
     <Content Include="scripts\brand\gallery\photos.html" />
+    <Content Include="scripts\brand\apps.html" />
+    <Content Include="scripts\brand\materials.html" />
+    <Content Include="scripts\brand\newsletter.html" />
+    <Content Include="scripts\brand\website.html" />
     <Content Include="scripts\brand\print-files.html" />
     <Content Include="scripts\brand\identity.html" />
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\KitController.js" />
     <Content Include="scripts\kit\ui-kit.html" />
     <Content Include="scripts\manual\components\tables.html" />
-    <Content Include="scripts\manual\components\components.html" />
-    <Content Include="scripts\manual\components\buttons.html" />
     <Content Include="scripts\manual\components\forms.html" />
     <Content Include="scripts\manual\designsystem.html" />
     <Content Include="scripts\manual\grid.html" />
@@ -295,7 +297,6 @@
     <Content Include="scripts\manual\motion\animations.html" />
     <Content Include="scripts\manual\style\icons.html" />
     <Content Include="scripts\manual\style\typography.html" />
-    <Content Include="scripts\manual\style\elements.html" />
     <Content Include="scripts\manual\style\colors.html" />
     <Content Include="scripts\menu\MenuController.js" />
     <Content Include="scripts\menu\menuPartial.html" />

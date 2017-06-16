@@ -7,9 +7,13 @@
                             category: 'Brand guidelines',
                             icon: 'lnr lnr-pencil',
                             firstLevel: [
-                                {name: 'Manual', path: '/identity', active: false},
-                                {name: 'Print files', path: '/print-files', active: false},
-                                {name: 'Stock Photos', path: '/photos',active: false}
+                                { name: 'Manual', path: '/identity', active: false },
+                                { name: 'Print files', path: '/print-files', active: false },
+                                { name: 'Stock Photos', path: '/photos', active: false },
+                                { name: 'Website', path: '/website', active: false },
+                                { name: 'Newsletter', path: '/newsletter', active: false },
+                                { name: 'Marketing Materials', path: '/materials', active: false },
+                                { name: 'Our Apps', path: '/apps', active: false }
                             ]
                         },
                         {
@@ -25,9 +29,7 @@
                                     isCollapsed: false,
                                     submenu: [
                                         { name: 'Forms', path: '/forms', active: false },
-                                        { name: 'Buttons', path: '/buttons', active: false },
                                         { name: 'Tables', path: '/tables', active: false },
-                                        { name: 'Elements', path: '/components', active: false }
                                     ]
                                 },
                                 {
@@ -36,8 +38,7 @@
                                     submenu: [
                                         { name: 'Colors', path: '/colors', active: false },
                                         { name: 'Icons', path: '/icons', active: false },
-                                        { name: 'Typography', path: '/typography', active: false },
-                                        { name: 'Elements', path: '/elements', active: false }
+                                        { name: 'Typography', path: '/typography', active: false }, 
                                     ]
                                 },
                                 {
@@ -61,24 +62,44 @@
         getMenuItems: function () {
             return menuItems
         },
-        setSelectedMenuItem: function (path) {
-            selectedMenuItem = path;
-        },
-
-        getSelectedMenuItem: function () {
-            return selectedMenuItem;
-        },
         setActiveItem: function (path) {
-            angular.forEach(menuItems, function (value) {
-                for (i = 0; i < value.submenu.length; i++) {
-                    if (value.submenu[i].path === path) {
-                        value.submenu[i].active = true;
-                    }
-                    else {
-                        value.submenu[i].active = false;
-                    }
-                }
-            });
+            if (path === '/home') {
+                angular.forEach(menuItems, function (value) {
+                    angular.forEach(value.firstLevel, function (menuItem) {
+                        if (menuItem.submenu) {
+                            menuItem.isCollapsed = false;
+                            angular.forEach(menuItem.submenu, function (submenu) {
+                                submenu.active = false;
+                            });
+                        }
+                        else {
+                            menuItem.active = false;
+                        }
+
+                    });
+                });
+            }
+
+            else {
+                angular.forEach(menuItems, function (value) {
+                    angular.forEach(value.firstLevel, function (menuItem) {
+                        if (menuItem.path === path && !menuItem.submenu) {
+                            menuItem.active = true;
+                        }
+                        else {
+                            menuItem.active = false;
+                            angular.forEach(menuItem.submenu, function (submenu) {
+                                if (submenu.path === path) {
+                                    submenu.active = true;
+                                }
+                                else {
+                                    submenu.active = false;
+                                }
+                            });
+                        }
+                    });
+                });
+            }
         },
         setActiveCategory: function (name) {
             angular.forEach(menuItems, function (menuItem) {
@@ -93,14 +114,6 @@
                     }
                 });
             });
-        },
-        setCategory: function (name) {
-            selectedCategory = name;
-        },
-
-        getCategory: function () {
-            return selectedCategory;
         }
-
     };
 });

@@ -262,9 +262,17 @@ header .header-wrapper h3 {
   right: 0;
   background-color: #fff;
 }
+.login-page .holder {
+  position: absolute;
+  right: 40%;
+  left: 40%;
+}
+.login-page .holder .login-form {
+  display: block;
+}
 .login-page .content {
   position: relative;
-  top: 50px;
+  top: 128px;
   margin-left: 0;
   margin-right: 0;
 }

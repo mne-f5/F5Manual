@@ -97,6 +97,7 @@
     <Content Include="css\ui-kit.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
+    <Content Include="images\brand\Business Card Mockup 01.jpg" />
     <Content Include="images\brand\chrome_2017-06-15_11-09-51.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-10-03.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-10-15.png" />
@@ -106,6 +107,7 @@
     <Content Include="images\brand\chrome_2017-06-15_11-11-08.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-11-18.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-11-28.png" />
+    <Content Include="images\brand\power-point-presentation.jpg" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\manual-content\1-9v3d-bqpkrQJ8KxASLO_-w.png" />
     <Content Include="images\manual-content\1-FDR6xlcd36GxvwWtvLjysw.jpeg" />

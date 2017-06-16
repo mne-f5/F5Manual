@@ -279,7 +279,7 @@
     <Content Include="scripts\kit\KitController.js" />
     <Content Include="scripts\kit\ui-kit.html" />
     <Content Include="scripts\manual\components\tables.html" />
-    <Content Include="scripts\manual\components\elements.html" />
+    <Content Include="scripts\manual\components\components.html" />
     <Content Include="scripts\manual\components\buttons.html" />
     <Content Include="scripts\manual\components\forms.html" />
     <Content Include="scripts\manual\designsystem.html" />

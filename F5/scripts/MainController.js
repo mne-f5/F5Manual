@@ -13,7 +13,7 @@
         }
     });
 
-    $scope.toHome = function (path) {
+    $scope.go = function (path) {
         $location.path(path);
     }
 

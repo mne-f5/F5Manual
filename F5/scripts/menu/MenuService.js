@@ -90,6 +90,7 @@
                             menuItem.active = false;
                             angular.forEach(menuItem.submenu, function (submenu) {
                                 if (submenu.path === path) {
+                                    menuItem.isCollapsed = true;
                                     submenu.active = true;
                                 }
                                 else {

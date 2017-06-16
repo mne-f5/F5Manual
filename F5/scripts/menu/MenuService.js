@@ -7,9 +7,13 @@
                             category: 'Brand guidelines',
                             icon: 'lnr lnr-pencil',
                             firstLevel: [
-                                {name: 'Manual', path: '/identity', active: false},
-                                {name: 'Print files', path: '/print-files', active: false},
-                                {name: 'Stock Photos', path: '/photos',active: false}
+                                { name: 'Manual', path: '/identity', active: false },
+                                { name: 'Print files', path: '/print-files', active: false },
+                                { name: 'Stock Photos', path: '/photos', active: false },
+                                { name: 'Website', path: '/website', active: false },
+                                { name: 'Newsletter', path: '/newsletter', active: false },
+                                { name: 'Marketing Materials', path: '/materials', active: false },
+                                { name: 'Our Apps', path: '/apps', active: false }
                             ]
                         },
                         {
@@ -25,9 +29,7 @@
                                     isCollapsed: false,
                                     submenu: [
                                         { name: 'Forms', path: '/forms', active: false },
-                                        { name: 'Buttons', path: '/buttons', active: false },
                                         { name: 'Tables', path: '/tables', active: false },
-                                        { name: 'Elements', path: '/components', active: false }
                                     ]
                                 },
                                 {
@@ -37,7 +39,6 @@
                                         { name: 'Colors', path: '/colors', active: false },
                                         { name: 'Icons', path: '/icons', active: false },
                                         { name: 'Typography', path: '/typography', active: false },
-                                        { name: 'Elements', path: '/elements', active: false }
                                     ]
                                 },
                                 {

@@ -30,6 +30,22 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
             controller: 'GalleryController'
         });
 
+        $routeProvider.when('/website', {
+            templateUrl: 'scripts/brand/website.html'
+        });
+
+        $routeProvider.when('/newsletter', {
+            templateUrl: 'scripts/brand/newsletter.html'
+        });
+
+        $routeProvider.when('/materials', {
+            templateUrl: 'scripts/brand/materials.html'
+        });
+
+        $routeProvider.when('/apps', {
+            templateUrl: 'scripts/brand/apps.html'
+        });
+
     // WEB & MOBILE SECTION
 
         $routeProvider.when('/introduction', {
@@ -51,17 +67,9 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
         $routeProvider.when('/forms', {
             templateUrl: 'scripts/manual/components/forms.html'
         });
-
-        $routeProvider.when('/buttons', {
-            templateUrl: 'scripts/manual/components/buttons.html'
-        });
-
+        
         $routeProvider.when('/tables', {
             templateUrl: 'scripts/manual/components/tables.html'
-        });
-
-        $routeProvider.when('/components', {
-            templateUrl: 'scripts/manual/components/components.html'
         });
 
         $routeProvider.when('/colors', {
@@ -76,9 +84,6 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
             templateUrl: 'scripts/manual/style/typography.html'
         });
 
-        $routeProvider.when('/elements', {
-            templateUrl: 'scripts/manual/style/elements.html'
-        });
 
         $routeProvider.when('/animations', {
             templateUrl: 'scripts/manual/motion/animations.html'

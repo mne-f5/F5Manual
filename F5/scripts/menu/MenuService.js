@@ -38,7 +38,7 @@
                                     submenu: [
                                         { name: 'Colors', path: '/colors', active: false },
                                         { name: 'Icons', path: '/icons', active: false },
-                                        { name: 'Typography', path: '/typography', active: false },
+                                        { name: 'Typography', path: '/typography', active: false }, 
                                     ]
                                 },
                                 {
@@ -62,24 +62,44 @@
         getMenuItems: function () {
             return menuItems
         },
-        setSelectedMenuItem: function (path) {
-            selectedMenuItem = path;
-        },
-
-        getSelectedMenuItem: function () {
-            return selectedMenuItem;
-        },
         setActiveItem: function (path) {
-            angular.forEach(menuItems, function (value) {
-                for (i = 0; i < value.submenu.length; i++) {
-                    if (value.submenu[i].path === path) {
-                        value.submenu[i].active = true;
-                    }
-                    else {
-                        value.submenu[i].active = false;
-                    }
-                }
-            });
+            if (path === '/home') {
+                angular.forEach(menuItems, function (value) {
+                    angular.forEach(value.firstLevel, function (menuItem) {
+                        if (menuItem.submenu) {
+                            menuItem.isCollapsed = false;
+                            angular.forEach(menuItem.submenu, function (submenu) {
+                                submenu.active = false;
+                            });
+                        }
+                        else {
+                            menuItem.active = false;
+                        }
+
+                    });
+                });
+            }
+
+            else {
+                angular.forEach(menuItems, function (value) {
+                    angular.forEach(value.firstLevel, function (menuItem) {
+                        if (menuItem.path === path && !menuItem.submenu) {
+                            menuItem.active = true;
+                        }
+                        else {
+                            menuItem.active = false;
+                            angular.forEach(menuItem.submenu, function (submenu) {
+                                if (submenu.path === path) {
+                                    submenu.active = true;
+                                }
+                                else {
+                                    submenu.active = false;
+                                }
+                            });
+                        }
+                    });
+                });
+            }
         },
         setActiveCategory: function (name) {
             angular.forEach(menuItems, function (menuItem) {
@@ -94,14 +114,6 @@
                     }
                 });
             });
-        },
-        setCategory: function (name) {
-            selectedCategory = name;
-        },
-
-        getCategory: function () {
-            return selectedCategory;
         }
-
     };
 });

@@ -5,28 +5,9 @@
         menuFactory.setActiveCategory(name)
     }
 
-    $scope.go = function (path) {
+    $scope.goTo = function (path) {
         $location.path(path);
-        menuFactory.setSelectedMenuItem(path);
-
-        angular.forEach($scope.menuList, function (value) {
-            angular.forEach(value.firstLevel, function (menuItem) {
-                if (menuItem.path === menuFactory.getSelectedMenuItem() && !menuItem.submenu) {
-                    menuItem.active = true;
-                }
-                else {
-                    menuItem.active = false;
-                    angular.forEach(menuItem.submenu, function (submenu) {
-                        if (submenu.path === menuFactory.getSelectedMenuItem()) {
-                            submenu.active = true;
-                        }
-                        else {
-                            submenu.active = false;
-                        }
-                    });
-                }
-            });
-        });
+        menuFactory.setActiveItem(path);
     }
 
 

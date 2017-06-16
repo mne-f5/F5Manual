@@ -1,4 +1,4 @@
-﻿angular.module('MainModule').controller('MainController', function ($scope, $location) {
+﻿angular.module('MainModule').controller('MainController', function ($scope, $location, menuFactory) {
 
     $scope.logged = false;
 
@@ -13,8 +13,11 @@
         }
     });
 
+    $scope.menuList = menuFactory.getMenuItems();
+
     $scope.go = function (path) {
         $location.path(path);
+        menuFactory.setActiveItem(path);
     }
 
 });

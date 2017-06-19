@@ -8,7 +8,7 @@
                             icon: 'lnr lnr-pencil',
                             firstLevel: [
                                 { name: 'Manual', path: '/identity', active: false },
-                                { name: 'Print files', path: '/print-files', active: false },
+                                { name: 'Download files', path: '/print-files', active: false },
                                 { name: 'Stock Photos', path: '/photos', active: false },
                                 { name: 'Website', path: '/website', active: false },
                                 { name: 'Newsletter', path: '/newsletter', active: false },

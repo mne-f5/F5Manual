@@ -245,3 +245,8 @@
         float: none;
      }
 }
+
+.btn-padding {
+    margin-top:16px;
+    margin-bottom:16px;
+}

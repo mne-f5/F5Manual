@@ -100,3 +100,11 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.otherwise({ redirectTo: '/login' });
 }]);
 
+app.run(function ($rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function (event, currentRoute, previousRoute) {
+
+        window.scrollTo(0, 0);
+
+    });
+});
+

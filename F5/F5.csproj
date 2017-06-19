@@ -250,6 +250,9 @@
     <Content Include="fonts\Linearicons-Free.woff2" />
     <Content Include="images\manual-content\design-system\Untitled-3.psd" />
     <Content Include="downloads\business-cards\business-card.zip" />
+    <None Include="Properties\PublishProfiles\dd.pubxml" />
+    <None Include="Properties\PublishProfiles\ss.pubxml" />
+    <None Include="Properties\PublishProfiles\zas.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

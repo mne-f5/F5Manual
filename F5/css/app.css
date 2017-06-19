@@ -82,40 +82,31 @@
 .menu-holder .open .menu-btn span:after {
   transform: translateY(-7px) rotate(-45deg);
 }
-.menu-holder .fill {
-  background-color: transparent;
-  position: absolute;
-  width: 100%;
+.menu-holder .slide {
   height: 100%;
+  width: 100%;
+}
+.menu-holder .slide .btn-holder .menu-btn span {
+  transition: all 0.3s ease-in-out;
+}
+.menu-holder .slide .menu-items {
+  position: absolute;
   top: 0;
-  left: 0;
-  overflow: hidden !important;
-  visibility: hidden;
-}
-.menu-holder .fill .btn-holder {
-  border-radius: 50%;
-  visibility: hidden;
-}
-.menu-holder .fill .btn-holder .fill-element,
-.menu-holder .fill .btn-holder .menu-btn {
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: 50%;
-  position: relative;
-  background-color: #353439;
-}
-.menu-holder .fill .btn-holder .fill-element {
-  position: absolute;
-  height: 49px;
-  width: 49px;
-}
-.menu-holder .fill .menu-items {
-  visibility: visible;
-  position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.menu-holder .slide .menu-items ul {
+  top: 80px;
+  left: 16px;
+  right: 16px;
+  bottom: auto;
+  /*li {
+                    opacity: 0;
+                    .transform(translateY(2%));
+                    .transition(all .3s ease-in-out);
+                }*/
 }
 .card {
   position: relative;
@@ -496,53 +487,63 @@ header .header-wrapper h3 {
   .navigation-menu + section {
     padding-top: 163px;
   }
-  .navigation-menu .menu-holder .fill {
+  .navigation-menu .menu-holder .slide .menu-items {
+    transform: translateX(-100%);
+    background-color: #353439;
+    top: 65px;
+    color: #fff;
+    overflow: auto;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  .navigation-menu .menu-holder .slide .menu-items a {
+    color: #fff;
+  }
+  .navigation-menu .menu-holder .slide .menu-items a:hover,
+  .navigation-menu .menu-holder .slide .menu-items a.active {
+    color: #000002;
+  }
+  .navigation-menu .menu-holder .slide .menu-items .submenu a {
+    color: #000002;
+  }
+  .navigation-menu .menu-holder .slide.open {
     position: fixed;
   }
-  .navigation-menu .menu-holder .fill .btn-holder {
-    visibility: visible;
+  .navigation-menu .menu-holder .slide.open .btn-holder {
+    z-index: 9;
   }
-  .navigation-menu .menu-holder .fill .btn-holder .fill-element,
-  .navigation-menu .menu-holder .fill .btn-holder .menu-btn {
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+  .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span {
+    transform: rotate(-180deg);
+    background-color: #fff;
   }
-  .navigation-menu .menu-holder .fill .menu-items {
-    visibility: hidden;
-    opacity: 0;
-    top: 55px;
+  .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span::before {
+    transform: translate(5px, 3px) rotate(45deg);
+    width: 8px;
   }
-  .navigation-menu .menu-holder .fill.open .btn-holder .fill-element {
-    background-color: #353439;
-    width: 2000em;
-    height: 2000em;
-    -webkit-transition: all 0.45s ease-in;
-    -moz-transition: all 0.45s ease-in;
-    -ms-transition: all 0.45s ease-in;
-    -o-transition: all 0.45s ease-in;
-    transition: all 0.45s ease-in;
+  .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span::after {
+    transform: rotate(45deg);
+    transform: translate(5px, -3px) rotate(-45deg);
+    width: 8px;
   }
-  .navigation-menu .menu-holder .fill.open .menu-items {
+  .navigation-menu .menu-holder .slide.open .menu-items {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
     opacity: 1;
-    visibility: visible;
-    transition: all 0.200s;
-    transition-delay: .2s;
-    color: #fff;
-    bottom: 0;
-    overflow-y: auto;
+    z-index: 0;
   }
-  .navigation-menu .menu-holder .fill.open .menu-items a {
-    color: #fff;
-  }
-  .navigation-menu .menu-holder .fill.open .menu-items a:hover,
-  .navigation-menu .menu-holder .fill.open .menu-items a.active {
-    color: #000002;
-  }
-  .navigation-menu .menu-holder .fill.open .menu-items .submenu a {
-    color: #000002;
+  .navigation-menu .menu-holder .slide.open .menu-items ul li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
   }
   .main-wrapper {
     padding-left: 15px;
@@ -558,7 +559,7 @@ header .header-wrapper h3 {
 }
 @media all and (min-width: 768px) {
   body {
-    overflow: auto!important;
+    overflow: auto !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1199px) {

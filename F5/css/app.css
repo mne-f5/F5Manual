@@ -10,6 +10,9 @@
 .small-mt {
   margin-top: 15px !important;
 }
+.no-overflow {
+  overflow: hidden;
+}
 .menu-holder {
   position: absolute;
   top: 0;
@@ -255,17 +258,21 @@ header .header-wrapper h3 {
   background-color: #e5eaee;
 }
 .login-page {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 40px;
 }
 .login-page .holder {
   position: absolute;
   right: 40%;
   left: 40%;
+  margin-bottom: 32px;
 }
 .login-page .holder .login-form {
   display: block;
@@ -524,6 +531,8 @@ header .header-wrapper h3 {
     transition: all 0.200s;
     transition-delay: .2s;
     color: #fff;
+    bottom: 0;
+    overflow-y: auto;
   }
   .navigation-menu .menu-holder .fill.open .menu-items a {
     color: #fff;
@@ -542,10 +551,29 @@ header .header-wrapper h3 {
     margin-left: 0;
     margin-right: 0;
   }
+  .login-page .holder {
+    left: 5%;
+    right: 5%;
+  }
+}
+@media all and (min-width: 768px) {
+  body {
+    overflow: auto!important;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 1199px) {
   .no-sides-margins {
     margin-left: 0;
+  }
+  .login-page .holder {
+    left: 25%;
+    right: 25%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .no-sides-margins {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media all and (min-width: 1200px) and (max-width: 1400px) {

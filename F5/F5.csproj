@@ -107,6 +107,8 @@
     <Content Include="images\brand\chrome_2017-06-15_11-11-08.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-11-18.png" />
     <Content Include="images\brand\chrome_2017-06-15_11-11-28.png" />
+    <Content Include="images\brand\document-preview.jpg" />
+    <Content Include="images\brand\logo-preview.jpg" />
     <Content Include="images\brand\power-point-presentation.jpg" />
     <Content Include="images\brand\website\website-preview.jpg" />
     <Content Include="images\logo.jpg" />
@@ -250,6 +252,12 @@
     <Content Include="fonts\Linearicons-Free.woff2" />
     <Content Include="images\manual-content\design-system\Untitled-3.psd" />
     <Content Include="downloads\business-cards\business-card.zip" />
+    <Content Include="downloads\PPT.zip" />
+    <Content Include="downloads\logo.zip" />
+    <Content Include="downloads\documents.zip" />
+    <None Include="Properties\PublishProfiles\dd.pubxml" />
+    <None Include="Properties\PublishProfiles\ss.pubxml" />
+    <None Include="Properties\PublishProfiles\zas.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

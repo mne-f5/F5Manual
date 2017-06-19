@@ -498,6 +498,7 @@ header .header-wrapper h3 {
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
+    position: fixed;
   }
   .navigation-menu .menu-holder .slide .menu-items a {
     color: #fff;

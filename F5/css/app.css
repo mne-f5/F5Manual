@@ -560,6 +560,9 @@ header .header-wrapper h3 {
   .login-page .content {
     top: 0;
   }
+  .login-page .content .logo-holder {
+    margin-bottom: 0;
+  }
   .login-page .content .logo-holder img {
     -webkit-transform: none;
     -moz-transform: none;

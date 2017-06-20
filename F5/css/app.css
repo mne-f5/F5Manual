@@ -557,6 +557,9 @@ header .header-wrapper h3 {
     left: 5%;
     right: 5%;
   }
+  .login-page .content {
+    top: 0;
+  }
 }
 @media all and (min-width: 768px) {
   body {

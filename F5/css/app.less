@@ -690,8 +690,9 @@ header {
                 }
 
 
-                &.open { 
+                &.open {
                     position: fixed;
+
                     .btn-holder {
                         z-index: 9;
 
@@ -723,7 +724,6 @@ header {
                             li {
                                 opacity: 1;
                                 .transform(translateX(0));
-                                
                             }
                         }
                     }
@@ -741,9 +741,15 @@ header {
         margin-right: 0;
     }
 
-    .login-page .holder {
-        left: 5%;
-        right: 5%;
+    .login-page {
+        .holder {
+            left: 5%;
+            right: 5%;
+        }
+
+        .content {
+            top: 0;
+        }
     }
 }
 

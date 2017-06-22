@@ -96,6 +96,7 @@
   right: 0;
   bottom: 0;
   background-color: transparent;
+  overflow: auto;
 }
 .menu-holder .slide .menu-items ul {
   top: 80px;

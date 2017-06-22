@@ -397,6 +397,9 @@ header .header-wrapper h3 {
   float: left;
   padding: 5px;
 }
+.grid-holder .grid-row .column a {
+  display: block;
+}
 .grid-holder .grid-row .column.lg {
   width: 40%;
 }

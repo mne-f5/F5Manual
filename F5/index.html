@@ -13,6 +13,7 @@
     <link href="css/theme.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/ui-kit.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,6 +26,8 @@
     <script src="js/angular-route.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+    
 </head>
 <body>
      
@@ -56,6 +59,10 @@
 
 
         <section ng-view autoscroll="true"></section>
+
+        <div class="up" ng-click="toTop()">
+            <span class="lnr lnr-chevron-up"></span>
+        </div>
     </div>
 
 
@@ -69,5 +76,8 @@
     <script src="scripts/brand/gallery/GalleryService.js"></script>
     <script src="scripts/brand/gallery/GalleryController.js"></script>
     <script src="scripts/kit/KitController.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
+    
+    
 </body>
 </html>

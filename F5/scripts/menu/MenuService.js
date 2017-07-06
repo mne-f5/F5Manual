@@ -52,7 +52,15 @@
                             category: 'ui kit',
                             icon: 'lnr lnr-gift',
                             firstLevel: [
-                                { name: 'Overview & Download', path: '/ui-kit', active: false }
+                                { name: 'Overview & Download', path: '/ui-kit', active: false },
+                                { name: 'Buttons', path: '/kit/top', active: false },
+                                { name: 'Input fields', path: '/kit/if', active: false },
+                                { name: 'Tables', path: '/kit/tb', active: false },
+                                { name: 'Dropdowns', path: '/kit/dropbtn', active: false },
+                                { name: 'Pagination', path: '/kit/pagination', active: false },
+                                { name: 'Panels', path: '/kit/panels', active: false },
+                                { name: 'Badges', path: '/kit/badges', active: false },
+                                { name: 'Charts', path: '/kit/charts', active: false },
                             ]
                         }
 

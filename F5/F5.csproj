@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\prism.css" />
     <Content Include="css\ui-kit.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
@@ -236,7 +237,18 @@
     <Content Include="js\angular-route.min.js" />
     <Content Include="js\angular.min.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\charts\barChart.js" />
+    <Content Include="js\charts\d3-selection-multi.min.js" />
+    <Content Include="js\charts\d3.min.js" />
+    <Content Include="js\charts\donut-chart.js" />
+    <Content Include="js\charts\lineChart.js" />
+    <Content Include="js\charts\map.js" />
+    <Content Include="js\charts\pieChart.js" />
+    <Content Include="js\charts\progress-chart.js" />
+    <Content Include="js\geo-projection\d3-geo-projection.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\prism.js" />
+    <Content Include="js\topojson\topojson.min.js" />
     <Content Include="js\ui-bootstrap-tpls-2.5.0.min.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -255,6 +267,15 @@
     <Content Include="downloads\PPT.zip" />
     <Content Include="downloads\logo.zip" />
     <Content Include="downloads\documents.zip" />
+    <Content Include="js\charts\API.md" />
+    <Content Include="js\charts\CHANGES.md" />
+    <Content Include="js\charts\LICENSE" />
+    <Content Include="js\charts\README.md" />
+    <Content Include="js\geo-projection\LICENSE" />
+    <Content Include="js\geo-projection\README.md" />
+    <Content Include="js\maps\europe.json" />
+    <Content Include="js\topojson\LICENSE.md" />
+    <Content Include="js\topojson\README.md" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -311,6 +332,7 @@
     <Content Include="scripts\menu\MenuController.js" />
     <Content Include="scripts\menu\menuPartial.html" />
     <Content Include="scripts\menu\MenuService.js" />
+    <Content Include="scripts\smoothScroll.js" />
     <Content Include="Web.config" />
     <Content Include="css\app.less" />
   </ItemGroup>

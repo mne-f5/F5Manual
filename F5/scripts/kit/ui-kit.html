@@ -26,7 +26,7 @@
                             <p>And this is caused by reasons like : - <a href="#" class="primary-link">deadlines</a> , the design might not be practical to build , developer prioritising functionality rather than design work.</p>
                         </div>
 
-                        <div class="buttons wrapper row">
+                        <div class="buttons wrapper row" id="top">
                             <div class="col-sm-4 normal">
                                 <p>Normal</p>
                                 <button class="btn btn-primary">Primary Button</button>
@@ -46,21 +46,37 @@
                                 <button class="btn btn-negative">Negative Button</button>
                             </div>
 
-                            <!-- HTML CODE -->
-                            <!--<div class="col-sm-12">
-                                <pre class="code-holder">
-                                <code class="language-markup">
-                                <button class="btn btn-primary">Primary Button</button>
-                                <button class="btn btn-secondary">Secondary Button</button>
-                                <button class="btn btn-negative">Negative Button</button>
-                                </code>
-                            </pre>
-                            </div>-->
-                            <!-- END HTML CODE -->
+                            <div class="col-sm-12 text-right">
+                                <a class="primary-link show-code" ng-click="openCode('#buttons')">
+                                    <i class="lnr lnr-chevron-left"></i>
+                                    <i class="lnr lnr-chevron-right"></i>
+                                    <span>CODE</span>
+                                </a>
+                            </div>
+
+                            <div class="code-holder col-sm-12" id='buttons'>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <pre>
+                                        <code class="language-markup">
+                                            &lt;button class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt; 
+                                            &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/button&gt; 
+                                            &lt;button class=&quot;btn btn-negative&quot;&gt;Negative Button&lt;/button&gt;
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-12 wrapper input-fields">
+                            <div class="col-sm-12 wrapper input-fields" id="if">
                                 <h3><strong>Input fields</strong></h3>
                                 <div class="holder row">
                                     <div class="mb row">
@@ -163,6 +179,508 @@
                                 </div>
                             </div>
 
+                            <div class="col-sm-12 wrapper" id="tb">
+                                <h3><strong>Tables</strong></h3>
+                                <table class="table hidden-xs">
+                                    <thead>
+                                        <tr>
+                                            <th>Firstname</th>
+                                            <th>Lastname</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>john@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mary</td>
+                                            <td>Moe</td>
+                                            <td>mary@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>Dooley</td>
+                                            <td>july@example.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3><strong>Small resolution tables</strong></h3>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="holder">
+                                            <div class="name">Firstname</div>
+                                            <div class="data">John</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Lastname</div>
+                                            <div class="data">Doe</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Email</div>
+                                            <div class="data">john@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="holder">
+                                            <div class="name">Firstname</div>
+                                            <div class="data">Mary</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Lastname</div>
+                                            <div class="data">Moe</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Email</div>
+                                            <div class="data">mary@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="holder">
+                                            <div class="name">Firstname</div>
+                                            <div class="data">July</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Lastname</div>
+                                            <div class="data">Dooley</div>
+                                        </div>
+                                        <div class="holder">
+                                            <div class="name">Email</div>
+                                            <div class="data">july@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 text-right">
+                                <a class="primary-link show-code" ng-click="openCode('#tables')">
+                                    <i class="lnr lnr-chevron-left"></i>
+                                    <i class="lnr lnr-chevron-right"></i>
+                                    <span>CODE</span>
+                                </a>
+                            </div>
+
+                            <div class="code-holder col-sm-12" id="tables">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <pre>
+                                        <code class="language-markup">
+                                    &lt;div class=&quot;card&quot;&gt; 
+                                        &lt;div class=&quot;card-content&quot;&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt; 
+                                                &lt;div class=&quot;name&quot;&gt;Firstname&lt;/div&gt;     
+                                                &lt;div class=&quot;data&quot;&gt;Mary&lt;/div&gt; 
+                                            &lt;/div&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt;    
+                                                &lt;div class=&quot;name&quot;&gt;Lastname&lt;/div&gt; 
+                                                &lt;div class=&quot;data&quot;&gt;Moe&lt;/div&gt;
+                                            &lt;/div&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt; 
+                                                &lt;div class=&quot;name&quot;&gt;Email&lt;/div&gt; 
+                                                &lt;div class=&quot;data&quot;&gt;mary@example.com&lt;/div&gt; 
+                                            &lt;/div&gt; 
+                                        &lt;/div&gt; 
+                                    &lt;/div&gt;
+                                </code>
+                                </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-12 wrapper" id="dropbtn">
+                                <h3><strong>Button dropdowns</strong></h3>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-negative dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 text-right">
+                                <a class="primary-link show-code" ng-click="openCode('#btn-grp')">
+                                    <i class="lnr lnr-chevron-left"></i>
+                                    <i class="lnr lnr-chevron-right"></i>
+                                    <span>CODE</span>
+                                </a>
+                            </div>
+
+                            <div class="code-holder col-sm-12" id="btn-grp">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <pre>
+                                        <code class="language-markup">
+                                    &lt;div class=&quot;btn-group&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                            Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;btn-group&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                            Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;btn-group&quot;&gt;
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-negative dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                                            Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                                        &lt;/button&gt;
+                                        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                </code>
+                                </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-12 wrapper" id="pagination">
+                                <h3><strong>Pagination</strong></h3>
+                                <div class="row">
+                                    <div class="col-sm-6 text-center">
+                                        <h2>Primary</h2>
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination primary">
+                                                <li>
+                                                    <a href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-sm-6 text-center">
+                                        <h2>Secondary</h2>
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination secondary">
+                                                <li>
+                                                    <a href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li>
+                                                    <a href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+                                    <div class="col-sm-12 text-right">
+                                        <a class="primary-link show-code" ng-click="openCode('#pag')">
+                                            <i class="lnr lnr-chevron-left"></i>
+                                            <i class="lnr lnr-chevron-right"></i>
+                                            <span>CODE</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="code-holder col-sm-12" id="pag">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="home">
+                                                <pre>
+                                                <code class="language-markup">
+                                                    &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
+                                                        &lt;ul class=&quot;pagination primary&quot;&gt; 
+                                                            &lt;li&gt; 
+                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt; 
+                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt; 
+                                                                &lt;/a&gt; 
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt; 
+                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt; 
+                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt; 
+                                                                &lt;/a&gt; 
+                                                            &lt;/li&gt; 
+                                                        &lt;/ul&gt; 
+                                                    &lt;/nav&gt;
+                                                    &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
+                                                        &lt;ul class=&quot;pagination secondary&quot;&gt; 
+                                                            &lt;li&gt; 
+                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt; 
+                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt; 
+                                                                &lt;/a&gt; 
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt;
+                                                                &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+                                                            &lt;/li&gt; 
+                                                            &lt;li&gt; 
+                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt; 
+                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt; 
+                                                                &lt;/a&gt; 
+                                                            &lt;/li&gt; 
+                                                        &lt;/ul&gt; 
+                                                    &lt;/nav&gt;
+                                                </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-12 wrapper" id="panels">
+                                <h3><strong>Panels</strong></h3>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        Panel title
+                                    </div>
+                                    <div class="panel-body">
+                                        Panel body
+                                    </div>
+                                </div>
+                                <div class="panel panel-secondary">
+                                    <div class="panel-heading">
+                                        Panel title
+                                    </div>
+                                    <div class="panel-body">
+                                        Panel body
+                                    </div>
+                                </div>
+                                <div class="panel panel-negative">
+                                    <div class="panel-heading">
+                                        Panel title
+                                    </div>
+                                    <div class="panel-body">
+                                        Panel body
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 text-right">
+                                <a class="primary-link show-code" ng-click="openCode('#panel')">
+                                    <i class="lnr lnr-chevron-left"></i>
+                                    <i class="lnr lnr-chevron-right"></i>
+                                    <span>CODE</span>
+                                </a>
+                            </div>
+
+                            <div class="code-holder col-sm-12" id="panel">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <pre>
+                                        <code class="language-markup">
+                                            &lt;div class=&quot;panel panel-primary&quot;&gt; 
+                                                &lt;div class=&quot;panel-heading&quot;&gt; 
+                                                    Panel title 
+                                                &lt;/div&gt; 
+                                                &lt;div class=&quot;panel-body&quot;&gt; 
+                                                    Panel body 
+                                                &lt;/div&gt; 
+                                            &lt;/div&gt; 
+
+                                            &lt;div class=&quot;panel panel-secondary&quot;&gt; 
+                                                &lt;div class=&quot;panel-heading&quot;&gt; 
+                                                    Panel title 
+                                                &lt;/div&gt; 
+                                                &lt;div class=&quot;panel-body&quot;&gt; 
+                                                    Panel body 
+                                                &lt;/div&gt; 
+                                            &lt;/div&gt; 
+
+                                            &lt;div class=&quot;panel panel-negative&quot;&gt; 
+                                                &lt;div class=&quot;panel-heading&quot;&gt; 
+                                                    Panel title 
+                                                &lt;/div&gt; 
+                                                &lt;div class=&quot;panel-body&quot;&gt; 
+                                                    Panel body 
+                                                &lt;/div&gt; 
+                                            &lt;/div&gt;            
+                                        </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 wrapper" id="badges">
+                                <h3><strong>Badges</strong></h3>
+                                <span class="badge primary">32</span>
+                                <span class="badge secondary">32</span>
+                                <span class="badge negative">32</span>
+                            </div>
+
+                            <div class="col-sm-12 wrapper" id="charts">
+                                <h3><strong>Charts</strong></h3>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="wrapper">
+                                        <h3><strong>Bar chart</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="donut-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <div class="wrapper">
+                                        <h3><strong>Line chart</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="line-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-8">
+                                    <div class="wrapper">
+                                        <h3><strong>Donut chart</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="bar-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="wrapper">
+                                        <h3><strong>Progress chart</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="progress-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="wrapper">
+                                        <h3><strong>Progress chart</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="pie-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <div class="wrapper">
+                                        <h3><strong>Map</strong></h3>
+                                        <div class="chart-container">
+                                            <div class="map"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,3 +690,15 @@
         </div>
     </div>
 </div>
+
+<script src="js/charts/d3.min.js"></script>
+<script src="js/charts/d3-selection-multi.min.js"></script>
+<script src="js/topojson/topojson.min.js"></script>
+<script src="js/geo-projection/d3-geo-projection.min.js"></script>
+<script src="js/charts/barChart.js"></script>
+<script src="js/charts/lineChart.js"></script>
+<script src="js/charts/pieChart.js"></script>
+<script src="js/charts/donut-chart.js"></script>
+<script src="js/charts/progress-chart.js"></script>
+<script src="js/charts/map.js"></script>
+<script src="js/prism.js"></script>

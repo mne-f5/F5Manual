@@ -3,4 +3,9 @@
         $location.hash('headings');
         $anchorScroll();
     };
+
+
+    $scope.openCode = function (element) {
+        $(element).toggleClass('open');
+    };
 });

@@ -1,9 +1,10 @@
-﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule']);
+﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule']);
 var mainModule = angular.module('MainModule',[]);
 var loginModule = angular.module('LoginModule', []);
 var menuModule = angular.module('MenuModule', []);
 var galleryModule = angular.module('GalleryModule', []);
 var kitModule = angular.module('KitModule', []);
+var scrollModule = angular.module('ScrollModule', []);
 
 app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.when('/login', {

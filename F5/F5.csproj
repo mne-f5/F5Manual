@@ -315,6 +315,7 @@
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\KitController.js" />
     <Content Include="scripts\kit\ui-kit.html" />
+    <Content Include="scripts\loader.js" />
     <Content Include="scripts\manual\components\tables.html" />
     <Content Include="scripts\manual\components\forms.html" />
     <Content Include="scripts\manual\designsystem.html" />

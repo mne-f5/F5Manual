@@ -8,4 +8,9 @@
     $scope.openCode = function (element) {
         $(element).toggleClass('open');
     };
+
+    $scope.openMenu = function (m) {
+        $(m).toggleClass('open');
+    };
+
 });

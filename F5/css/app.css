@@ -148,7 +148,7 @@
 .main-wrapper {
   padding-left: 271px;
 }
-header {
+header.app {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -157,22 +157,23 @@ header {
   right: 0;
   left: 0;
   z-index: 4;
+  padding: 0;
 }
-header .logo {
+header.app .logo {
   display: inline-block;
   float: left;
   padding: 6px 98px;
   background-color: #353439;
   cursor: pointer;
 }
-header .logo img {
+header.app .logo img {
   max-width: 100%;
 }
-header .header-wrapper {
+header.app .header-wrapper {
   display: inline-block;
   float: left;
 }
-header .header-wrapper h3 {
+header.app .header-wrapper h3 {
   padding: 26px 15px;
   margin: 0;
   font-weight: 500;
@@ -259,10 +260,10 @@ header .header-wrapper h3 {
 .kit-menu .menu li:nth-child(2) {
   display: none;
 }
-.kit-menu .menu li:nth-child(3) .items li {
+.kit-menu .menu li:nth-child(3) .items > li {
   display: block;
 }
-.kit-menu .menu li:nth-child(3) .items li:first-child {
+.kit-menu .menu li:nth-child(3) .items > li:first-child {
   display: none;
 }
 .login-page {
@@ -313,6 +314,9 @@ header .header-wrapper h3 {
   min-width: 200px;
   bottom: 0;
   right: 10px;
+}
+.login-page .card.error:before {
+  background-color: transparent!important;
 }
 .box {
   -webkit-border-radius: 4px;
@@ -396,6 +400,9 @@ header .header-wrapper h3 {
 }
 .img-holder img + p {
   margin-top: 10px;
+}
+.img-holder iframe {
+  max-width: 100%;
 }
 .grid-holder {
   margin: 20px 0;
@@ -578,6 +585,41 @@ header .header-wrapper h3 {
 }
 .hideEl {
   display: none;
+}
+.ex-1 {
+  margin: 100px 0;
+}
+.ex-2 {
+  margin: 100px 0;
+}
+/* PAGE EXAMPLE */
+.top-menu-example {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: #5b5b5b;
+}
+.content-box {
+  webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+  min-height: 150px;
 }
 /* Media queries  */
 @media all and (max-width: 360px) {

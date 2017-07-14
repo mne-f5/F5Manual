@@ -61,6 +61,12 @@
                                 { name: 'Panels', path: '/kit/panels', active: false },
                                 { name: 'Badges', path: '/kit/badges', active: false },
                                 { name: 'Charts', path: '/kit/charts', active: false },
+                                { name: 'Navigation', path: '/kit/navigation', active: false },
+                                {
+                                    name: 'Page examples',
+                                    isCollapsed: false,
+                                    submenu: [{ name: 'Top navigation', path: '/top-navbar', active: false }]
+                                }
                             ]
                         }
 

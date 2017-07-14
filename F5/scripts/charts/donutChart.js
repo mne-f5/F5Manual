@@ -28,7 +28,7 @@ angular.module('donutChartModule').directive('donutChart', function () {
                 width: '100%',
                 height: '100%',
                 'viewBox': '0 0 ' + Math.min(width, height) + ' ' + Math.min(width, height),
-                'preserveAspectRatio': 'xMinYMin'
+                'preserveAspectRatio': 'xMidYMin'
             });
 
             var total = function (d) {

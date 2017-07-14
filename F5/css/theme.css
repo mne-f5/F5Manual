@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*-------------------------------------------------------------*/
@@ -595,7 +595,8 @@ textarea.form-control {
 }
 
 .radio-holder {
-  margin: 8px 0;
+  margin: 8px 8px 8px 0;
+  display: inline-block;
 }
 .radio-holder [type="radio"]:disabled + label {
   color: rgba(0, 0, 0, 0.26);
@@ -818,8 +819,53 @@ textarea.form-control {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #1980ff;
 }
+
+.card.primary:before {
+      background-color: #1980ff;
+}
+.card.negative:before {
+      background-color: #a2a6a9;
+}
+.card.secondary:before {
+      background-color: #222224;
+}
+.card.danger:before {
+      background-color: #ff5d5e;
+}
+.card.success:before {
+      background-color: #47CF73;
+}
+.card.warning:before {
+      background-color: #ffab00;
+}
+
+
+.card.primary a,
+.card.primary i {
+      color: #1980ff;
+}
+.card.negative a,
+.card.negative i {
+      color: #a2a6a9;
+}
+.card.secondary a,
+.card.secondary i {
+      color: #222224;
+}
+.card.danger a,
+.card.danger i {
+      color: #ff5d5e;
+}
+.card.success a,
+.card.success i {
+      color: #47CF73;
+}
+.card.warning a,
+.card.warning i {
+      color: #ffab00;
+}
+
 .card .card-content {
   padding: 16px;
   -webkit-border-radius: 0 0 2px 2px;
@@ -828,6 +874,8 @@ textarea.form-control {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  text-align: left;
+  position: relative;
 }
 .card .card-content p {
   margin: 0;
@@ -845,6 +893,57 @@ textarea.form-control {
 }
 .card .card-content .holder .data {
   margin-left: 8px;
+}
+
+.card.widget {
+    margin: 0 0 16px 0;
+}
+
+.card.widget,
+.card.widget .card-content {
+    float: left;
+    width: 100%;
+}
+
+.card .tile {
+    float: left;
+    width: 100%;
+}
+
+.card .tile .content {
+    float: right;
+    width: 100%;
+    padding-left: 90px;
+}
+
+
+.card .tile .icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 16px;
+}
+
+.card .tile .icon i {
+    font-size: 60px;
+    line-height: 90px;
+}
+
+.card .tile .content h3 {
+    margin: 8px 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card .tile .content span {
+    display: block;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
 /* Pagination */
@@ -957,6 +1056,22 @@ textarea.form-control {
     background-color: #a2a6a9;
 }
 
+.badge.success {
+    background-color: #47CF73;
+}
+
+.badge.warning {
+    background-color: #ffab00;
+}
+
+.badge.danger {
+    background-color: #ff5d5e;
+}
+
+.badge.boxed {
+    border-radius: 4px;
+}
+
 
 /* Charts */
 
@@ -1059,6 +1174,84 @@ svg g.tick text {
     right: 0;
     z-index: 9;
 }
+
+.db {
+   display: block; 
+}
+
+
+/* 404 page */
+.error-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #353439;
+    text-align: center;
+}
+
+.error-page .img-holder {
+    padding: 10px;
+}
+
+.error-page .img-holder img,
+.login .logo-wrapper img {
+    max-width: 100%;
+}
+
+.error-page .message-wrapper,
+.login .login-wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.error-page h1,
+.error-page h2 {
+    color:#fff;
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #353439;
+    text-align: center;
+}
+
+.login .logo-wrapper {
+    margin-bottom: 32px;
+}
+
+.login .login-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.login .login-wrapper .form-group {
+    text-align: left;
+}
+
+.login .login-wrapper .form-group label {
+    color: #fff;
+}
+
+.login form button {
+    margin-top: 16px;
+}
+
+
 
 
 
@@ -1247,6 +1440,23 @@ svg g.tick text {
         background-color: #353439;
         color: #fff;
     }
+
+    .error-page .message-wrapper .img-holder:last-child img {
+        width: 50px;
+    }
+
+    .error-page h1 {
+        font-size: 24px;
+    }
+
+    .error-page h2 {
+        font-size: 14px;
+    }
+
+    .login .login-wrapper {
+        width: 100%;
+    }
+
 }
 
 

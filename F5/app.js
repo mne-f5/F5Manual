@@ -110,6 +110,21 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
             controller: 'KitController'
         });
 
+        $routeProvider.when('/side-navbar', {
+            templateUrl: 'scripts/kit/sideExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/error', {
+            templateUrl: 'scripts/kit/errorExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/login-example', {
+            templateUrl: 'scripts/kit/loginExample.html',
+            controller: 'KitController'
+        });
+
     $routeProvider.otherwise({ redirectTo: '/login' });
 }]);
 

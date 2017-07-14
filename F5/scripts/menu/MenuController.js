@@ -40,8 +40,9 @@
                 menuFactory.setActiveItem(path);
             }
             else {
-                if (path === '/top-navbar') {
-                    $window.open(url + path, '_blank');
+                if (path && path.indexOf('/example/') > -1) {
+                    var res = path.replace('/example', '');
+                    $window.open(url + res, '_blank');
                 }
                 else {
                     $location.path(path);

@@ -72,6 +72,12 @@ body {
     overflow: hidden;
 }
 
+.radios {
+    .radio-holder {
+        display: block;
+    }
+}
+
 .menu-holder {
     position: absolute;
     top: 0;
@@ -353,7 +359,7 @@ header.app {
         }
 
         .submenu {
-            li {
+            li { display: block!important;
                 a {
                     padding-left: 65px;
                     background-color: #eff3f6;
@@ -370,7 +376,7 @@ header.app {
 
 .kit-menu {
     .menu {
-        li {
+       > li {
             &:first-child,
             &:nth-child(2) {
                 display: none;
@@ -748,7 +754,8 @@ header.app {
     z-index: 9;
     border-radius: 0;
     margin-bottom: 0;
-    background-color: #5b5b5b;
+    background-color: #edf0f5;
+    overflow: auto;
 }
 
 .content-box {
@@ -765,9 +772,36 @@ header.app {
     -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
     color: #000;
-    text-align: center;
     min-height: 150px;
+
+    h3 {
+        margin-top: 0;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
+    .card {
+        display: inline-block;
+    }
 }
+
+.cards-holder {
+    text-align: center;
+    padding-left: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+        }
+    }
+
+.error-page,
+.login {
+    position: fixed;
+}
+
+
+
 
 
 

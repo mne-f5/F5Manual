@@ -113,6 +113,7 @@
     <Content Include="images\brand\power-point-presentation.jpg" />
     <Content Include="images\brand\website\website-preview.jpg" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\maintenance_icon.png" />
     <Content Include="images\manual-content\1-9v3d-bqpkrQJ8KxASLO_-w.png" />
     <Content Include="images\manual-content\1-FDR6xlcd36GxvwWtvLjysw.jpeg" />
     <Content Include="images\manual-content\1-gc4TVRquQIB3etlcnNKtQQ.png" />
@@ -232,6 +233,7 @@
     <Content Include="images\stockphotos\compressed\7.jpg" />
     <Content Include="images\stockphotos\compressed\8.jpg" />
     <Content Include="images\stockphotos\compressed\9.jpg" />
+    <Content Include="images\user.png" />
     <Content Include="images\wall-kit.jpg" />
     <Content Include="js\angular-animate.min.js" />
     <Content Include="js\angular-route.min.js" />
@@ -313,7 +315,10 @@
     <Content Include="scripts\charts\progressChart.js" />
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
+    <Content Include="scripts\kit\loginExample.html" />
     <Content Include="scripts\kit\KitController.js" />
+    <Content Include="scripts\kit\errorExample.html" />
+    <Content Include="scripts\kit\sideExample.html" />
     <Content Include="scripts\kit\topExample.html" />
     <Content Include="scripts\kit\ui-kit.html" />
     <Content Include="scripts\loader.js" />

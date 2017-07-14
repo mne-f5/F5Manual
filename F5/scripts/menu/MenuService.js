@@ -65,7 +65,12 @@
                                 {
                                     name: 'Page examples',
                                     isCollapsed: false,
-                                    submenu: [{ name: 'Top navigation', path: '/top-navbar', active: false }]
+                                    submenu: [
+                                        { name: 'Top navigation', path: '/example/top-navbar', active: false },
+                                        { name: 'Error page', path: '/example/error', active: false },
+                                        { name: 'Side navigation', path: '/example/side-navbar', active: false },
+                                        { name: 'Login example', path: '/example/login-example', active: false }
+                                    ]
                                 }
                             ]
                         }

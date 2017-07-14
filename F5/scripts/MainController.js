@@ -17,7 +17,7 @@
 
     $scope.go = function (path) {
         $location.path(path);
-        
+        menuFactory.setActiveItem(path);
     }
 
     function hasClass(element, cls) {
@@ -25,34 +25,45 @@
         return c.indexOf(cls) > -1;
     }
 
-
-
     window.onscroll = function () {
 
         var distance = window.pageYOffset,
-            bubble = document.getElementsByClassName('up');
+            bubble = document.getElementsByClassName('up'),
+            sections = smoothScroll.getElements(),
+            li = document.getElementsByClassName('menu'),
+            menu = li[0].children[2],
+            page = window.location.hash;
 
-        if (distance > 200) {
 
-            if (hasClass(bubble, 'appear')) {
-                return false;
+        if (page === '#!/ui-kit') {
+
+            for (i = 0; i < sections.length; i++) {
+                if (sections[i].position - 50 <= distance && sections[i].position + sections[i].height > distance) {
+                    menu.children[1].children[i + 1].children[0].className += ' active';
+                }
+                else {
+                    menu.children[1].children[i + 1].children[0].classList.remove('active');
+                }
             }
-            else {
+
+            if (distance > 200) {
                 bubble[0].className += ' appear';
             }
-
-        }
-        else {
-            if (hasClass(bubble, 'appear')) {
+            else {
                 bubble[0].classList.remove('appear');
             }
+        }
+        else {
+            if (distance > 200) {
+                bubble[0].className += ' appear';
+            }
             else {
-                return false;
+                bubble[0].classList.remove('appear');
             }
         }
-
-        smoothScroll.changeMenuItem();
+ 
     };
+    
 
     $scope.toTop = function () {
         smoothScroll.scroll(0);

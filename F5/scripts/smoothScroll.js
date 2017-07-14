@@ -1,5 +1,5 @@
 ﻿angular.module('ScrollModule').factory('smoothScroll', function () {
-
+    var stopPoints = [];
     return {
         scroll: function smoothScroll(param) {
             var startY = currentYPosition();
@@ -29,9 +29,22 @@
                 leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
             }
         },
-        changeMenuItem: function () {
-            var sections = document.getElementsByClassName('sec');
+        setElements: function () {
+            if (stopPoints.length === 0) {
+                var sections = document.getElementsByClassName('sec');
+                for (i = 0; i < sections.length; i++) {
+                    var el = sections[i].id,
+                        h = sections[i].clientHeight;
+                    stopPoints.push({
+                        position: elmYPosition(el),
+                        height: h
+                    });
+                }
+            }
             
+        },
+        getElements: function () {
+            return stopPoints;
         }
     }
 

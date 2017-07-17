@@ -106,22 +106,22 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
         });
 
         $routeProvider.when('/top-navbar', {
-            templateUrl: 'scripts/kit/topExample.html',
+            templateUrl: 'scripts/kit/examples/topExample.html',
             controller: 'KitController'
         });
 
         $routeProvider.when('/side-navbar', {
-            templateUrl: 'scripts/kit/sideExample.html',
+            templateUrl: 'scripts/kit/examples/sideExample.html',
             controller: 'KitController'
         });
 
         $routeProvider.when('/error', {
-            templateUrl: 'scripts/kit/errorExample.html',
+            templateUrl: 'scripts/kit/examples/errorExample.html',
             controller: 'KitController'
         });
 
         $routeProvider.when('/login-example', {
-            templateUrl: 'scripts/kit/loginExample.html',
+            templateUrl: 'scripts/kit/examples/loginExample.html',
             controller: 'KitController'
         });
 

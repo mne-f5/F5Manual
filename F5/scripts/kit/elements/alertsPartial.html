@@ -1,0 +1,123 @@
+﻿<div class="sec col-sm-12 wrapper" id="alerts">
+    <h3><strong>Alerts</strong></h3>
+
+    <div class="alert alert-primary alert-icon alert-dismissible" role="alert">
+        <div class="icon">
+            <span class="lnr lnr-clock"></span>
+        </div>
+        <strong>Primary!</strong> This alert needs your attention, but it's not super important.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+
+    <div class="alert alert-secondary alert-icon alert-dismissible" role="alert">
+        <div class="icon">
+            <span class="lnr lnr-cloud"></span>
+        </div>
+        <strong>Secondary!</strong> We wanna let you know something.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+
+    <div class="alert alert-negative alert-dismissible" role="alert">
+        <strong>Negative!</strong> We wanna let you know something.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+
+    <div class="alert alert-warning alert-icon alert-dismissible" role="alert">
+        <div class="icon">
+            <span class="lnr lnr-warning"></span>
+        </div>
+        <strong>Warning!</strong>  Better check yourself, you're not looking too good.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+
+    <div class="alert alert-success alert-icon alert-dismissible" role="alert">
+        <div class="icon">
+            <span class="lnr lnr-checkmark-circle"></span>
+        </div>
+        <strong>Success!</strong> You successfully read this important alert message.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+
+    <div class="alert alert-danger alert-icon alert-dismissible" role="alert">
+        <div class="icon">
+            <span class="lnr lnr-redo"></span>
+        </div>
+        <strong>Danger!</strong> Change a few things up and try submitting again.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="lnr lnr-cross-circle"></span></button>
+    </div>
+</div>
+
+<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#alert')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="alert">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <pre>
+            <code class="language-markup">
+                &lt;div class="alert alert-primary alert-icon alert-dismissible" role="alert"&gt;
+                    &lt;div class="icon"&gt;
+                        &lt;span class="lnr lnr-clock"&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;strong&gt;Primary!&lt;/strong&gt;This alert needs your attention, but it's not super important.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-secondary alert-icon alert-dismissible" role="alert"&gt;
+                    &lt;div class="icon"&gt;
+                        &lt;span class="lnr lnr-cloud"&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;strong&gt;Secondary!&lt;/strong&gt;We wanna let you know something.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-negative alert-dismissible" role="alert"&gt;
+                    &lt;strong&gt;Negative!&lt;/strong&gt;We wanna let you know something.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-warning alert-icon alert-dismissible" role="alert"&gt;
+                    &lt;div class="icon"&gt;
+                        &lt;span class="lnr lnr-warning"&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;strong&gt;Warning!&lt;/strong&gt;Better check yourself, you're not looking too good.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-success alert-icon alert-dismissible" role="alert"&gt;
+                    &lt;div class="icon"&gt;
+                        &lt;span class="lnr lnr-checkmark-circle"&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;strong&gt;Success!&lt;/strong&gt;You successfully read this important alert message.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-danger alert-icon alert-dismissible" role="alert"&gt;
+                    &lt;div class="icon"&gt;
+                        &lt;span class="lnr lnr-redo"&gt;&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;strong&gt;Danger!&lt;/strong&gt;Change a few things up and try submitting again.
+                    &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
+                        &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            </code>
+            </pre>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+﻿<div class="sec buttons wrapper row" id="top">
+    <div class="col-sm-4 normal">
+        <p>Normal</p>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-negative">Negative Button</button>
+    </div>
+    <div class="col-sm-4 hover">
+        <p>Hover</p>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-negative">Negative Button</button>
+    </div>
+    <div class="col-sm-4 active">
+        <p>Active</p>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-negative">Negative Button</button>
+    </div>
+
+    <div class="col-sm-12 text-right">
+        <a class="primary-link show-code" ng-click="openCode('#buttons')">
+            <i class="lnr lnr-chevron-left"></i>
+            <i class="lnr lnr-chevron-right"></i>
+            <span>CODE</span>
+        </a>
+    </div>
+
+    <div class="code-holder col-sm-12" id='buttons'>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <pre>
+                <code class="language-markup">
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt; 
+                    &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/button&gt; 
+                    &lt;button class=&quot;btn btn-negative&quot;&gt;Negative Button&lt;/button&gt;
+                </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

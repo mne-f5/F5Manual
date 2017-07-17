@@ -1,0 +1,57 @@
+﻿<div class="sec col-sm-12 wrapper" id="charts">
+    <h3><strong>Charts</strong></h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="wrapper" ng-controller="donutChartController">
+                <h3><strong>Donut chart</strong></h3>
+                <div class="chart-container">
+                    <donut-chart data="data"><donut-chart />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-8">
+            <div class="wrapper" ng-controller="lineChartController">
+                <h3><strong>Line chart</strong></h3>
+                <div class="chart-container">
+                    <line-chart data="data"><line-chart />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-8">
+            <div class="wrapper" ng-controller="barChartController">
+                <h3><strong>Bar chart</strong></h3>
+                <div class="chart-container">
+                    <bar-chart data="data"><bar-chart />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="wrapper" ng-controller="progressChartController">
+                <h3><strong>Progress chart</strong></h3>
+                <div class="chart-container">
+                    <progress-chart data="percent"></progress-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="wrapper" ng-controller="pieChartController">
+                <h3><strong>Pie chart</strong></h3>
+                <div class="chart-container">
+                    <pie-chart data="data"></pie-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-8">
+            <div class="wrapper" ng-controller="mapController">
+                <h3><strong>Map</strong></h3>
+                <div class="chart-container">
+                    <map data="location"></map>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

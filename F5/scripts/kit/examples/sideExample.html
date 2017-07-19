@@ -5,6 +5,71 @@
                 <aside class="side-navbar side-fixed">
                     <div class="header-section">
                         <h3>Page name</h3>
+                        <ul class="menu-right">
+                            <li>
+                                <div class="btn-group language">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>
+                                            <img src="images/flags/en.png" alt="" />
+                                        </span>English <span class="lnr lnr-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href>
+                                                <span>
+                                                    <img src="images/flags/en.png" alt="" />
+                                                </span>
+                                                English
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href>
+                                                <span>
+                                                    <img src="images/flags/no.png" alt="" />
+                                                </span>
+                                                Norwegian
+                                            </a>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-group alerts">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon">
+                                            <i class="lnr lnr-inbox"></i>
+                                            <span class="badge primary">32</span>
+                                        </span>
+
+                                        <span class="lnr lnr-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>Notifications</li>
+                                        <li><a href>Another action</a></li>
+                                        <li><a href>Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href>Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-group user">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="group-img">
+                                            <img src="images/user.png" alt="" />
+                                        </span>Username <span class="lnr lnr-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href>Action</a></li>
+                                        <li><a href>Another action</a></li>
+                                        <li><a href>Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href>Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="btn-holder" ng-click="openMenu('.side-navbar')">
                         <div class="menu-btn">
@@ -29,6 +94,76 @@
                 </aside>
                 <div class="side-main-content container-fluid">
                     <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <ul class="cards-holder">
+                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card primary widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-users"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Customers</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open customers list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card success widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-pencil"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Comments</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open comments list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card warning widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-camera"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Gallery</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open gallery</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card danger widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-warning"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Errors</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open errors list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
                         <div class="col-xs-12 col-sm-6 col-lg-8">
                             <div class="content-box" ng-controller="lineChartController">
                                 <h3>Product Sales History</h3>
@@ -201,76 +336,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <ul class="cards-holder">
-                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="card primary widget">
-                                            <div class="card-content">
-                                                <div class="tile">
-                                                    <div class="icon">
-                                                        <i class="lnr lnr-users"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3>Customers</h3>
-                                                        <span>3,456</span>
-                                                        <a href>open customers list</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="card success widget">
-                                            <div class="card-content">
-                                                <div class="tile">
-                                                    <div class="icon">
-                                                        <i class="lnr lnr-pencil"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3>Comments</h3>
-                                                        <span>3,456</span>
-                                                        <a href>open comments list</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="card warning widget">
-                                            <div class="card-content">
-                                                <div class="tile">
-                                                    <div class="icon">
-                                                        <i class="lnr lnr-camera"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3>Gallery</h3>
-                                                        <span>3,456</span>
-                                                        <a href>open gallery</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="card danger widget">
-                                            <div class="card-content">
-                                                <div class="tile">
-                                                    <div class="icon">
-                                                        <i class="lnr lnr-warning"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3>Errors</h3>
-                                                        <span>3,456</span>
-                                                        <a href>open errors list</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
                     </div>
                 </div>
 

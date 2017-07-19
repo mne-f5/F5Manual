@@ -47,18 +47,38 @@
             }
 
             if (distance > 200) {
-                bubble[0].className += ' appear';
+                if (hasClass(bubble, 'appear')) {
+                    return false;
+                }
+                else {
+                    bubble[0].className += ' appear';
+                }
             }
             else {
-                bubble[0].classList.remove('appear');
+                if (hasClass(bubble, 'appear')) {
+                    bubble[0].classList.remove('appear');
+                }
+                else {
+                    return false;
+                }
             }
         }
         else {
             if (distance > 200) {
-                bubble[0].className += ' appear';
+                if (hasClass(bubble, 'appear')) {
+                    return false;
+                }
+                else {
+                    bubble[0].className += ' appear';
+                }
             }
             else {
-                bubble[0].classList.remove('appear');
+                if (hasClass(bubble, 'appear')) {
+                    bubble[0].classList.remove('appear');
+                }
+                else {
+                    return false;
+                }
             }
         }
  

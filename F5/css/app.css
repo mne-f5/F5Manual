@@ -112,42 +112,40 @@
                     .transition(all .3s ease-in-out);
                 }*/
 }
-.card {
-  position: relative;
-  margin: 8px 0;
-  background-color: #fff;
-  transition: box-shadow 0.25s;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-}
-.card .card-content {
-  padding: 16px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.card .card-content p {
-  margin: 0;
-  color: inherit;
-}
-.card .card-content .holder {
-  margin-bottom: 4px;
-}
-.card .card-content .holder .name,
-.card .card-content .holder .data {
-  display: inline-block;
-}
-.card .card-content .holder .name {
-  font-weight: 700;
-}
-.card .card-content .holder .data {
-  margin-left: 8px;
-}
+/*.card {
+    position: relative;
+    margin: 8px 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    .shadows();
+
+    .card-content {
+        padding: 16px;
+        .border-radius(4px);
+
+        p {
+            margin: 0;
+            color: inherit;
+        }
+
+        .holder {
+            margin-bottom: 4px;
+
+            .name, .data {
+                display: inline-block;
+            }
+
+            .name {
+                font-weight: 700;
+            }
+
+            .data {
+                margin-left: 8px;
+            }
+        }
+    }
+}*/
 .main-wrapper {
   padding-left: 271px;
 }
@@ -600,13 +598,14 @@ header.app .header-wrapper h3 {
 }
 .ex-2 .header-section {
   position: absolute;
-  background-color: #353439;
+  background-color: #fff;
+  border: 1px solid #ededed;
 }
 .ex-2 .side-navbar {
   position: relative;
 }
 .ex-2 .header-section h3 {
-  color: #fff;
+  color: #000;
 }
 .ex-2 .side-menu ul {
   position: relative;

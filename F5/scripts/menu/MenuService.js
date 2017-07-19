@@ -64,7 +64,8 @@
                                 { name: 'Charts', path: '/kit/charts', active: false },
                                 { name: 'Navigation', path: '/kit/navigation', active: false },
                                 { name: 'Spinners', path: '/kit/spinners', active: false },
-                                { name: 'Alerts', path: '/kit/alerts', active:false },
+                                { name: 'Alerts', path: '/kit/alerts', active: false },
+                                { name: 'Progress bars', path: '/kit/progress-bars', active: false },
                                 {
                                     name: 'Page examples',
                                     isCollapsed: false,

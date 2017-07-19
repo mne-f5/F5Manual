@@ -94,7 +94,61 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\alerts.css">
+      <DependentUpon>alerts.less</DependentUpon>
+    </Content>
+    <Content Include="css\alerts.min.css">
+      <DependentUpon>alerts.css</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.css">
+      <DependentUpon>buttons.less</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.min.css">
+      <DependentUpon>buttons.css</DependentUpon>
+    </Content>
+    <Content Include="css\charts.css">
+      <DependentUpon>charts.less</DependentUpon>
+    </Content>
+    <Content Include="css\charts.min.css">
+      <DependentUpon>charts.css</DependentUpon>
+    </Content>
+    <Content Include="css\F5IT.css">
+      <DependentUpon>F5IT.less</DependentUpon>
+    </Content>
+    <Content Include="css\F5IT.min.css">
+      <DependentUpon>F5IT.css</DependentUpon>
+    </Content>
+    <Content Include="css\input-fields.css">
+      <DependentUpon>input-fields.less</DependentUpon>
+    </Content>
+    <Content Include="css\input-fields.min.css">
+      <DependentUpon>input-fields.css</DependentUpon>
+    </Content>
+    <Content Include="css\login.css">
+      <DependentUpon>login.less</DependentUpon>
+    </Content>
+    <Content Include="css\login.min.css">
+      <DependentUpon>login.css</DependentUpon>
+    </Content>
+    <Content Include="css\navigation.css">
+      <DependentUpon>navigation.less</DependentUpon>
+    </Content>
+    <Content Include="css\navigation.min.css">
+      <DependentUpon>navigation.css</DependentUpon>
+    </Content>
+    <Content Include="css\pagination.css">
+      <DependentUpon>pagination.less</DependentUpon>
+    </Content>
+    <Content Include="css\pagination.min.css">
+      <DependentUpon>pagination.css</DependentUpon>
+    </Content>
     <Content Include="css\prism.css" />
+    <Content Include="css\tables.css">
+      <DependentUpon>tables.less</DependentUpon>
+    </Content>
+    <Content Include="css\tables.min.css">
+      <DependentUpon>tables.css</DependentUpon>
+    </Content>
     <Content Include="css\ui-kit.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
@@ -273,6 +327,21 @@
     <Content Include="js\maps\europe.json" />
     <Content Include="js\topojson\LICENSE.md" />
     <Content Include="js\topojson\README.md" />
+    <Content Include="css\navigation.less" />
+    <Content Include="css\variables.less" />
+    <Content Include="css\buttons.less" />
+    <Content Include="css\input-fields.less" />
+    <Content Include="css\tables.less" />
+    <Content Include="css\F5IT.less" />
+    <Content Include="css\pagination.less" />
+    <Content Include="css\panels.less" />
+    <Content Include="css\badges.less" />
+    <Content Include="css\charts.less" />
+    <Content Include="css\spinners.less" />
+    <Content Include="css\alerts.less" />
+    <Content Include="css\progress-bars.less" />
+    <Content Include="css\login.less" />
+    <Content Include="css\404.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -316,6 +385,7 @@
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />
+    <Content Include="scripts\kit\elements\progressbarsPartial.html" />
     <Content Include="scripts\kit\elements\buttonsPartial.html" />
     <Content Include="scripts\kit\elements\paginationPartial.html" />
     <Content Include="scripts\kit\elements\panelsPartial.html" />

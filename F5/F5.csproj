@@ -143,6 +143,12 @@
       <DependentUpon>pagination.css</DependentUpon>
     </Content>
     <Content Include="css\prism.css" />
+    <Content Include="css\responsive.css">
+      <DependentUpon>responsive.less</DependentUpon>
+    </Content>
+    <Content Include="css\responsive.min.css">
+      <DependentUpon>responsive.css</DependentUpon>
+    </Content>
     <Content Include="css\tables.css">
       <DependentUpon>tables.less</DependentUpon>
     </Content>
@@ -342,6 +348,7 @@
     <Content Include="css\progress-bars.less" />
     <Content Include="css\login.less" />
     <Content Include="css\404.less" />
+    <Content Include="css\responsive.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />

@@ -6,51 +6,6 @@
 }
 
 
-/* 404 page */
-
-
-/* Login page */
-
-
-
-/* Spinners */
-
-
-/* Alerts */
-
-
-
-/* Progress bars */
-
-
-
-
-
-@media all and ( min-width: 1200px) {
-    .chart-container {
-        height: 400px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .error-page .message-wrapper .img-holder:last-child img {
-        width: 50px;
-    }
-
-    .error-page h1 {
-        font-size: 24px;
-    }
-
-    .error-page h2 {
-        font-size: 14px;
-    }
-
-    .login .login-wrapper {
-        width: 100%;
-    }
-}
-
-
 
 
 

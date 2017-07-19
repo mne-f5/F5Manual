@@ -7,6 +7,7 @@
   z-index: 9;
   background-color: #353439;
   text-align: center;
+  overflow: auto;
 }
 .login .logo-wrapper {
   margin-bottom: 32px;

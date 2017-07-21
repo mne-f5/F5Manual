@@ -15,7 +15,7 @@
                 loader[0].classList.remove('loading');
                 menu[0].className += ' kit-menu';
                 backBtn[0].className += ' vis';
-            }, 1000);
+            }, 2000);
             
         },
         getPrevPath: function () {

@@ -130,6 +130,12 @@
     <Content Include="css\login.min.css">
       <DependentUpon>login.css</DependentUpon>
     </Content>
+    <Content Include="css\modal.css">
+      <DependentUpon>modal.less</DependentUpon>
+    </Content>
+    <Content Include="css\modal.min.css">
+      <DependentUpon>modal.css</DependentUpon>
+    </Content>
     <Content Include="css\navigation.css">
       <DependentUpon>navigation.less</DependentUpon>
     </Content>
@@ -154,6 +160,12 @@
     </Content>
     <Content Include="css\tables.min.css">
       <DependentUpon>tables.css</DependentUpon>
+    </Content>
+    <Content Include="css\tabs.css">
+      <DependentUpon>tabs.less</DependentUpon>
+    </Content>
+    <Content Include="css\tabs.min.css">
+      <DependentUpon>tabs.css</DependentUpon>
     </Content>
     <Content Include="css\ui-kit.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -349,6 +361,8 @@
     <Content Include="css\login.less" />
     <Content Include="css\404.less" />
     <Content Include="css\responsive.less" />
+    <Content Include="css\modal.less" />
+    <Content Include="css\tabs.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -392,6 +406,8 @@
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />
+    <Content Include="scripts\kit\elements\modalPartial.html" />
+    <Content Include="scripts\kit\elements\modalsPartial.html" />
     <Content Include="scripts\kit\elements\progressbarsPartial.html" />
     <Content Include="scripts\kit\elements\buttonsPartial.html" />
     <Content Include="scripts\kit\elements\paginationPartial.html" />
@@ -401,6 +417,7 @@
     <Content Include="scripts\kit\elements\badgesPartial.html" />
     <Content Include="scripts\kit\elements\dropdownsPartial.html" />
     <Content Include="scripts\kit\elements\spinnersPartial.html" />
+    <Content Include="scripts\kit\elements\tabsPartial.html" />
     <Content Include="scripts\kit\elements\widgetsPartial.html" />
     <Content Include="scripts\kit\elements\tablesPartial.html" />
     <Content Include="scripts\kit\elements\inputsPartial.html" />

@@ -29,9 +29,8 @@
                 leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
             }
         },
-        setElements: function () {
+        setElements: function (sections) {
             if (stopPoints.length === 0) {
-                var sections = document.getElementsByClassName('sec');
                 for (i = 0; i < sections.length; i++) {
                     var el = sections[i].id,
                         h = sections[i].clientHeight;

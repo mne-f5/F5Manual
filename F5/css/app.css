@@ -280,6 +280,7 @@ header.app .header-wrapper h3 {
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 40px;
+  z-index: 9;
 }
 .login-page .holder {
   position: absolute;
@@ -309,7 +310,7 @@ header.app .header-wrapper h3 {
 }
 .login-page .content .login-form .btn-primary {
   width: 100%;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
 }
 .login-page .card.error {
   background-color: #ff8a80;
@@ -569,7 +570,7 @@ header.app .header-wrapper h3 {
   height: 3px;
   background-color: #fff;
   width: 0;
-  animation: fill ease 1s;
+  animation: fill ease 2s;
 }
 @keyframes fill {
   0% {

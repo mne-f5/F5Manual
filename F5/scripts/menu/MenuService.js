@@ -66,6 +66,8 @@
                                 { name: 'Spinners', path: '/kit/spinners', active: false },
                                 { name: 'Alerts', path: '/kit/alerts', active: false },
                                 { name: 'Progress bars', path: '/kit/progress-bars', active: false },
+                                { name: 'Modals', path: '/kit/modals', active: false },
+                                { name: 'Tabs', path: '/kit/tabs', active: false },
                                 {
                                     name: 'Page examples',
                                     isCollapsed: false,

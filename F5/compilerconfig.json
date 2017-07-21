@@ -46,5 +46,13 @@
   {
     "outputFile": "css/responsive.css",
     "inputFile": "css/responsive.less"
+  },
+  {
+    "outputFile": "css/modal.css",
+    "inputFile": "css/modal.less"
+  },
+  {
+    "outputFile": "css/tabs.css",
+    "inputFile": "css/tabs.less"
   }
 ]

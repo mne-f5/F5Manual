@@ -6,6 +6,7 @@
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
     padding: 8px 32px;
+    margin: 8px;
 
     &:hover {
         -webkit-box-shadow: 0 6px 5px -6px #000002 inset;
@@ -63,6 +64,23 @@
             background-color: @btn-negative-focus-bg;
             border-color: @btn-negative-focus-border;
             color: @btn-negative-focus-color;
+        }
+    }
+
+    
+    &.btn-danger {
+        color: @btn-danger-color;
+        background-color: @danger;
+        border-color: @danger;
+
+        &:hover {
+            background-color: @btn-danger-hover;
+            border-color: @btn-danger-hover;
+        }
+
+        &:focus, &:active, &:active:focus {
+            background-color: @btn-danger-focus;
+            border-color: @btn-danger-focus;
         }
     }
 }

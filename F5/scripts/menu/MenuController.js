@@ -22,9 +22,9 @@
             $scope.$on('$routeChangeSuccess', function (event, current, previous) {
                 prevPath = previous.$$route.originalPath;
                 loader.setPrevPath(prevPath);
-                if (current.$$route.originalPath === '/ui-kit') {
-                    smoothScroll.setElements();
-                }
+                //if (current.$$route.originalPath === '/ui-kit') {
+                //    smoothScroll.setElements();
+                //}
             });
 
             $location.path(path);

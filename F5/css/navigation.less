@@ -1,0 +1,337 @@
+﻿@import 'variables.less';
+
+.navigation {
+    position: relative;
+    background-color: @navbar-default-bg;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+    nav {
+        min-height: 50px;
+        position: relative;
+    }
+
+    .logo-holder {
+        float: left;
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        overflow: hidden;
+        line-height: inherit;
+        vertical-align: middle;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: 100%;
+            transform: translate(-50%,-50%);
+            padding: 8px;
+        }
+    }
+
+    .menu {
+        &.left {
+            display: inline-block;
+        }
+
+        &.right {
+            float: right;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 16px;
+
+            li {
+                position: relative;
+                display: inline-block;
+
+                a {
+                    display: block;
+                    padding: 15px;
+                    color: @navbar-default-link-color;
+                    cursor: pointer;
+                    -webkit-transition: all ease-in 0.3s;
+                    -moz-transition: all ease-in 0.3s;
+                    -ms-transition: all ease-in 0.3s;
+                    -o-transition: all ease-in 0.3s;
+                    transition: all ease-in 0.3s;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    &.active {
+                        background-color: @navbar-default-link-active-bg;
+                        color: @navbar-default-link-active-color;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        background-color: @navbar-default-link-hover-bg;
+                        color: @navbar-default-link-hover-color;
+                    }
+                }
+            }
+        }
+
+        .btn-group {
+            .dropdown-toggle {
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                .lnr-chevron-down {
+                    vertical-align: middle;
+                    font-size: 11px;
+                }
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    display: block;
+                    float: none;
+
+                    a {
+                        padding: 3px 20px;
+                        color: @dropdown-link-color;
+                    }
+                }
+            }
+
+            .group-img {
+                position: relative;
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                padding: 0;
+                margin: 0 10px 0 0;
+                overflow: hidden;
+                line-height: inherit;
+                vertical-align: middle;
+                background-color: #fff;
+                border-radius: 100%;
+                margin: -15px 10px -15px 0;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.alerts {
+    i {
+        vertical-align: middle;
+        font-size: 20px;
+    }
+
+    .icon {
+        position: relative;
+        padding: 10px 0 10px 10px;
+
+        .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 10px;
+            padding: 5px;
+        }
+    }
+
+    .dropdown-menu {
+        li {
+            &:first-child {
+                padding: 3px 20px;
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+}
+
+
+.side-navbar {
+    .side-menu {
+        width: @side-navbar-width;
+        -webkit-box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+        height: 100%;
+
+        .logo-holder {
+            position: relative;
+            display: block;
+            height: 50px;
+            overflow: hidden;
+            line-height: inherit;
+            vertical-align: middle;
+            background-color: @side-navbar-logo-default-bg;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto;
+                height: 100%;
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                padding: 8px;
+            }
+        }
+
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+            background-color: @side-navbar-default-bg;
+            overflow: auto;
+            height: 100%;
+            margin: 0;
+
+            li {
+                a {
+                    display: block;
+                    padding: 12px 12px 12px 32px;
+                    color: @side-navbar-link-color;
+                    cursor: pointer;
+                    -webkit-transition: all ease-in 0.3s;
+                    -moz-transition: all ease-in 0.3s;
+                    -ms-transition: all ease-in 0.3s;
+                    -o-transition: all ease-in 0.3s;
+                    transition: all ease-in 0.3s;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    &.active {
+                        background-color: @side-navbar-link-active-bg;
+                    }
+
+                    &:hover {
+                        background-color: @side-navbar-link-hover-bg;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-section {
+        position: fixed;
+        top: 0;
+        left: @side-navbar-width;
+        right: 0;
+        background-color: @side-navbar-header-bg;
+        min-height: 50px;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            padding-left: 16px;
+            line-height: 50px;
+            vertical-align: middle;
+            margin: 0;
+            float: left;
+        }
+
+        .menu-right {
+            float: right;
+            margin-bottom: 0;
+
+            > li {
+                position: relative;
+                display: inline-block;
+
+                a {
+                    padding: 15px;
+                    display: block;
+                    color: #000;
+                    cursor: pointer;
+                }
+
+                .btn-group ul li a {
+                    padding: 3px 20px;
+                    color: #333;
+                }
+
+                .dropdown-toggle {
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    .lnr-chevron-down {
+                        vertical-align: middle;
+                        font-size: 11px;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .group-img {
+                position: relative;
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                padding: 0;
+                margin: 0 10px 0 0;
+                overflow: hidden;
+                line-height: inherit;
+                vertical-align: middle;
+                background-color: #fff;
+                border-radius: 100%;
+                margin: -15px 10px -15px 0;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.side-main-content {
+    padding-left: @side-navbar-width + 15px;
+    padding-top: 65px;
+}
+
+.main-content {
+    padding-top: 70px;
+}
+
+.top-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.side-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+}

@@ -2,5 +2,57 @@
   {
     "outputFile": "css/app.css",
     "inputFile": "css/app.less"
+  },
+  {
+    "outputFile": "css/navigation.css",
+    "inputFile": "css/navigation.less"
+  },
+  {
+    "outputFile": "css/buttons.css",
+    "inputFile": "css/buttons.less"
+  },
+  {
+    "outputFile": "css/input-fields.css",
+    "inputFile": "css/input-fields.less"
+  },
+  {
+    "outputFile": "css/tables.css",
+    "inputFile": "css/tables.less"
+  },
+  {
+    "outputFile": "css/_theme.css",
+    "inputFile": "css/_theme.less"
+  },
+  {
+    "outputFile": "css/F5IT.css",
+    "inputFile": "css/F5IT.less"
+  },
+  {
+    "outputFile": "css/pagination.css",
+    "inputFile": "css/pagination.less"
+  },
+  {
+    "outputFile": "css/charts.css",
+    "inputFile": "css/charts.less"
+  },
+  {
+    "outputFile": "css/alerts.css",
+    "inputFile": "css/alerts.less"
+  },
+  {
+    "outputFile": "css/login.css",
+    "inputFile": "css/login.less"
+  },
+  {
+    "outputFile": "css/responsive.css",
+    "inputFile": "css/responsive.less"
+  },
+  {
+    "outputFile": "css/modal.css",
+    "inputFile": "css/modal.less"
+  },
+  {
+    "outputFile": "css/tabs.css",
+    "inputFile": "css/tabs.less"
   }
 ]

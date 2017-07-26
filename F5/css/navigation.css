@@ -1,0 +1,273 @@
+﻿.navigation {
+  position: relative;
+  background-color: #353439;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.navigation nav {
+  min-height: 50px;
+  position: relative;
+}
+.navigation .logo-holder {
+  float: left;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  line-height: inherit;
+  vertical-align: middle;
+}
+.navigation .logo-holder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  padding: 8px;
+}
+.navigation .menu.left {
+  display: inline-block;
+}
+.navigation .menu.right {
+  float: right;
+}
+.navigation .menu ul {
+  margin: 0;
+  padding-left: 16px;
+}
+.navigation .menu ul li {
+  position: relative;
+  display: inline-block;
+}
+.navigation .menu ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.navigation .menu ul li a i {
+  margin-right: 5px;
+}
+.navigation .menu ul li a.active {
+  background-color: #fff;
+  color: #000;
+}
+.navigation .menu ul li a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
+.navigation .menu .btn-group .dropdown-toggle {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navigation .menu .btn-group .dropdown-toggle i {
+  margin-right: 5px;
+}
+.navigation .menu .btn-group .dropdown-toggle .lnr-chevron-down {
+  vertical-align: middle;
+  font-size: 11px;
+}
+.navigation .menu .btn-group ul {
+  padding-left: 0;
+}
+.navigation .menu .btn-group ul li {
+  display: block;
+  float: none;
+}
+.navigation .menu .btn-group ul li a {
+  padding: 3px 20px;
+  color: #333;
+}
+.navigation .menu .btn-group .group-img {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  line-height: inherit;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: -15px 10px -15px 0;
+}
+.navigation .menu .btn-group .group-img img {
+  max-width: 100%;
+}
+.alerts i {
+  vertical-align: middle;
+  font-size: 20px;
+}
+.alerts .icon {
+  position: relative;
+  padding: 10px 0 10px 10px;
+}
+.alerts .icon .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  padding: 5px;
+}
+.alerts .dropdown-menu li:first-child {
+  padding: 3px 20px;
+  border-bottom: 1px solid #000;
+}
+.side-navbar .side-menu {
+  width: 256px;
+  -webkit-box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 0 10px -3px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+.side-navbar .side-menu .logo-holder {
+  position: relative;
+  display: block;
+  height: 50px;
+  overflow: hidden;
+  line-height: inherit;
+  vertical-align: middle;
+  background-color: #353439;
+}
+.side-navbar .side-menu .logo-holder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 8px;
+}
+.side-navbar .side-menu ul {
+  padding-left: 0;
+  list-style-type: none;
+  background-color: #fff;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+}
+.side-navbar .side-menu ul li a {
+  display: block;
+  padding: 12px 12px 12px 32px;
+  color: #5b5b5b;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.side-navbar .side-menu ul li a i {
+  margin-right: 5px;
+}
+.side-navbar .side-menu ul li a.active {
+  background-color: #e5eaee;
+}
+.side-navbar .side-menu ul li a:hover {
+  background-color: #eff3f6;
+  text-decoration: none;
+}
+.side-navbar .header-section {
+  position: fixed;
+  top: 0;
+  left: 256px;
+  right: 0;
+  background-color: #fff;
+  min-height: 50px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.side-navbar .header-section h3 {
+  padding-left: 16px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin: 0;
+  float: left;
+}
+.side-navbar .header-section .menu-right {
+  float: right;
+  margin-bottom: 0;
+}
+.side-navbar .header-section .menu-right > li {
+  position: relative;
+  display: inline-block;
+}
+.side-navbar .header-section .menu-right > li a {
+  padding: 15px;
+  display: block;
+  color: #000;
+  cursor: pointer;
+}
+.side-navbar .header-section .menu-right > li .btn-group ul li a {
+  padding: 3px 20px;
+  color: #333;
+}
+.side-navbar .header-section .menu-right > li .dropdown-toggle {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.side-navbar .header-section .menu-right > li .dropdown-toggle i {
+  margin-right: 5px;
+}
+.side-navbar .header-section .menu-right > li .dropdown-toggle .lnr-chevron-down {
+  vertical-align: middle;
+  font-size: 11px;
+}
+.side-navbar .header-section .menu-right > li .dropdown-toggle:hover {
+  text-decoration: none;
+}
+.side-navbar .header-section .menu-right .group-img {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  line-height: inherit;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: -15px 10px -15px 0;
+}
+.side-navbar .header-section .menu-right .group-img img {
+  max-width: 100%;
+}
+.side-main-content {
+  padding-left: 271px;
+  padding-top: 65px;
+}
+.main-content {
+  padding-top: 70px;
+}
+.top-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.side-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+}

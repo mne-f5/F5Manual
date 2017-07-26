@@ -52,7 +52,32 @@
                             category: 'ui kit',
                             icon: 'lnr lnr-gift',
                             firstLevel: [
-                                { name: 'Overview & Download', path: '/ui-kit', active: false }
+                                { name: 'Overview & Download', path: '/ui-kit', active: false },
+                                { name: 'Buttons', path: '/kit/top', active: false },
+                                { name: 'Input fields', path: '/kit/if', active: false },
+                                { name: 'Tables', path: '/kit/tb', active: false },
+                                { name: 'Widgets', path: '/kit/widgets', active: false },
+                                { name: 'Dropdowns', path: '/kit/dropbtn', active: false },
+                                { name: 'Pagination', path: '/kit/pagination', active: false },
+                                { name: 'Panels', path: '/kit/panels', active: false },
+                                { name: 'Badges', path: '/kit/badges', active: false },
+                                { name: 'Charts', path: '/kit/charts', active: false },
+                                { name: 'Navigation', path: '/kit/navigation', active: false },
+                                { name: 'Spinners', path: '/kit/spinners', active: false },
+                                { name: 'Alerts', path: '/kit/alerts', active: false },
+                                { name: 'Progress bars', path: '/kit/progress-bars', active: false },
+                                { name: 'Modals', path: '/kit/modals', active: false },
+                                { name: 'Tabs', path: '/kit/tabs', active: false },
+                                {
+                                    name: 'Page examples',
+                                    isCollapsed: false,
+                                    submenu: [
+                                        { name: 'Top navigation', path: '/example/top-navbar', active: false },
+                                        { name: 'Side navigation', path: '/example/side-navbar', active: false },
+                                        { name: 'Login example', path: '/example/login-example', active: false },
+                                        { name: 'Error page', path: '/example/error', active: false }
+                                    ]
+                                }
                             ]
                         }
 

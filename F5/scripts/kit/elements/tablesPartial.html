@@ -1,0 +1,118 @@
+﻿<div class="col-sm-12 wrapper">
+    <h3><strong>Tables</strong></h3>
+    <table class="table hidden-xs">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3><strong>Small resolution tables</strong></h3>
+    <div class="card primary">
+        <div class="card-content">
+            <div class="holder">
+                <div class="name">Firstname</div>
+                <div class="data">John</div>
+            </div>
+            <div class="holder">
+                <div class="name">Lastname</div>
+                <div class="data">Doe</div>
+            </div>
+            <div class="holder">
+                <div class="name">Email</div>
+                <div class="data">john@example.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="card primary">
+        <div class="card-content">
+            <div class="holder">
+                <div class="name">Firstname</div>
+                <div class="data">Mary</div>
+            </div>
+            <div class="holder">
+                <div class="name">Lastname</div>
+                <div class="data">Moe</div>
+            </div>
+            <div class="holder">
+                <div class="name">Email</div>
+                <div class="data">mary@example.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="card primary">
+        <div class="card-content">
+            <div class="holder">
+                <div class="name">Firstname</div>
+                <div class="data">July</div>
+            </div>
+            <div class="holder">
+                <div class="name">Lastname</div>
+                <div class="data">Dooley</div>
+            </div>
+            <div class="holder">
+                <div class="name">Email</div>
+                <div class="data">july@example.com</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#tables')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="tables">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <pre>
+            <code class="language-markup">
+                                    &lt;div class=&quot;card&quot;&gt; 
+                                        &lt;div class=&quot;card-content&quot;&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt; 
+                                                &lt;div class=&quot;name&quot;&gt;Firstname&lt;/div&gt;     
+                                                &lt;div class=&quot;data&quot;&gt;Mary&lt;/div&gt; 
+                                            &lt;/div&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt;    
+                                                &lt;div class=&quot;name&quot;&gt;Lastname&lt;/div&gt; 
+                                                &lt;div class=&quot;data&quot;&gt;Moe&lt;/div&gt;
+                                            &lt;/div&gt; 
+                                            &lt;div class=&quot;holder&quot;&gt; 
+                                                &lt;div class=&quot;name&quot;&gt;Email&lt;/div&gt; 
+                                                &lt;div class=&quot;data&quot;&gt;mary@example.com&lt;/div&gt; 
+                                            &lt;/div&gt; 
+                                        &lt;/div&gt; 
+                                    &lt;/div&gt;
+                                </code>
+                                </pre>
+        </div>
+    </div>
+</div>

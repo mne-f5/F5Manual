@@ -1,0 +1,35 @@
+﻿
+
+.error-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: @error-page-bg;
+    text-align: center;
+    overflow: auto;
+
+    .img-holder {
+        padding: 10px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .message-wrapper {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    h1, h2 {
+        color: @error-page-text-color;
+    }
+}

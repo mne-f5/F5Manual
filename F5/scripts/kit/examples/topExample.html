@@ -1,0 +1,425 @@
+﻿<div class="main-wrapper container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="top-menu-example">
+                <section class="navigation top-fixed">
+                    <nav>
+                        <div class="btn-holder" ng-click="openMenu('.navigation')">
+                            <div class="menu-btn">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="logo-holder">
+                            <img src="images/logo.png" alt="" />
+                        </div>
+                        <div class="navbar-content">
+                            <div class="menu left">
+                                <ul>
+                                    <li><a href><i class="lnr lnr-home"></i>Menu item</a></li>
+                                    <li><a href><i class="lnr lnr-apartment"></i>Menu item</a></li>
+                                    <li><a href class="active"><i class="lnr lnr-bicycle"></i>Menu item</a></li>
+                                    <li><a href><i class="lnr lnr-calendar-full"></i>Menu item</a></li>
+                                    <li><a href><i class="lnr lnr-diamond"></i>Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu right hidden-xs hidden-sm">
+                                <ul>
+                                    <li>
+                                        <div class="btn-group language">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>
+                                                    <img src="images/flags/en.png" alt="" />
+                                                </span>English <span class="lnr lnr-chevron-down"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href>
+                                                        <span>
+                                                            <img src="images/flags/en.png" alt="" />
+                                                        </span>
+                                                        English
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href>
+                                                        <span>
+                                                            <img src="images/flags/no.png" alt="" />
+                                                        </span>
+                                                        Norwegian
+                                                    </a>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="btn-group alerts">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon">
+                                                    <i class="lnr lnr-inbox"></i>
+                                                    <span class="badge primary">32</span>
+                                                </span>
+
+                                                <span class="lnr lnr-chevron-down"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>Notifications</li>
+                                                <li><a href>Another action</a></li>
+                                                <li><a href>Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href>Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="btn-group user">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="group-img">
+                                                    <img src="images/user.png" alt="" />
+                                                </span>Username <span class="lnr lnr-chevron-down"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href>Action</a></li>
+                                                <li><a href>Another action</a></li>
+                                                <li><a href>Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href>Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu right visible-xs visible-sm">
+                                <ul>
+                                    <li>
+                                        <div class="btn-group all">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="group-img">
+                                                    <img src="images/user.png" alt="" />
+                                                </span>Username <span class="lnr lnr-chevron-down"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href>
+                                                        <i class="lnr lnr-mustache"></i>
+                                                        My profile
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href>
+                                                        <span>
+                                                            <img src="images/flags/en.png" alt="" />
+                                                        </span>
+                                                        English
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href>
+                                                        <span>
+                                                            <img src="images/flags/no.png" alt="" />
+                                                        </span>
+                                                        Norwegian
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href>
+                                                        <span class="icon">
+                                                            <i class="lnr lnr-alarm"></i>
+                                                            Notifications
+                                                            <span class="badge primary">32</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href>
+                                                        <i class="lnr lnr-exit"></i>
+                                                        Log out
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </section>
+                <div class="main-content container-fluid">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="content-box" ng-controller="lineChartController">
+                                <h3>Product Sales History</h3>
+                                <div class="chart-container">
+                                    <line-chart data="data"><line-chart />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="content-box" ng-controller="donutChartController">
+                                <h3>Upload Statistics</h3>
+                                <div class="chart-container">
+                                    <donut-chart data="data"><donut-chart />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="content-box">
+                                <h3>Latest Transactions</h3>
+                                <table class="table hidden-xs">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer</th>
+                                            <th>Order</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge success boxed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge success boxed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge success boxed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge success boxed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge warning boxed">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge danger boxed">Canceled</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>SPW-955-21</td>
+                                            <td><span class="badge warning boxed">Pending</span></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="content-box">
+                                <h3>Basic form</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Username:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Email:</label>
+                                        <div class="left-icon">
+                                            <input type="text" class="form-control" placeholder="Enter email">
+                                            <i class="lnr lnr-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Country:</label>
+                                        <div class="select-wrapper">
+                                            <select class="form-control">
+                                                <option value="Choose City">Choose country</option>
+                                                <option value="2">Brasil</option>
+                                                <option value="3">USA</option>
+                                                <option value="4">China</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label db">Gender:</label>
+                                        <div class="radio-holder">
+                                            <input type="radio" value="" id="radio1" name="group">
+                                            <label for="radio1">Male</label>
+                                        </div>
+                                        <div class="radio-holder">
+                                            <input type="radio" value="" id="radio2" name="group">
+                                            <label for="radio2">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-holder">
+                                        <input type="checkbox" value="" id="check1">
+                                        <label for="check1">I agree with the terms&conditions</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="content-box">
+                                <h3>Panel with text</h3>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        Maecenas ut tempus dolor
+                                    </div>
+                                    <div class="panel-body">
+                                        Praesent semper nisi magna, nec consectetur nulla pretium id. Donec scelerisque leo quis urna aliquet, eget dignissim est rutrum. Sed egestas, lacus a varius mollis, augue eros consequat ligula, scelerisque scelerisque eros lectus sed ante. Aenean ullamcorper dolor nibh, id ullamcorper orci lobortis at. Phasellus dapibus luctus ex, vel aliquet tellus viverra et. Maecenas ut tempus dolor.In luctus eu lectus eget tincidunt. Aenean dictum metus vel tortor condimentum finibus. Aenean pharetra tempus efficitur. Vivamus nec mi bibendum, congue eros eu, euismod eros. Nulla faucibus pellentesque velit. Cras varius tellus in tellus posuere, vel pretium ipsum molestie.
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="content-box">
+                                <h3>Panel with table</h3>
+                                <div class="panel panel-secondary">
+                                    <div class="panel-heading">
+                                        Maecenas ut tempus dolor
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table hidden-xs">
+                                            <thead class="colored">
+                                                <tr>
+                                                    <th>Customer</th>
+                                                    <th>Order</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>SPW-955-21</td>
+                                                    <td><span class="badge success boxed">Confirmed</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>SPW-955-21</td>
+                                                    <td><span class="badge warning boxed">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>John Doe</td>
+                                                    <td>SPW-955-21</td>
+                                                    <td><span class="badge danger boxed">Canceled</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <ul class="cards-holder">
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card primary widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-users"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Customers</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open customers list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card secondary widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-inbox"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Inbox mails</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open inbox list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card negative widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-bubble"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Messages</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open messages list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card success widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-pencil"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Comments</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open comments list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card warning widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-camera"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Gallery</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open gallery</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                        <div class="card danger widget">
+                                            <div class="card-content">
+                                                <div class="tile">
+                                                    <div class="icon">
+                                                        <i class="lnr lnr-warning"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h3>Errors</h3>
+                                                        <span>3,456</span>
+                                                        <a href>open errors list</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

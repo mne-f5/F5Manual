@@ -1,9 +1,17 @@
-﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule']);
+﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule', 'barChartModule', 'donutChartModule', 'lineChartModule', 'progressChartModule', 'pieChartModule', 'mapModule']);
 var mainModule = angular.module('MainModule',[]);
 var loginModule = angular.module('LoginModule', []);
 var menuModule = angular.module('MenuModule', []);
 var galleryModule = angular.module('GalleryModule', []);
 var kitModule = angular.module('KitModule', []);
+var scrollModule = angular.module('ScrollModule', []);
+var loaderModule = angular.module('LoaderModule', []);
+var barChart = angular.module('barChartModule', []);
+var donutChart = angular.module('donutChartModule', []);
+var lineChart = angular.module('lineChartModule', []);
+var progressChart = angular.module('progressChartModule', []);
+var pieChart = angular.module('pieChartModule', []);
+var map = angular.module('mapModule', []);
 
 app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.when('/login', {
@@ -94,6 +102,26 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
 
         $routeProvider.when('/ui-kit', {
             templateUrl: 'scripts/kit/ui-kit.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/top-navbar', {
+            templateUrl: 'scripts/kit/examples/topExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/side-navbar', {
+            templateUrl: 'scripts/kit/examples/sideExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/error', {
+            templateUrl: 'scripts/kit/examples/errorExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/login-example', {
+            templateUrl: 'scripts/kit/examples/loginExample.html',
             controller: 'KitController'
         });
 

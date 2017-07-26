@@ -4,7 +4,7 @@
         <ul class="items">
             <li ng-repeat="item in menuItem.firstLevel">
                 <a ng-click="dropdown(item.name);goTo(item.path)" ng-class="{ active: (item.active || item.isCollapsed) }">{{item.name }}<i ng-class="{'lnr lnr-chevron-down': !item.isCollapsed, 'lnr lnr-chevron-up':item.isCollapsed }" ng-if="item.submenu"></i></a>
-                <div uib-collapse="!item.isCollapsed">
+                <div uib-collapse="!item.isCollapsed" ng-if="item.submenu">
                     <ul class="submenu">
                         <li ng-repeat="submenu in item.submenu">
                             <a ng-click="goTo(submenu.path)" ng-class="{ active: submenu.active }">{{submenu.name }}</a>

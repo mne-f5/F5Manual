@@ -94,6 +94,79 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\alerts.css">
+      <DependentUpon>alerts.less</DependentUpon>
+    </Content>
+    <Content Include="css\alerts.min.css">
+      <DependentUpon>alerts.css</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.css">
+      <DependentUpon>buttons.less</DependentUpon>
+    </Content>
+    <Content Include="css\buttons.min.css">
+      <DependentUpon>buttons.css</DependentUpon>
+    </Content>
+    <Content Include="css\charts.css">
+      <DependentUpon>charts.less</DependentUpon>
+    </Content>
+    <Content Include="css\charts.min.css">
+      <DependentUpon>charts.css</DependentUpon>
+    </Content>
+    <Content Include="css\F5IT.css">
+      <DependentUpon>F5IT.less</DependentUpon>
+    </Content>
+    <Content Include="css\F5IT.min.css">
+      <DependentUpon>F5IT.css</DependentUpon>
+    </Content>
+    <Content Include="css\input-fields.css">
+      <DependentUpon>input-fields.less</DependentUpon>
+    </Content>
+    <Content Include="css\input-fields.min.css">
+      <DependentUpon>input-fields.css</DependentUpon>
+    </Content>
+    <Content Include="css\login.css">
+      <DependentUpon>login.less</DependentUpon>
+    </Content>
+    <Content Include="css\login.min.css">
+      <DependentUpon>login.css</DependentUpon>
+    </Content>
+    <Content Include="css\modal.css">
+      <DependentUpon>modal.less</DependentUpon>
+    </Content>
+    <Content Include="css\modal.min.css">
+      <DependentUpon>modal.css</DependentUpon>
+    </Content>
+    <Content Include="css\navigation.css">
+      <DependentUpon>navigation.less</DependentUpon>
+    </Content>
+    <Content Include="css\navigation.min.css">
+      <DependentUpon>navigation.css</DependentUpon>
+    </Content>
+    <Content Include="css\pagination.css">
+      <DependentUpon>pagination.less</DependentUpon>
+    </Content>
+    <Content Include="css\pagination.min.css">
+      <DependentUpon>pagination.css</DependentUpon>
+    </Content>
+    <Content Include="css\prism.css" />
+    <Content Include="css\responsive.css">
+      <DependentUpon>responsive.less</DependentUpon>
+    </Content>
+    <Content Include="css\responsive.min.css">
+      <DependentUpon>responsive.css</DependentUpon>
+    </Content>
+    <Content Include="css\tables.css">
+      <DependentUpon>tables.less</DependentUpon>
+    </Content>
+    <Content Include="css\tables.min.css">
+      <DependentUpon>tables.css</DependentUpon>
+    </Content>
+    <Content Include="css\tabs.css">
+      <DependentUpon>tabs.less</DependentUpon>
+    </Content>
+    <Content Include="css\tabs.min.css">
+      <DependentUpon>tabs.css</DependentUpon>
+    </Content>
     <Content Include="css\ui-kit.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
@@ -112,6 +185,7 @@
     <Content Include="images\brand\power-point-presentation.jpg" />
     <Content Include="images\brand\website\website-preview.jpg" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\maintenance_icon.png" />
     <Content Include="images\manual-content\1-9v3d-bqpkrQJ8KxASLO_-w.png" />
     <Content Include="images\manual-content\1-FDR6xlcd36GxvwWtvLjysw.jpeg" />
     <Content Include="images\manual-content\1-gc4TVRquQIB3etlcnNKtQQ.png" />
@@ -231,12 +305,19 @@
     <Content Include="images\stockphotos\compressed\7.jpg" />
     <Content Include="images\stockphotos\compressed\8.jpg" />
     <Content Include="images\stockphotos\compressed\9.jpg" />
+    <Content Include="images\user.png" />
     <Content Include="images\wall-kit.jpg" />
     <Content Include="js\angular-animate.min.js" />
     <Content Include="js\angular-route.min.js" />
     <Content Include="js\angular.min.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\charts\d3-selection-multi.min.js" />
+    <Content Include="js\charts\d3.min.js" />
+    <Content Include="scripts\charts\map.js" />
+    <Content Include="js\geo-projection\d3-geo-projection.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\prism.js" />
+    <Content Include="js\topojson\topojson.min.js" />
     <Content Include="js\ui-bootstrap-tpls-2.5.0.min.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -255,6 +336,33 @@
     <Content Include="downloads\PPT.zip" />
     <Content Include="downloads\logo.zip" />
     <Content Include="downloads\documents.zip" />
+    <Content Include="js\charts\API.md" />
+    <Content Include="js\charts\CHANGES.md" />
+    <Content Include="js\charts\LICENSE" />
+    <Content Include="js\charts\README.md" />
+    <Content Include="js\geo-projection\LICENSE" />
+    <Content Include="js\geo-projection\README.md" />
+    <Content Include="js\maps\europe.json" />
+    <Content Include="js\topojson\LICENSE.md" />
+    <Content Include="js\topojson\README.md" />
+    <Content Include="css\navigation.less" />
+    <Content Include="css\variables.less" />
+    <Content Include="css\buttons.less" />
+    <Content Include="css\input-fields.less" />
+    <Content Include="css\tables.less" />
+    <Content Include="css\F5IT.less" />
+    <Content Include="css\pagination.less" />
+    <Content Include="css\panels.less" />
+    <Content Include="css\badges.less" />
+    <Content Include="css\charts.less" />
+    <Content Include="css\spinners.less" />
+    <Content Include="css\alerts.less" />
+    <Content Include="css\progress-bars.less" />
+    <Content Include="css\login.less" />
+    <Content Include="css\404.less" />
+    <Content Include="css\responsive.less" />
+    <Content Include="css\modal.less" />
+    <Content Include="css\tabs.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -291,9 +399,35 @@
     <Content Include="scripts\brand\website.html" />
     <Content Include="scripts\brand\print-files.html" />
     <Content Include="scripts\brand\identity.html" />
+    <Content Include="scripts\charts\barChart.js" />
+    <Content Include="scripts\charts\donutChart.js" />
+    <Content Include="scripts\charts\lineChart.js" />
+    <Content Include="scripts\charts\progressChart.js" />
+    <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
+    <Content Include="scripts\kit\elements\alertsPartial.html" />
+    <Content Include="scripts\kit\elements\modalPartial.html" />
+    <Content Include="scripts\kit\elements\modalsPartial.html" />
+    <Content Include="scripts\kit\elements\progressbarsPartial.html" />
+    <Content Include="scripts\kit\elements\buttonsPartial.html" />
+    <Content Include="scripts\kit\elements\paginationPartial.html" />
+    <Content Include="scripts\kit\elements\panelsPartial.html" />
+    <Content Include="scripts\kit\elements\chartsPartial.html" />
+    <Content Include="scripts\kit\elements\navPartial.html" />
+    <Content Include="scripts\kit\elements\badgesPartial.html" />
+    <Content Include="scripts\kit\elements\dropdownsPartial.html" />
+    <Content Include="scripts\kit\elements\spinnersPartial.html" />
+    <Content Include="scripts\kit\elements\tabsPartial.html" />
+    <Content Include="scripts\kit\elements\widgetsPartial.html" />
+    <Content Include="scripts\kit\elements\tablesPartial.html" />
+    <Content Include="scripts\kit\elements\inputsPartial.html" />
+    <Content Include="scripts\kit\examples\loginExample.html" />
     <Content Include="scripts\kit\KitController.js" />
+    <Content Include="scripts\kit\examples\errorExample.html" />
+    <Content Include="scripts\kit\examples\sideExample.html" />
+    <Content Include="scripts\kit\examples\topExample.html" />
     <Content Include="scripts\kit\ui-kit.html" />
+    <Content Include="scripts\loader.js" />
     <Content Include="scripts\manual\components\tables.html" />
     <Content Include="scripts\manual\components\forms.html" />
     <Content Include="scripts\manual\designsystem.html" />
@@ -311,6 +445,7 @@
     <Content Include="scripts\menu\MenuController.js" />
     <Content Include="scripts\menu\menuPartial.html" />
     <Content Include="scripts\menu\MenuService.js" />
+    <Content Include="scripts\smoothScroll.js" />
     <Content Include="Web.config" />
     <Content Include="css\app.less" />
   </ItemGroup>

@@ -46,19 +46,27 @@
     }
 
     .ui-kit .code-holder {
-        background-color: #e1f5fe;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        width: 85%;
-        margin: 40px auto;
+       display: none;
     }
 
-    .ui-kit code {
-        display: none;
+    .ui-kit .code-holder.open {
+        display: block;
+    }
+
+    .ui-kit .code-holder .nav-tabs li a {
+        background-color: #272822;
+        border-radius: 0;
+        font-weight:  700;
+        color: #fff;
+    }
+
+    .ui-kit .code-holder .nav-tabs {
+        border-bottom:  none;
+    }
+
+    .ui-kit .code-holder pre {
+        margin-top: 0!important;
+        border-radius: 0!important;
     }
 
     .ui-kit .mb {
@@ -190,6 +198,61 @@
     .ui-kit .mt {
         margin-top: 30px!important;
     }
+
+.ui-kit .show-code {
+    padding:   12px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.ui-kit .show-code:before,
+.ui-kit .show-code:after {
+    content: '';
+    position: absolute;
+    width: 99.5%;
+    height: 2px;
+    box-sizing: border-box;
+}
+
+.ui-kit .show-code:before {
+    transform: translateX(100%);
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.ui-kit .show-code:after {
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.ui-kit .show-code:hover {
+    text-decoration: none;
+    background-color: #1a80fc;
+    color: #fff;
+    transition:  all ease-in .2s;
+    transition-delay: .3s;
+}
+
+.ui-kit .show-code:hover:before {
+    transition: .1s transform linear, .1s height linear .1s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: #1a80fc;
+}
+
+.ui-kit .show-code:hover:after {
+    transition: .1s transform linear .2s, .1s height linear .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: #1a80fc;
+}
+
 
 
 

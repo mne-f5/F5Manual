@@ -10,9 +10,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/linearicons.css" rel="stylesheet" />
-    <link href="css/theme.css" rel="stylesheet" />
+    <link href="css/F5IT.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/ui-kit.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,16 +26,28 @@
     <script src="js/angular-route.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
     <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="js/charts/d3.min.js"></script>
+    <script src="js/charts/d3-selection-multi.min.js"></script>
+    <script src="js/topojson/topojson.min.js"></script>
+    <script src="js/geo-projection/d3-geo-projection.min.js"></script>
+
+    
+
+    
 </head>
 <body>
      
     <div ng-controller="MainController">
-        <header ng-if="logged">
+        <header ng-if="logged" class="app">
             <div class="logo" ng-click="go('/home')">
                 <img class="center-block" src="images/logo.png" alt="" />
             </div>
             <div class="header-wrapper ">
                 <h3>Design Guidelines</h3>
+            </div>
+            <div class="back" ng-click="goBack()">
+                <span class="lnr lnr-arrow-left"></span>
+                <p>Back</p>
             </div>
         </header>
 
@@ -56,6 +69,15 @@
 
 
         <section ng-view autoscroll="true"></section>
+
+        <div class="up" ng-click="toTop()">
+            <span class="lnr lnr-chevron-up"></span>
+        </div>
+    </div>
+
+    <div class="loader">
+        <img src="images/logo.png" />
+        <div class="line"></div>
     </div>
 
 
@@ -69,5 +91,16 @@
     <script src="scripts/brand/gallery/GalleryService.js"></script>
     <script src="scripts/brand/gallery/GalleryController.js"></script>
     <script src="scripts/kit/KitController.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/charts/barChart.js"></script>
+    <script src="scripts/charts/donutChart.js"></script>
+    <script src="scripts/charts/lineChart.js"></script>
+    <script src="scripts/charts/progressChart.js"></script>
+    <script src="scripts/charts/pieChart.js"></script>
+    <script src="scripts/charts/map.js"></script>
+
+       
+    
 </body>
 </html>

@@ -1,0 +1,216 @@
+﻿<div class="col-sm-12 wrapper input-fields">
+    <h3 class="small-mt"><strong>Widget tiles</strong></h3>
+    <div class="row">
+        <ul class="cards-holder">
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card primary widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-users"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Customers</h3>
+                                <span>3,456</span>
+                                <a href>open customers list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card secondary widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-inbox"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Inbox mails</h3>
+                                <span>3,456</span>
+                                <a href>open inbox list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card negative widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-bubble"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Messages</h3>
+                                <span>3,456</span>
+                                <a href>open messages list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card success widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-pencil"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Comments</h3>
+                                <span>3,456</span>
+                                <a href>open comments list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card warning widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-camera"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Gallery</h3>
+                                <span>3,456</span>
+                                <a href>open gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <div class="card danger widget">
+                    <div class="card-content">
+                        <div class="tile">
+                            <div class="icon">
+                                <i class="lnr lnr-warning"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Errors</h3>
+                                <span>3,456</span>
+                                <a href>open errors list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-sm-12 text-right">
+        <a class="primary-link show-code" ng-click="openCode('#widget')">
+            <i class="lnr lnr-chevron-left"></i>
+            <i class="lnr lnr-chevron-right"></i>
+            <span>CODE</span>
+        </a>
+    </div>
+
+    <div class="code-holder col-sm-12" id="widget">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <pre>
+                <code class="language-markup">
+                    &lt;div class="card primary widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-users"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                     &lt;div class="card secondary widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-inbox"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="card negative widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-bubble"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="card success widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-pencil"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="card warning widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-camera"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="card danger widget"&gt;
+                        &lt;div class="card-content"&gt;
+                            &lt;div class="tile"&gt;
+                                &lt;div class="icon"&gt;
+                                    &lt;i class="lnr lnr-warning"&gt;&lt;/i&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content"&gt;
+                                    &lt;h3&gt;Inbox mails&lt;/h3&gt;
+                                    &lt;span&gt;3,456&lt;/span&gt;
+                                    &lt;a href&gt;open inbox list&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <script src="js/prism.js"></script>

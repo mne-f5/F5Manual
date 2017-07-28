@@ -10,17 +10,28 @@
   transition: all .5s ease !important;
 }
 .modal .modal-dialog .modal-header {
-  background: #ededed;
-  font-size: 18px;
+  background: white;
+  font-size: 16px;
+  font-weight: 300;
   padding: 10px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
-.modal .modal-dialog .modal-header h4 {
+.modal .modal-dialog .modal-header h3 {
   margin: 0;
-  padding: 0;
+  padding: 8px;
+}
+.modal .modal-dialog .modal-header .close {
+  margin-top: 8px;
+  margin-right: 8px;
 }
 .modal .modal-dialog .modal-body {
   background: #fff;
-  padding: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .modal .modal-dialog .modal-body p {
   margin: 0 0 5px 0;

@@ -112,11 +112,29 @@
     <Content Include="css\charts.min.css">
       <DependentUpon>charts.css</DependentUpon>
     </Content>
+    <Content Include="css\datepicker.css">
+      <DependentUpon>datepicker.less</DependentUpon>
+    </Content>
+    <Content Include="css\datepicker.min.css">
+      <DependentUpon>datepicker.css</DependentUpon>
+    </Content>
     <Content Include="css\F5IT.css">
       <DependentUpon>F5IT.less</DependentUpon>
     </Content>
     <Content Include="css\F5IT.min.css">
       <DependentUpon>F5IT.css</DependentUpon>
+    </Content>
+    <Content Include="css\file-upload.css">
+      <DependentUpon>file-upload.less</DependentUpon>
+    </Content>
+    <Content Include="css\file-upload.min.css">
+      <DependentUpon>file-upload.css</DependentUpon>
+    </Content>
+    <Content Include="css\icons.css">
+      <DependentUpon>icons.less</DependentUpon>
+    </Content>
+    <Content Include="css\icons.min.css">
+      <DependentUpon>icons.css</DependentUpon>
     </Content>
     <Content Include="css\input-fields.css">
       <DependentUpon>input-fields.less</DependentUpon>
@@ -167,7 +185,19 @@
     <Content Include="css\tabs.min.css">
       <DependentUpon>tabs.css</DependentUpon>
     </Content>
+    <Content Include="css\tooltip.css">
+      <DependentUpon>tooltip.less</DependentUpon>
+    </Content>
+    <Content Include="css\tooltip.min.css">
+      <DependentUpon>tooltip.css</DependentUpon>
+    </Content>
     <Content Include="css\ui-kit.css" />
+    <Content Include="css\user-images.css">
+      <DependentUpon>user-images.less</DependentUpon>
+    </Content>
+    <Content Include="css\user-images.min.css">
+      <DependentUpon>user-images.css</DependentUpon>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
     <Content Include="images\brand\Business Card Mockup 01.jpg" />
@@ -313,6 +343,8 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\charts\d3-selection-multi.min.js" />
     <Content Include="js\charts\d3.min.js" />
+    <Content Include="js\ng-file-upload-shim.js" />
+    <Content Include="js\ng-file-upload.js" />
     <Content Include="scripts\charts\map.js" />
     <Content Include="js\geo-projection\d3-geo-projection.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
@@ -363,6 +395,11 @@
     <Content Include="css\responsive.less" />
     <Content Include="css\modal.less" />
     <Content Include="css\tabs.less" />
+    <Content Include="css\tooltip.less" />
+    <Content Include="css\datepicker.less" />
+    <Content Include="css\icons.less" />
+    <Content Include="css\user-images.less" />
+    <Content Include="css\file-upload.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -405,7 +442,11 @@
     <Content Include="scripts\charts\progressChart.js" />
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
+    <Content Include="scripts\kit\elements\fileuploadPartial.html" />
+    <Content Include="scripts\kit\elements\userimgPartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />
+    <Content Include="scripts\kit\elements\calendarPartial.html" />
+    <Content Include="scripts\kit\elements\iconsPartial.html" />
     <Content Include="scripts\kit\elements\modalPartial.html" />
     <Content Include="scripts\kit\elements\modalsPartial.html" />
     <Content Include="scripts\kit\elements\progressbarsPartial.html" />
@@ -418,6 +459,7 @@
     <Content Include="scripts\kit\elements\dropdownsPartial.html" />
     <Content Include="scripts\kit\elements\spinnersPartial.html" />
     <Content Include="scripts\kit\elements\tabsPartial.html" />
+    <Content Include="scripts\kit\elements\tooltipsPartial.html" />
     <Content Include="scripts\kit\elements\widgetsPartial.html" />
     <Content Include="scripts\kit\elements\tablesPartial.html" />
     <Content Include="scripts\kit\elements\inputsPartial.html" />

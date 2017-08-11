@@ -68,10 +68,6 @@
   margin-bottom: 8px;
   padding: 16px;
   min-height: 150px;
-  -webkit-box-shadow: 0 2px 5px 0 #1980ff, 0 2px 5px 0 #1980ff;
-  -moz-box-shadow: 0 2px 5px 0 #1980ff, 0 2px 5px 0 #1980ff;
-  box-shadow: 0 2px 5px 0 #1980ff, 0 2px 5px 0 #1980ff;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom: 1px solid #a3ccfe;
   color: #000;
 }

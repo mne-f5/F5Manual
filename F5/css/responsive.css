@@ -61,10 +61,10 @@
     float: none;
     width: 100%;
     text-align: center;
-    background-color: #353439;
+    background-color: #fff;
   }
   .navigation .navbar-content {
-    background-color: #353439;
+    background-color: #fff;
     transform: translateX(-100%);
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
@@ -92,8 +92,8 @@
     padding: 8px 30px;
   }
   .navigation .navbar-content .menu ul li .btn-group.all .dropdown-menu li a:hover {
-    background-color: #353439;
-    color: #fff;
+    background-color: #fff;
+    color: #a2a6a9;
   }
   .navigation .navbar-content .menu.left,
   .navigation .navbar-content .menu.right {

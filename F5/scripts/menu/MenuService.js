@@ -38,7 +38,7 @@
                                     submenu: [
                                         { name: 'Colors', path: '/colors', active: false },
                                         { name: 'Icons', path: '/icons', active: false },
-                                        { name: 'Typography', path: '/typography', active: false }, 
+                                        { name: 'Typography', path: '/typography', active: false },
                                     ]
                                 },
                                 {
@@ -68,6 +68,11 @@
                                 { name: 'Progress bars', path: '/kit/progress-bars', active: false },
                                 { name: 'Modals', path: '/kit/modals', active: false },
                                 { name: 'Tabs', path: '/kit/tabs', active: false },
+                                { name: 'Tooltips', path: '/kit/tooltips', active: false },
+                                { name: 'Datepicker', path: '/kit/dp', active: false },
+                                { name: 'Status icons', path: '/kit/icons', active: false },
+                                { name: 'User images', path: '/kit/user-img', active: false },
+                                { name: 'File upload', path: '/kit/file-upload', active: false },
                                 {
                                     name: 'Page examples',
                                     isCollapsed: false,

@@ -54,5 +54,25 @@
   {
     "outputFile": "css/tabs.css",
     "inputFile": "css/tabs.less"
+  },
+  {
+    "outputFile": "css/tooltip.css",
+    "inputFile": "css/tooltip.less"
+  },
+  {
+    "outputFile": "css/datepicker.css",
+    "inputFile": "css/datepicker.less"
+  },
+  {
+    "outputFile": "css/icons.css",
+    "inputFile": "css/icons.less"
+  },
+  {
+    "outputFile": "css/user-images.css",
+    "inputFile": "css/user-images.less"
+  },
+  {
+    "outputFile": "css/file-upload.css",
+    "inputFile": "css/file-upload.less"
   }
 ]

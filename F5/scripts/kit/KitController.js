@@ -1,9 +1,58 @@
-﻿angular.module('KitModule').controller('KitController', function ($scope, $location, $anchorScroll, smoothScroll, $uibModal, $timeout) {
+﻿angular.module('KitModule').controller('KitController', function ($scope, $location, $anchorScroll, smoothScroll, $uibModal, $timeout, Upload) {
     $scope.toElements = function () {
         $location.hash('headings');
         $anchorScroll();
     };
 
+
+
+    $scope.attachments = [];
+
+    $scope.upload = function (file) {
+        var list = $('.files-list');
+        Upload.dataUrl(file, true).then(function (url) {
+            console.log(url);
+        });
+
+        if (file != null) {
+            $scope.attachments.push(file);
+            list.addClass('bordered');
+        }
+    };
+
+    $scope.delete = function (index) {
+        var list = $('.files-list');
+        if ($scope.attachments.length === 1) {
+            list.removeClass('bordered');
+            $scope.attachments.splice(index, 1);
+        }
+        else {
+            $scope.attachments.splice(index, 1);
+        }
+    };
+
+    $scope.done = function () {
+        var btnHolder = $('.upload-btn-holder'),
+            dropContent = $('.drop-content'),
+            doneMsg = $('.done-msg');
+
+        btnHolder.addClass('clicked');
+
+        $timeout(function () {
+            btnHolder.addClass('done');
+        }, 2600);
+
+        $timeout(function () {
+            dropContent.addClass('disappear');
+            doneMsg.addClass('visible');
+        }, 3600);
+
+    };
+
+    $scope.openUpload = function () {
+        var paper = $('.drop-box-paper');
+        paper.toggleClass('open');
+    };
 
     $scope.openCode = function (element) {
         $(element).toggleClass('open');
@@ -18,7 +67,7 @@
     var elements = document.getElementsByClassName('sec');
 
     $scope.$on('$includeContentLoaded', function (event) {
-        counter ++;
+        counter++;
         if (counter === elements.length) {
             smoothScroll.setElements(elements);
         }
@@ -59,9 +108,15 @@
                 }, modalAnimations[i].time);
             }
         }
-        
-        
+
+
     }
+
+
+    $scope.options = {
+        minDate: new Date(),
+        showWeeks: false
+    };
 
 
 });

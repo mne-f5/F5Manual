@@ -1,0 +1,50 @@
+﻿@import 'variables.less';
+
+.tooltip {
+    font-family: inherit;
+    padding: 16px !important;
+
+    .tooltip-inner {
+        background-color: @tooltip-bg;
+        color: @tooltip-color;
+        padding: 16px;
+        font-weight: 500;
+        -webkit-box-shadow: 0 0 30px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 30px 3px rgba(0,0,0,0.2);
+        box-shadow: 0 0 30px 3px rgba(0,0,0,0.2);
+        text-align: left;
+    }
+
+
+    &.top {
+        .tooltip-arrow {
+            border-top-color: @tooltip-bg;
+            margin-left: -8px;
+            border-width: 16px 8px 0;
+        }
+    }
+
+    &.bottom {
+        .tooltip-arrow {
+            border-bottom-color: @tooltip-bg;
+            margin-left: -8px;
+            border-width: 0 8px 16px;
+        }
+    }
+
+    &.left {
+        .tooltip-arrow {
+            border-left-color: @tooltip-bg;
+            margin-top: -8px;
+            border-width: 8px 0 8px 16px;
+        }
+    }
+
+    &.right {
+        .tooltip-arrow {
+            border-right-color: @tooltip-bg;
+            margin-top: -8px;
+            border-width: 8px 16px 8px 0;
+        }
+    }
+}

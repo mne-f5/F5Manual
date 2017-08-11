@@ -26,6 +26,29 @@
   padding: 16px !important;
   font-size: 13px;
 }
+.table.striped thead th {
+  border: none !important;
+}
+.table.striped tbody tr {
+  background-color: #fff;
+}
+.table.striped tbody tr td {
+  border-left: none !important;
+  border-right: none !important;
+}
+.table.bordered thead th {
+  border: none !important;
+}
+.table.bordered tbody tr {
+  background-color: #fff;
+}
+.table.bordered tbody tr:first-child td {
+  border-top: none!important;
+}
+.table.bordered tbody tr td {
+  border-left: none !important;
+  border-right: none !important;
+}
 .card {
   position: relative;
   margin: 8px 0;

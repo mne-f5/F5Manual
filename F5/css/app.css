@@ -88,6 +88,7 @@
 .menu-holder .slide {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .menu-holder .slide .btn-holder .menu-btn span {
   transition: all 0.3s ease-in-out;
@@ -96,7 +97,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: -17px;
   bottom: 0;
   background-color: transparent;
   overflow: auto;
@@ -148,6 +149,9 @@
 }*/
 .main-wrapper {
   padding-left: 271px;
+}
+.main-wrapper .sec:last-child {
+  margin-bottom: 100px;
 }
 header.app {
   background-color: #fff;
@@ -698,6 +702,9 @@ header.app .header-wrapper h3 {
 }
 .d {
   color: #ff5d5e;
+}
+.sec {
+  margin-bottom: 50px;
 }
 /* Media queries  */
 @media all and (max-width: 360px) {

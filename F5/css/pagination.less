@@ -3,31 +3,6 @@
 .pagination {
     &.primary {
         li {
-            &:first-child, &:last-child {
-                a {
-                    color: @pagination-step-link-color;
-                    background-color: @primary;
-                    border: 1px solid @primary;
-
-                    &:hover {
-                        color: @pagination-step-link-color;
-                        background-color: @primary;
-                        border: 1px solid @primary;
-                    }
-                }
-            }
-
-            &:first-child {
-                a {
-                    margin-right: 1px;
-                }
-            }
-
-            &:last-child {
-                a {
-                    margin-left: 0;
-                }
-            }
 
             a {
                 color: @pagination-link-color;
@@ -37,9 +12,17 @@
                 transition: all ease .3s;
 
                 &:hover {
-                    color: @primary;
-                    border-color: @primary;
-                    background-color: @pagination-link-hover-bg;
+                    color: @pagination-link-active-color;
+                    background-color: @primary;
+                    border-color: transparent;
+                }
+            }
+
+            &.active {
+                a {
+                    color: @pagination-link-active-color;
+                    background-color: @primary;
+                    border-color: transparent;
                 }
             }
         }
@@ -89,4 +72,3 @@
         }
     }
 }
-

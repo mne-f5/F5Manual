@@ -3,12 +3,12 @@
 .navigation {
     position: relative;
     background-color: @navbar-default-bg;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
     nav {
-        min-height: 50px;
+        min-height: 80px;
         position: relative;
     }
 
@@ -17,7 +17,7 @@
         position: relative;
         display: inline-block;
         width: 100px;
-        height: 50px;
+        height: 80px;
         overflow: hidden;
         line-height: inherit;
         vertical-align: middle;
@@ -29,30 +29,19 @@
             width: auto;
             height: 100%;
             transform: translate(-50%,-50%);
-            padding: 8px;
         }
     }
 
     .menu {
         &.left {
             display: inline-block;
-        }
-
-        &.right {
-            float: right;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 16px;
 
             li {
-                position: relative;
-                display: inline-block;
-
                 a {
+                    font-size: 17px;
+                    position: relative;
                     display: block;
-                    padding: 15px;
+                    padding: 26px 16px;
                     color: @navbar-default-link-color;
                     cursor: pointer;
                     -webkit-transition: all ease-in 0.3s;
@@ -63,19 +52,93 @@
 
                     i {
                         margin-right: 5px;
+                        font-size: 23px;
                     }
 
-                    &.active {
-                        background-color: @navbar-default-link-active-bg;
-                        color: @navbar-default-link-active-color;
-                    }
 
                     &:hover {
                         text-decoration: none;
                         background-color: @navbar-default-link-hover-bg;
                         color: @navbar-default-link-hover-color;
+                        font-weight: 500;
+
+                        &:after {
+                            -webkit-transition: all ease-in 0.3s;
+                            -moz-transition: all ease-in 0.3s;
+                            -ms-transition: all ease-in 0.3s;
+                            -o-transition: all ease-in 0.3s;
+                            transition: all ease-in 0.3s;
+                            width: 100%;
+                            background-color: @navbar-default-link-active-color;
+                        }
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 4px;
+                        background-color: transparent;
+                    }
+
+                    &.active {
+                        font-weight: 500;
+                        color: @navbar-default-link-active-color;
+
+                        &:after {
+                            background-color: @navbar-default-link-active-color;
+                            width: 100%;
+                        }
                     }
                 }
+            }
+        }
+
+        &.right {
+            float: right;
+
+            li {
+                a {
+                    font-size: 12px;
+                    display: block;
+                    padding: 31px 16px;
+                    color: @right-menu-link-color;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                min-width: 200px;
+                left: auto;
+                right: 0;
+
+                li {
+                    a {
+                        font-size: 14px;
+                        color: @right-menu-link-color;
+                        padding: 5px 20px;
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 16px;
+
+            li {
+                position: relative;
+                display: inline-block;
             }
         }
 
@@ -112,8 +175,8 @@
             .group-img {
                 position: relative;
                 display: inline-block;
-                width: 35px;
-                height: 35px;
+                width: 25px;
+                height: 25px;
                 padding: 0;
                 margin: 0 10px 0 0;
                 overflow: hidden;

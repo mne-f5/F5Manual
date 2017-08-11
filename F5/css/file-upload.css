@@ -1,0 +1,875 @@
+﻿.drop-box-holder {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+.drop-box-holder .head-section {
+  background-color: #1980ff;
+  padding: 18px;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.drop-box-holder .head-section i {
+  font-size: 80px;
+  animation: bounce 2s infinite;
+  display: inline-block;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.drop-box-holder .drop-box {
+  padding: 32px;
+  color: #32353a;
+  text-align: center;
+  position: relative;
+}
+.drop-box-holder .drop-box .drop-content.disappear {
+  -webkit-transition: opacity ease .3s;
+  -moz-transition: opacity ease .3s;
+  -ms-transition: opacity ease .3s;
+  -o-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+  opacity: 0;
+}
+.drop-box-holder .drop-box .drop-content > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.drop-box-holder .drop-box .drop-content span {
+  font-size: 13px;
+  display: block;
+  margin: 16px 0;
+}
+.drop-box-holder .drop-box .drop-content span.browse {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #1980ff;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 0;
+}
+.drop-box-holder .drop-box .drop-content span.browse:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-holder .drop-box .files-list {
+  list-style-type: none;
+  padding: 8px 0 0 0;
+}
+.drop-box-holder .drop-box .files-list.bordered {
+  border-top: 2px solid #1980ff;
+}
+.drop-box-holder .drop-box .files-list li {
+  text-align: left;
+  vertical-align: bottom;
+  padding-left: 20px;
+  position: relative;
+}
+.drop-box-holder .drop-box .files-list li p {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+.drop-box-holder .drop-box .files-list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  margin-top: -5px;
+  display: inline-block;
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  -o-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  color: #1980ff;
+}
+.drop-box-holder .drop-box .files-list li .delete-btn {
+  display: inline-block;
+  margin: 0;
+  float: right;
+  font-size: 20px;
+}
+.drop-box-holder .drop-box .files-list li .delete-btn:hover {
+  color: #ff5d5e;
+}
+.drop-box-holder .drop-box .upload-btn-holder {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-holder .drop-box .upload-btn-holder .upload-btn {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid #1980ff;
+  color: #1980ff;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.drop-box-holder .drop-box .upload-btn-holder .upload-btn:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #1980ff;
+  color: #fff;
+}
+.drop-box-holder .drop-box .upload-btn-holder .upload-btn .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  background: #1980ff;
+  border-radius: 25px;
+}
+.drop-box-holder .drop-box .upload-btn-holder .upload-btn i {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 38px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale();
+  transform: scale(0);
+}
+.drop-box-holder .drop-box .upload-btn-holder .upload-btn p {
+  margin: 0;
+}
+.drop-box-holder .drop-box .upload-btn-holder.clicked {
+  padding: 0;
+}
+.drop-box-holder .drop-box .upload-btn-holder.clicked .upload-btn {
+  background: #e5eaee;
+  border: none;
+  padding: 4px;
+}
+.drop-box-holder .drop-box .upload-btn-holder.clicked .upload-btn p {
+  overflow: hidden;
+  max-height: 0;
+}
+.drop-box-holder .drop-box .upload-btn-holder.clicked .upload-btn .fill {
+  width: 100%;
+  -webkit-transition: .3s all ease .3s;
+  transition: 2s all ease .6s;
+}
+.drop-box-holder .drop-box .upload-btn-holder.done .upload-btn {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-holder .drop-box .upload-btn-holder.done .upload-btn i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-holder .drop-box .done-msg {
+  -webkit-transform: scale(0) translate(-50%, -50%);
+  -moz-transform: scale(0) translate(-50%, -50%);
+  -ms-transform: scale(0) translate(-50%, -50%);
+  -o-transform: scale(0) translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+}
+.drop-box-holder .drop-box .done-msg.visible {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -o-transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+}
+.drop-box-holder .drop-box .done-msg p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.drop-box-holder .drop-box .done-msg i {
+  font-size: 80px;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #1980ff;
+}
+.drop-box-holder.boxed {
+  border-radius: 0;
+}
+.drop-box-holder.boxed .head-section {
+  background-color: #232325;
+  padding: 18px;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+}
+.drop-box-holder.boxed .head-section i {
+  font-size: 80px;
+  animation: bounce 2s infinite;
+  display: inline-block;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.drop-box-holder.boxed .drop-box {
+  padding: 32px;
+  color: #32353a;
+  text-align: center;
+  position: relative;
+}
+.drop-box-holder.boxed .drop-box .drop-content.disappear {
+  -webkit-transition: opacity ease .3s;
+  -moz-transition: opacity ease .3s;
+  -ms-transition: opacity ease .3s;
+  -o-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+  opacity: 0;
+}
+.drop-box-holder.boxed .drop-box .drop-content > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.drop-box-holder.boxed .drop-box .drop-content span {
+  font-size: 13px;
+  display: block;
+  margin: 16px 0;
+}
+.drop-box-holder.boxed .drop-box .drop-content span.browse {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #232325;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 0;
+}
+.drop-box-holder.boxed .drop-box .drop-content span.browse:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-holder.boxed .drop-box .files-list {
+  list-style-type: none;
+  padding: 8px 0 0 0;
+}
+.drop-box-holder.boxed .drop-box .files-list.bordered {
+  border-top: 2px solid #232325;
+}
+.drop-box-holder.boxed .drop-box .files-list li {
+  text-align: left;
+  vertical-align: bottom;
+  padding-left: 20px;
+  position: relative;
+}
+.drop-box-holder.boxed .drop-box .files-list li p {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+.drop-box-holder.boxed .drop-box .files-list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  margin-top: -5px;
+  display: inline-block;
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  -o-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  color: #232325;
+}
+.drop-box-holder.boxed .drop-box .files-list li .delete-btn {
+  display: inline-block;
+  margin: 0;
+  float: right;
+  font-size: 20px;
+}
+.drop-box-holder.boxed .drop-box .files-list li .delete-btn:hover {
+  color: #ff5d5e;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder .upload-btn {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid #232325;
+  color: #232325;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder .upload-btn:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #232325;
+  color: #fff;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder .upload-btn .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  background: #232325;
+  border-radius: 25px;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder .upload-btn i {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 38px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale();
+  transform: scale(0);
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder .upload-btn p {
+  margin: 0;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.clicked {
+  padding: 0;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.clicked .upload-btn {
+  background: #e5eaee;
+  border: none;
+  padding: 4px;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.clicked .upload-btn p {
+  overflow: hidden;
+  max-height: 0;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.clicked .upload-btn .fill {
+  width: 100%;
+  -webkit-transition: .3s all ease .3s;
+  transition: 2s all ease .6s;
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.done .upload-btn {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-holder.boxed .drop-box .upload-btn-holder.done .upload-btn i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-holder.boxed .drop-box .done-msg {
+  -webkit-transform: scale(0) translate(-50%, -50%);
+  -moz-transform: scale(0) translate(-50%, -50%);
+  -ms-transform: scale(0) translate(-50%, -50%);
+  -o-transform: scale(0) translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+}
+.drop-box-holder.boxed .drop-box .done-msg.visible {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -o-transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+}
+.drop-box-holder.boxed .drop-box .done-msg p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.drop-box-holder.boxed .drop-box .done-msg i {
+  font-size: 80px;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #232325;
+}
+.drop-box-paper {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 72px;
+  -webkit-transition: min-height 0.4s ease-out;
+  -moz-transition: min-height 0.4s ease-out;
+  -ms-transition: min-height 0.4s ease-out;
+  -o-transition: min-height 0.4s ease-out;
+}
+.drop-box-paper.open {
+  min-height: 400px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-paper.open .fill-element {
+  width: 100em;
+  height: 100em;
+  background-color: #ffdd99;
+}
+.drop-box-paper.open .head-section i {
+  animation: bounce 2s infinite;
+  margin-left: -16px;
+  margin-top: -16px;
+  color: #ff5d5e;
+}
+.drop-box-paper.open .head-section .folded-corner {
+  border-style: none;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.drop-box-paper .fill-element {
+  position: absolute;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: #ff5d5e;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 65px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.drop-box-paper .head-section {
+  display: inline-block;
+  background-color: #ff5d5e;
+  padding: 16px 12px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 55px;
+  height: 65px;
+  transition: min-height 0.4s ease-out;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-paper .head-section .folded-corner {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  background: rgba(151, 148, 158, 0.2);
+  -webkit-box-shadow: 3px 0px 0px #fff, 0 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 0px 0px #fff, 0 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 0px 0px #fff, 0 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 0 2px;
+  border-color: #fff #fff transparent transparent;
+  -webkit-transition: border-width 0.2s ease-out;
+  -moz-transition: border-width 0.2s ease-out;
+  -ms-transition: border-width 0.2s ease-out;
+  -o-transition: border-width 0.2s ease-out;
+  transition: border-width 0.2s ease-out;
+  transition-delay: .4s;
+  border-width: 0 20px 20px 0;
+  z-index: 2;
+}
+.drop-box-paper .head-section i {
+  font-size: 30px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.drop-box-paper .drop-box {
+  padding: 32px;
+  color: #000;
+  text-align: center;
+  min-width: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 300px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.drop-box-paper .drop-box .drop-content {
+  position: relative;
+  margin-right: -17px;
+}
+.drop-box-paper .drop-box .drop-content:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  bottom: 0;
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+}
+.drop-box-paper .drop-box .drop-content.disappear {
+  -webkit-transition: opacity ease .3s;
+  -moz-transition: opacity ease .3s;
+  -ms-transition: opacity ease .3s;
+  -o-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+  opacity: 0;
+}
+.drop-box-paper .drop-box .drop-content > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.drop-box-paper .drop-box .drop-content span {
+  font-size: 13px;
+  display: block;
+  margin: 16px 0;
+}
+.drop-box-paper .drop-box .drop-content span.browse {
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #ff5d5e;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  margin-top: 0;
+}
+.drop-box-paper .drop-box .drop-content span.browse:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-paper .drop-box .drop-content i {
+  font-size: 80px;
+}
+.drop-box-paper .drop-box .files-list {
+  list-style-type: none;
+  padding: 8px 12px 0 12px;
+}
+.drop-box-paper .drop-box .files-list.bordered {
+  border-top: 2px solid #ff5d5e;
+}
+.drop-box-paper .drop-box .files-list li {
+  text-align: left;
+  vertical-align: bottom;
+  padding-left: 20px;
+  position: relative;
+}
+.drop-box-paper .drop-box .files-list li p {
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+.drop-box-paper .drop-box .files-list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  margin-top: -5px;
+  display: inline-block;
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  -o-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  color: #ff5d5e;
+}
+.drop-box-paper .drop-box .files-list li .delete-btn {
+  display: inline-block;
+  margin: 0;
+  float: right;
+  font-size: 20px;
+}
+.drop-box-paper .drop-box .files-list li .delete-btn:hover {
+  color: #ff5d5e;
+}
+.drop-box-paper .drop-box .upload-btn-holder {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-paper .drop-box .upload-btn-holder .upload-btn {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid #ff5d5e;
+  color: #ff5d5e;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.drop-box-paper .drop-box .upload-btn-holder .upload-btn:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ff5d5e;
+  color: #fff;
+}
+.drop-box-paper .drop-box .upload-btn-holder .upload-btn .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  background: #ff5d5e;
+  border-radius: 25px;
+}
+.drop-box-paper .drop-box .upload-btn-holder .upload-btn i {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 38px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale();
+  transform: scale(0);
+}
+.drop-box-paper .drop-box .upload-btn-holder .upload-btn p {
+  margin: 0;
+}
+.drop-box-paper .drop-box .upload-btn-holder.clicked {
+  padding: 0;
+}
+.drop-box-paper .drop-box .upload-btn-holder.clicked .upload-btn {
+  background: #e5eaee;
+  border: none;
+  padding: 4px;
+}
+.drop-box-paper .drop-box .upload-btn-holder.clicked .upload-btn p {
+  overflow: hidden;
+  max-height: 0;
+}
+.drop-box-paper .drop-box .upload-btn-holder.clicked .upload-btn .fill {
+  width: 100%;
+  -webkit-transition: .3s all ease .3s;
+  transition: 2s all ease .6s;
+}
+.drop-box-paper .drop-box .upload-btn-holder.done .upload-btn {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.drop-box-paper .drop-box .upload-btn-holder.done .upload-btn i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s all ease .3s;
+  -moz-transition: .3s all ease .3s;
+  -ms-transition: .3s all ease .3s;
+  -o-transition: .3s all ease .3s;
+  transition: .3s all ease .3s;
+}
+.drop-box-paper .drop-box .done-msg {
+  -webkit-transform: scale(0) translate(-50%, -50%);
+  -moz-transform: scale(0) translate(-50%, -50%);
+  -ms-transform: scale(0) translate(-50%, -50%);
+  -o-transform: scale(0) translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+}
+.drop-box-paper .drop-box .done-msg.visible {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -o-transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+}
+.drop-box-paper .drop-box .done-msg p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.drop-box-paper .drop-box .done-msg i {
+  font-size: 80px;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #ff5d5e;
+}

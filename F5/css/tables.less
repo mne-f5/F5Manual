@@ -39,6 +39,50 @@
             font-size: 13px;
         }
     }
+
+    &.striped {
+        thead {
+            th {
+                border: none !important;
+            }
+        }
+
+        tbody {
+            tr {
+                background-color: #fff;
+
+                td {
+                    border-left: none !important;
+                    border-right: none !important;
+                }
+            }
+        }
+    }
+
+    &.bordered {
+        thead {
+            th {
+                border: none !important;
+            }
+        }
+
+        tbody {
+            tr {
+                background-color: #fff;
+
+                &:first-child {
+                    td {
+                        border-top: none!important;
+                    }
+                }
+
+                td {
+                    border-left: none !important;
+                    border-right: none !important;
+                }
+            }
+        }
+    }
 }
 
 .card {
@@ -217,4 +261,3 @@
         }
     }
 }
-

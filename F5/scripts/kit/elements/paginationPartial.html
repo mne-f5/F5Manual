@@ -1,7 +1,7 @@
 ﻿<div class="col-sm-12 wrapper">
     <h3><strong>Pagination</strong></h3>
     <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-12 text-center">
             <h2>Primary</h2>
             <nav aria-label="Page navigation">
                 <ul class="pagination primary">
@@ -11,7 +11,7 @@
                         </a>
                     </li>
                     <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
+                    <li class="active"><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-sm-6 text-center">
+        <!--<div class="col-sm-6 text-center">
             <h2>Secondary</h2>
             <nav aria-label="Page navigation">
                 <ul class="pagination secondary">
@@ -44,7 +44,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div>-->
 
         <div class="col-sm-12 text-right">
             <a class="primary-link show-code" ng-click="openCode('#pag')">
@@ -64,66 +64,38 @@
                 <div role="tabpanel" class="tab-pane active" id="home">
                     <pre>
                     <code class="language-markup">
-                                                    &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
-                                                        &lt;ul class=&quot;pagination primary&quot;&gt; 
-                                                            &lt;li&gt; 
-                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt; 
-                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt; 
-                                                                &lt;/a&gt; 
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt; 
-                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt; 
-                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt; 
-                                                                &lt;/a&gt; 
-                                                            &lt;/li&gt; 
-                                                        &lt;/ul&gt; 
-                                                    &lt;/nav&gt;
-                                                    &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
-                                                        &lt;ul class=&quot;pagination secondary&quot;&gt; 
-                                                            &lt;li&gt; 
-                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt; 
-                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt; 
-                                                                &lt;/a&gt; 
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt;
-                                                                &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
-                                                            &lt;/li&gt; 
-                                                            &lt;li&gt; 
-                                                                &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt; 
-                                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt; 
-                                                                &lt;/a&gt; 
-                                                            &lt;/li&gt; 
-                                                        &lt;/ul&gt; 
-                                                    &lt;/nav&gt;
-                                                </code>
-                                                </pre>
+                        &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
+                            &lt;ul class=&quot;pagination primary&quot;&gt; 
+                                &lt;li&gt; 
+                                    &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt; 
+                                        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt; 
+                                    &lt;/a&gt; 
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                    &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt; 
+                                    &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt; 
+                                        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt; 
+                                    &lt;/a&gt; 
+                                &lt;/li&gt; 
+                            &lt;/ul&gt; 
+                        &lt;/nav&gt;
+                                                   
+                    </code>
+                    </pre>
                 </div>
             </div>
         </div>

@@ -1,0 +1,27 @@
+﻿@import 'variables.less';
+
+.user-img {
+    position: relative;
+    display: inline-block;
+    width: @img-width;
+    height: @img-height;
+    padding: 0;
+    overflow: hidden;
+    line-height: inherit;
+    vertical-align: middle;
+    background-color: @img-bg;
+    border: 2px solid @img-border;
+
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    &.rounded {
+        border-radius: 100%;
+    }
+
+    &.boxed {
+        border-radius: @img-radius;
+    }
+}

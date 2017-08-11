@@ -158,6 +158,7 @@ body {
     .slide {
         height: 100%;
         width: 100%;
+        overflow: hidden;
 
         .btn-holder {
             .menu-btn {
@@ -171,7 +172,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
+            right: -17px;
             bottom: 0;
             background-color: transparent;
             overflow: auto;
@@ -230,6 +231,12 @@ body {
 
 .main-wrapper {
     padding-left: 271px;
+
+    .sec {
+        &:last-child {
+            margin-bottom: 100px;
+        }
+    }
 }
 
 
@@ -864,6 +871,10 @@ header.app {
     color: #ff5d5e;
 }
 
+
+.sec {
+    margin-bottom: 50px;
+}
 
 
 /* Media queries  */

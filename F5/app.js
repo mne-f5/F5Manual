@@ -1,4 +1,4 @@
-﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule', 'barChartModule', 'donutChartModule', 'lineChartModule', 'progressChartModule', 'pieChartModule', 'mapModule']);
+﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule', 'barChartModule', 'donutChartModule', 'lineChartModule', 'progressChartModule', 'pieChartModule', 'mapModule','ngFileUpload']);
 var mainModule = angular.module('MainModule',[]);
 var loginModule = angular.module('LoginModule', []);
 var menuModule = angular.module('MenuModule', []);

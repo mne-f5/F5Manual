@@ -32,20 +32,10 @@
 .table.striped tbody tr {
   background-color: #fff;
 }
+.table.striped tbody tr:first-child td {
+  border-top: 2px solid #dbe0e4 !important;
+}
 .table.striped tbody tr td {
-  border-left: none !important;
-  border-right: none !important;
-}
-.table.bordered thead th {
-  border: none !important;
-}
-.table.bordered tbody tr {
-  background-color: #fff;
-}
-.table.bordered tbody tr:first-child td {
-  border-top: none!important;
-}
-.table.bordered tbody tr td {
   border-left: none !important;
   border-right: none !important;
 }

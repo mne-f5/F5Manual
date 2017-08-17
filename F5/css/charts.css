@@ -11,12 +11,15 @@
   fill: #87a6bf;
 }
 .chart-container .name {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 35px;
+}
+.chart-container .percentage {
+  font-size: 16px;
 }
 .chart-container .value {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
 }
 .chart-container .middleText .number {
   font-size: 35px;

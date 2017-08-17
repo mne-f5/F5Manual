@@ -130,6 +130,12 @@
     <Content Include="css\file-upload.min.css">
       <DependentUpon>file-upload.css</DependentUpon>
     </Content>
+    <Content Include="css\general.css">
+      <DependentUpon>general.less</DependentUpon>
+    </Content>
+    <Content Include="css\general.min.css">
+      <DependentUpon>general.css</DependentUpon>
+    </Content>
     <Content Include="css\icons.css">
       <DependentUpon>icons.less</DependentUpon>
     </Content>
@@ -400,6 +406,7 @@
     <Content Include="css\icons.less" />
     <Content Include="css\user-images.less" />
     <Content Include="css\file-upload.less" />
+    <Content Include="css\general.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -443,6 +450,7 @@
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\elements\fileuploadPartial.html" />
+    <Content Include="scripts\kit\elements\helpPartial.html" />
     <Content Include="scripts\kit\elements\userimgPartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />
     <Content Include="scripts\kit\elements\calendarPartial.html" />
@@ -463,7 +471,8 @@
     <Content Include="scripts\kit\elements\widgetsPartial.html" />
     <Content Include="scripts\kit\elements\tablesPartial.html" />
     <Content Include="scripts\kit\elements\inputsPartial.html" />
-    <Content Include="scripts\kit\examples\loginExample.html" />
+    <Content Include="scripts\kit\examples\whiteloginExample.html" />
+    <Content Include="scripts\kit\examples\darkloginExample.html" />
     <Content Include="scripts\kit\KitController.js" />
     <Content Include="scripts\kit\examples\errorExample.html" />
     <Content Include="scripts\kit\examples\sideExample.html" />

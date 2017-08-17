@@ -7,7 +7,7 @@
     right: 0;
     left: 0;
     z-index: 9;
-    background-color: @login-bg;
+    background-color: @login-dark-bg;
     text-align: center;
     overflow: auto;
 
@@ -35,7 +35,7 @@
             text-align: left;
 
             label {
-                color: @login-label-color;
+                color: @login-dark-label-color;
             }
         }
 
@@ -43,6 +43,13 @@
             button {
                 margin-top: 16px;
             }
+        }
+    }
+
+    &.light {
+        background-color: @login-light-bg;
+        label {
+            color: @login-light-label-color;
         }
     }
 }

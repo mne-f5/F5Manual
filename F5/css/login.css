@@ -36,3 +36,9 @@
 .login .login-wrapper form button {
   margin-top: 16px;
 }
+.login.light {
+  background-color: #fff;
+}
+.login.light label {
+  color: #353439;
+}

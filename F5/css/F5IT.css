@@ -23,6 +23,180 @@ h2 {
 h3 {
   font-size: 16px;
 }
+.no-margin {
+  margin: 0;
+}
+.margin-8 {
+  margin: 8px;
+}
+.margin-16 {
+  margin: 16px;
+}
+.margin-32 {
+  margin: 32px;
+}
+.margin-64 {
+  margin: 64px;
+}
+.margin-top-0 {
+  margin-top: 0;
+}
+.margin-top-8 {
+  margin-top: 8px;
+}
+.margin-top-16 {
+  margin-top: 16px;
+}
+.margin-top-32 {
+  margin-top: 32px;
+}
+.margin-top-64 {
+  margin-top: 64px;
+}
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}
+.margin-bottom-64 {
+  margin-bottom: 64px;
+}
+.margin-left-0 {
+  margin-left: 0;
+}
+.margin-left-8 {
+  margin-left: 8px;
+}
+.margin-left-16 {
+  margin-left: 16px;
+}
+.margin-left-32 {
+  margin-left: 32px;
+}
+.margin-left-64 {
+  margin-left: 64px;
+}
+.margin-right-0 {
+  margin-right: 0;
+}
+.margin-right-8 {
+  margin-right: 8px;
+}
+.margin-right-16 {
+  margin-right: 16px;
+}
+.margin-right-32 {
+  margin-right: 32px;
+}
+.margin-right-64 {
+  margin-right: 64px;
+}
+.no-padding {
+  padding: 0;
+}
+.padding-8 {
+  padding: 8px;
+}
+.padding-16 {
+  padding: 16px;
+}
+.padding-32 {
+  padding: 32px;
+}
+.padding-64 {
+  padding: 64px;
+}
+.padding-top-0 {
+  padding-top: 0;
+}
+.padding-top-8 {
+  padding-top: 8px;
+}
+.padding-top-16 {
+  padding-top: 16px;
+}
+.padding-top-32 {
+  padding-top: 32px;
+}
+.padding-top-64 {
+  padding-top: 64px;
+}
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+.padding-bottom-8 {
+  padding-bottom: 8px;
+}
+.padding-bottom-16 {
+  padding-bottom: 16px;
+}
+.padding-bottom-32 {
+  padding-bottom: 32px;
+}
+.padding-bottom-64 {
+  padding-bottom: 64px;
+}
+.padding-left-0 {
+  padding-left: 0;
+}
+.padding-left-8 {
+  padding-left: 8px;
+}
+.padding-left-16 {
+  padding-left: 16px;
+}
+.padding-left-32 {
+  padding-left: 32px;
+}
+.padding-left-64 {
+  padding-left: 64px;
+}
+.padding-right-0 {
+  padding-right: 0;
+}
+.padding-right-8 {
+  padding-right: 8px;
+}
+.padding-right-16 {
+  padding-right: 16px;
+}
+.padding-right-32 {
+  padding-right: 32px;
+}
+.padding-right-64 {
+  padding-right: 64px;
+}
+.thin {
+  font-weight: 300;
+}
+.regular {
+  font-weight: 400;
+}
+.bold {
+  font-weight: 500;
+}
+.bolder {
+  font-weight: 700;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
+}
 .navigation {
   position: relative;
   background-color: #fff;
@@ -495,6 +669,25 @@ label {
   text-align: center;
   font-size: 18px;
 }
+.right-icon {
+  position: relative;
+}
+.right-icon .form-control {
+  padding-right: 30px;
+}
+.right-icon .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 18px;
+  color: #1980ff;
+}
 .select-wrapper {
   background-color: #fff;
   display: block;
@@ -826,20 +1019,10 @@ textarea {
 .table.striped tbody tr {
   background-color: #fff;
 }
+.table.striped tbody tr:first-child td {
+  border-top: 2px solid #dbe0e4 !important;
+}
 .table.striped tbody tr td {
-  border-left: none !important;
-  border-right: none !important;
-}
-.table.bordered thead th {
-  border: none !important;
-}
-.table.bordered tbody tr {
-  background-color: #fff;
-}
-.table.bordered tbody tr:first-child td {
-  border-top: none!important;
-}
-.table.bordered tbody tr td {
   border-left: none !important;
   border-right: none !important;
 }
@@ -1078,7 +1261,7 @@ textarea {
   border-color: #ff5d5e;
 }
 .badge {
-  font-weight: 500;
+  font-weight: 400;
   padding: 6px;
   border-radius: 50%;
 }
@@ -1116,12 +1299,15 @@ textarea {
   fill: #87a6bf;
 }
 .chart-container .name {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 35px;
+}
+.chart-container .percentage {
+  font-size: 16px;
 }
 .chart-container .value {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
 }
 .chart-container .middleText .number {
   font-size: 35px;
@@ -1495,6 +1681,12 @@ textarea {
 }
 .login .login-wrapper form button {
   margin-top: 16px;
+}
+.login.light {
+  background-color: #fff;
+}
+.login.light label {
+  color: #353439;
 }
 .error-page {
   position: absolute;
@@ -2027,6 +2219,7 @@ body.modal-bounce-zoom {
 .tooltip {
   font-family: inherit;
   padding: 16px !important;
+  display: inline-block;
 }
 .tooltip .tooltip-inner {
   background-color: #fff;
@@ -2058,51 +2251,62 @@ body.modal-bounce-zoom {
   margin-top: -8px;
   border-width: 8px 16px 8px 0;
 }
-.dp-holder .dp table {
+.dp-holder .dp table,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-.dp-holder .dp table thead tr:first-child th {
+.dp-holder .dp table thead tr:first-child th,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child th {
   padding: 28px 0;
   background-color: #1980ff;
 }
-.dp-holder .dp table thead tr:first-child button {
+.dp-holder .dp table thead tr:first-child button,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
   border: none;
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
 }
-.dp-holder .dp table thead tr:first-child button strong {
+.dp-holder .dp table thead tr:first-child button strong,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button strong {
   font-weight: 400;
 }
-.dp-holder .dp table thead tr:first-child button i {
+.dp-holder .dp table thead tr:first-child button i,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button i {
   font-size: 11px;
   font-family: 'Linearicons-Free';
 }
-.dp-holder .dp table thead tr:first-child button i.glyphicon-chevron-left:before {
+.dp-holder .dp table thead tr:first-child button i.glyphicon-chevron-left:before,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button i.glyphicon-chevron-left:before {
   content: "\e875";
 }
-.dp-holder .dp table thead tr:first-child button i.glyphicon-chevron-right:before {
+.dp-holder .dp table thead tr:first-child button i.glyphicon-chevron-right:before,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button i.glyphicon-chevron-right:before {
   content: "\e876";
 }
-.dp-holder .dp table thead tr:nth-child(2) th {
+.dp-holder .dp table thead tr:nth-child(2) th,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
   color: #32353a;
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 500;
   padding-top: 16px;
 }
-.dp-holder .dp table thead tr:nth-child(2) th:first-child {
+.dp-holder .dp table thead tr:nth-child(2) th:first-child,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
   text-align: right;
   padding-right: 10px;
 }
-.dp-holder .dp table thead tr:nth-child(2) th:last-child {
+.dp-holder .dp table thead tr:nth-child(2) th:last-child,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
   text-align: left;
   padding-left: 10px;
 }
-.dp-holder .dp table tbody button {
+.dp-holder .dp table tbody button,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button {
   border: none;
   padding: 8px !important;
   min-width: auto;
@@ -2110,16 +2314,20 @@ body.modal-bounce-zoom {
   width: 33px;
   height: 34px;
 }
-.dp-holder .dp table tbody button .text-info {
+.dp-holder .dp table tbody button .text-info,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button .text-info {
   color: #32353a;
 }
-.dp-holder .dp table tbody button:hover {
+.dp-holder .dp table tbody button:hover,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button:hover {
   background-color: transparent;
 }
-.dp-holder .dp table tbody button:hover:after {
+.dp-holder .dp table tbody button:hover:after,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button:hover:after {
   border: 2px solid #1980ff;
 }
-.dp-holder .dp table tbody button:after {
+.dp-holder .dp table tbody button:after,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
   content: '';
   position: absolute;
   top: 1px;
@@ -2136,28 +2344,135 @@ body.modal-bounce-zoom {
   -o-transition: border-color ease-in-out 0.3s;
   transition: border-color ease-in-out 0.3s;
 }
-.dp-holder .dp table tbody button.active {
+.dp-holder .dp table tbody button.active,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button.active {
   background-color: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.dp-holder .dp table tbody button.active:after {
+.dp-holder .dp table tbody button.active:after,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button.active:after {
   border: 2px solid #1980ff;
 }
-.dp-holder .dp table tbody button.active span {
+.dp-holder .dp table tbody button.active span,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody button.active span {
   color: #32353a;
 }
-.dp-holder .dp table tbody tr td:first-child {
+.dp-holder .dp table tbody tr td:first-child,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody tr td:first-child {
   text-align: right;
 }
-.dp-holder .dp table tbody tr td:last-child {
+.dp-holder .dp table tbody tr td:last-child,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table tbody tr td:last-child {
   text-align: left;
 }
-.dp-holder .dp button:hover {
+.dp-holder .dp button:hover,
+.dp-holder ul.uib-datepicker-popup.dropdown-menu button:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.dp-holder ul.uib-datepicker-popup.dropdown-menu {
+  padding: 0;
+}
+.dp-holder ul.uib-datepicker-popup.dropdown-menu table {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dp-holder .right-icon .form-control {
+  cursor: pointer;
+}
+.dp-holder.interval {
+  float: left;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #dbe0e4;
+  max-width: 340px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead button {
+  margin: 0;
+  padding: 4px 8px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
+  font-size: 12px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr th {
+  padding: 16px 0;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
+  padding: 8px;
+  padding-top: 8px !important;
+  font-size: 12px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
+  padding-right: 0 !important;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
+  padding-left: 14px !important;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button {
+  margin: 0;
+  padding: 8px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
+  top: 6px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+}
+.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button span {
+  font-size: 11px;
+}
+.dp-holder.interval .right-icon .dp-wrapper .form-control {
+  display: inline-block;
+  width: 150px;
+  padding-right: 16px;
+  border: none;
+  text-align: center;
+}
+.dp-holder.interval .right-icon .dp-wrapper span {
+  text-transform: uppercase;
+  position: absolute;
+  top: 8px;
+  font-size: 13px;
+  color: #1980ff;
+}
+.dp-holder.interval .right-icon .dp-wrapper span.from {
+  left: 16px;
+}
+.dp-holder.interval .right-icon .dp-wrapper span.from + input {
+  text-align: right;
+}
+.dp-holder.interval .right-icon .dp-wrapper span.from + input + div ul {
+  left: -25% !important;
+}
+.dp-holder.interval .right-icon .dp-wrapper span.to {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.dp-holder.interval .right-icon .dp-wrapper span.to + input {
+  text-align: left;
+}
+.tp-holder {
+  display: inline-block;
+  border: 1px solid #dbe0e4;
+  border-radius: 4px;
+}
+.tp-holder .right-icon {
+  position: relative;
+  padding-right: 30px;
+}
+.tp-holder .right-icon .form-control {
+  padding: 8px;
+}
+.tp-holder .right-icon .uib-timepicker .form-control {
+  border: none;
 }
 i.success {
   color: #47CF73;
@@ -2177,30 +2492,31 @@ i.disabled {
 .user-img {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   padding: 0;
   overflow: hidden;
   line-height: inherit;
   vertical-align: middle;
   background-color: #dbe0e4;
-  border: 2px solid #32353a;
+  border-radius: 100%;
 }
 .user-img img {
   max-width: 100%;
   height: 100%;
 }
-.user-img.rounded {
-  border-radius: 100%;
+.user-img.medium {
+  width: 56px;
+  height: 56px;
 }
-.user-img.boxed {
-  border-radius: 4px;
+.user-img.large {
+  width: 64px;
+  height: 64px;
 }
 .drop-box-holder {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
 }
 .drop-box-holder .head-section {
   background-color: #1980ff;
@@ -2276,7 +2592,6 @@ i.disabled {
   background-color: #1980ff;
   color: #fff;
   padding: 8px 16px;
-  margin-top: 0;
 }
 .drop-box-holder .drop-box .drop-content span.browse:hover {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -2720,7 +3035,8 @@ i.disabled {
   -o-transition: min-height 0.4s ease-out;
 }
 .drop-box-paper.open {
-  min-height: 400px;
+  min-height: 300px;
+  min-width: 300px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -2728,13 +3044,13 @@ i.disabled {
 .drop-box-paper.open .fill-element {
   width: 100em;
   height: 100em;
-  background-color: #ffdd99;
+  background-color: #fff;
 }
 .drop-box-paper.open .head-section i {
   animation: bounce 2s infinite;
   margin-left: -16px;
   margin-top: -16px;
-  color: #ff5d5e;
+  color: #1980ff;
 }
 .drop-box-paper.open .head-section .folded-corner {
   border-style: none;
@@ -2769,6 +3085,12 @@ i.disabled {
     transform: translateY(-15px);
   }
 }
+.drop-box-paper.open .drop-box {
+  top: 20px;
+}
+.drop-box-paper.open .drop-box .drop-content {
+  opacity: 1;
+}
 .drop-box-paper .fill-element {
   position: absolute;
   -webkit-transition: all 0.4s ease-out;
@@ -2776,7 +3098,7 @@ i.disabled {
   -ms-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  background: #ff5d5e;
+  background: #1980ff;
   top: 0;
   left: 0;
   width: 55px;
@@ -2787,7 +3109,7 @@ i.disabled {
 }
 .drop-box-paper .head-section {
   display: inline-block;
-  background-color: #ff5d5e;
+  background-color: #1980ff;
   padding: 16px 12px;
   color: #fff;
   text-align: center;
@@ -2849,6 +3171,12 @@ i.disabled {
 .drop-box-paper .drop-box .drop-content {
   position: relative;
   margin-right: -17px;
+  -webkit-transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -ms-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  opacity: 0;
 }
 .drop-box-paper .drop-box .drop-content:before {
   content: "";
@@ -2886,7 +3214,7 @@ i.disabled {
   border-radius: 4px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #ff5d5e;
+  background-color: #1980ff;
   color: #fff;
   border: 2px solid #fff;
   padding: 8px 16px;
@@ -2905,7 +3233,7 @@ i.disabled {
   padding: 8px 12px 0 12px;
 }
 .drop-box-paper .drop-box .files-list.bordered {
-  border-top: 2px solid #ff5d5e;
+  border-top: 2px solid #1980ff;
 }
 .drop-box-paper .drop-box .files-list li {
   text-align: left;
@@ -2934,7 +3262,7 @@ i.disabled {
   -ms-transform: rotate(-65deg);
   -o-transform: rotate(-65deg);
   transform: rotate(-65deg);
-  color: #ff5d5e;
+  color: #1980ff;
 }
 .drop-box-paper .drop-box .files-list li .delete-btn {
   display: inline-block;
@@ -2959,8 +3287,8 @@ i.disabled {
 .drop-box-paper .drop-box .upload-btn-holder .upload-btn {
   background-color: #fff;
   border-radius: 25px;
-  border: 2px solid #ff5d5e;
-  color: #ff5d5e;
+  border: 2px solid #1980ff;
+  color: #1980ff;
   position: relative;
   width: 100%;
   margin: 0;
@@ -2969,7 +3297,7 @@ i.disabled {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-  background-color: #ff5d5e;
+  background-color: #1980ff;
   color: #fff;
 }
 .drop-box-paper .drop-box .upload-btn-holder .upload-btn .fill {
@@ -2979,7 +3307,7 @@ i.disabled {
   bottom: 0;
   right: 0;
   width: 0%;
-  background: #ff5d5e;
+  background: #1980ff;
   border-radius: 25px;
 }
 .drop-box-paper .drop-box .upload-btn-holder .upload-btn i {
@@ -3069,7 +3397,7 @@ i.disabled {
   font-size: 80px;
   display: inline-block;
   margin-bottom: 16px;
-  color: #ff5d5e;
+  color: #1980ff;
 }
 @media all and (max-width: 768px) {
   .btn-holder {

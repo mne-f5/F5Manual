@@ -73,13 +73,15 @@
                                 { name: 'Status icons', path: '/kit/icons', active: false },
                                 { name: 'User images', path: '/kit/user-img', active: false },
                                 { name: 'File upload', path: '/kit/file-upload', active: false },
+                                { name: 'Help classes', path: '/kit/help', active: false },
                                 {
                                     name: 'Page examples',
                                     isCollapsed: false,
                                     submenu: [
                                         { name: 'Top navigation', path: '/example/top-navbar', active: false },
                                         { name: 'Side navigation', path: '/example/side-navbar', active: false },
-                                        { name: 'Login example', path: '/example/login-example', active: false },
+                                        { name: 'Dark login example', path: '/example/login-example1', active: false },
+                                        { name: 'Light login example', path: '/example/login-example2', active: false },
                                         { name: 'Error page', path: '/example/error', active: false }
                                     ]
                                 }

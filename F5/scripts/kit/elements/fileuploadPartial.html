@@ -1,11 +1,46 @@
 ﻿<div class="col-sm-12 wrapper">
-    <h3><strong>File upload<strong/></h3>
+    <h3 class="margin-bottom-32"><strong>File upload<strong/></h3>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="drop-box-holder">
-                <div class="head-section">
+        <div class="col-sm-3">
+            <div class="drop-box-paper">
+                <div class="head-section" ng-click="openUpload()">
+                    <span class="folded-corner"></span>
                     <i class="lnr lnr-cloud-upload"></i>
-                </div> 
+                </div>
+                <div class="fill-element"></div>
+                <div ngf-drop ng-model="file" class="drop-box"
+                     ngf-drag-over-class="'dragover'" ngf-multiple="false" ngf-allow-dir="false"
+                     accept="image/*,application/pdf"
+                     ngf-pattern="'image/*,application/pdf'">
+                    <div class="drop-content">
+                        <p>Drag and drop files here</p>
+                        <i class="lnr lnr-picture"></i>
+                        <span>or</span>
+                        <span class="browse" ngf-select="upload($file)">browse files</span>
+                        <ul class="files-list">
+                            <li ng-repeat="a in attachments">
+                                <i class="lnr lnr-pushpin"></i>
+                                <p>{{a.name}}</p>
+                                <span class="lnr lnr-trash delete-btn" ng-click="delete($index)"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="done-msg">
+                        <i class="lnr lnr-smile"></i>
+                        <p>Upload complete !</p>
+                    </div>
+                    <div class="upload-btn-holder">
+                        <button class="btn btn-default upload-btn" ng-click="done()" ng-if="attachments.length > 0">
+                            <p>Upload</p>
+                            <div class="fill"></div>
+                            <i class="lnr lnr-cloud-check"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="drop-box-holder">
                 <div ngf-drop ng-model="file" class="drop-box"
                      ngf-drag-over-class="'dragover'" ngf-multiple="false" ngf-allow-dir="false"
                      accept="image/*,application/pdf"
@@ -47,44 +82,6 @@
                      ngf-pattern="'image/*,application/pdf'">
                     <div class="drop-content">
                         <p>Drag and drop files here</p>
-                        <span>or</span>
-                        <span class="browse" ngf-select="upload($file)">browse files</span>
-                        <ul class="files-list">
-                            <li ng-repeat="a in attachments">
-                                <i class="lnr lnr-pushpin"></i>
-                                <p>{{a.name}}</p>
-                                <span class="lnr lnr-trash delete-btn" ng-click="delete($index)"></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="done-msg">
-                        <i class="lnr lnr-smile"></i>
-                        <p>Upload complete !</p>
-                    </div>
-                    <div class="upload-btn-holder">
-                        <button class="btn btn-default upload-btn" ng-click="done()" ng-if="attachments.length > 0">
-                            <p>Upload</p>
-                            <div class="fill"></div>
-                            <i class="lnr lnr-cloud-check"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="drop-box-paper">
-                <div class="head-section" ng-click="openUpload()">
-                    <span class="folded-corner"></span>
-                    <i class="lnr lnr-cloud-upload"></i>                    
-                </div>
-                <div class="fill-element"></div>
-                <div ngf-drop ng-model="file" class="drop-box"
-                     ngf-drag-over-class="'dragover'" ngf-multiple="false" ngf-allow-dir="false"
-                     accept="image/*,application/pdf"
-                     ngf-pattern="'image/*,application/pdf'">
-                    <div class="drop-content">
-                        <p>Drag and drop files here</p>
-                        <i class="lnr lnr-picture"></i>
                         <span>or</span>
                         <span class="browse" ngf-select="upload($file)">browse files</span>
                         <ul class="files-list">

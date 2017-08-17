@@ -74,5 +74,9 @@
   {
     "outputFile": "css/file-upload.css",
     "inputFile": "css/file-upload.less"
+  },
+  {
+    "outputFile": "css/general.css",
+    "inputFile": "css/general.less"
   }
 ]

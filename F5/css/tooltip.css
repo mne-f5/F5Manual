@@ -1,6 +1,7 @@
 ﻿.tooltip {
   font-family: inherit;
   padding: 16px !important;
+  display: inline-block;
 }
 .tooltip .tooltip-inner {
   background-color: #fff;

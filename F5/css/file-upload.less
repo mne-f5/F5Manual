@@ -4,7 +4,6 @@
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
 
     .head-section {
         background-color: @drop-head-bg;
@@ -83,7 +82,6 @@
                     background-color: @drop-head-bg;
                     color: @drop-head-color;
                     padding: 8px 16px;
-                    margin-top: 0;
 
                     &:hover {
                         -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
@@ -596,7 +594,8 @@
 
 
     &.open {
-        min-height: 400px;
+        min-height: 300px;
+        min-width: 300px;
         -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
         -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
         box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
@@ -645,6 +644,14 @@
                 60% {
                     transform: translateY(-15px);
                 }
+            }
+        }
+
+        .drop-box {
+            top: 20px;
+
+            .drop-content {
+                opacity: 1;
             }
         }
     }
@@ -733,6 +740,12 @@
         .drop-content {
             position: relative;
             margin-right: -17px;
+            -webkit-transition: opacity .2s ease;
+            -moz-transition: opacity .2s ease;
+            -ms-transition: opacity .2s ease;
+            -o-transition: opacity .2s ease;
+            transition: opacity .2s ease;
+            opacity: 0;
 
             &:before {
                 content: "";

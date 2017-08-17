@@ -60,6 +60,25 @@
   text-align: center;
   font-size: 18px;
 }
+.right-icon {
+  position: relative;
+}
+.right-icon .form-control {
+  padding-right: 30px;
+}
+.right-icon .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 18px;
+  color: #1980ff;
+}
 .select-wrapper {
   background-color: #fff;
   display: block;

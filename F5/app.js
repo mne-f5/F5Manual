@@ -120,8 +120,13 @@ app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
             controller: 'KitController'
         });
 
-        $routeProvider.when('/login-example', {
-            templateUrl: 'scripts/kit/examples/loginExample.html',
+        $routeProvider.when('/login-example1', {
+            templateUrl: 'scripts/kit/examples/darkloginExample.html',
+            controller: 'KitController'
+        });
+
+        $routeProvider.when('/login-example2', {
+            templateUrl: 'scripts/kit/examples/whiteloginExample.html',
             controller: 'KitController'
         });
 

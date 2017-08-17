@@ -109,7 +109,7 @@ angular.module('donutChartModule').directive('donutChart', function () {
                         .append('circle')
                         .attrs({
                             r: radius / 2,
-                            fill: '#E7E7E7'
+                            fill: '#fff'
                         });
 
                 var circle = d3.selectAll('.center-text');
@@ -134,7 +134,7 @@ angular.module('donutChartModule').directive('donutChart', function () {
                             class: 'percentage',
                             y: radius * 0.16,
                             'text-anchor': 'middle',
-                            fill: '#A2A2A2'
+                            fill: '#ff5d5e'
                         });
             };
 

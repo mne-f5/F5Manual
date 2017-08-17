@@ -118,5 +118,46 @@
         showWeeks: false
     };
 
+    // Popup datepicker
+
+    $scope.dt = new Date();
+
+    $scope.start = new Date();
+    $scope.end = new Date();
+
+    $scope.popup = {
+        opened: false
+    };
+
+    $scope.openDp = function () {
+        $scope.popup.opened = true;
+    };
+
+    $scope.popupOptions = {
+        minDate: new Date(),
+        showWeeks: false
+    }
+
+    $scope.startOptions = {
+        minDate: new Date(),
+        showWeeks: false
+    }
+
+    $scope.endOptions = {
+        minDate: new Date(),
+        showWeeks: false
+    }
+
+    $scope.interval = {
+        opened: false
+    };
+
+    $scope.openInterval = function () {
+        $scope.interval.opened = true;
+    };
+
+    // Timepicker
+    $scope.time = new Date();
+
 
 });

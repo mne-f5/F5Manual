@@ -338,7 +338,7 @@ header.app {
                 .items {
                     li {
                         display: none;
-                        
+
                         &:first-child {
                             display: block;
                         }
@@ -355,7 +355,7 @@ header.app {
 
                     i {
                         position: absolute;
-                        right: 15px;
+                        right: 30px;
                         line-height: 44px;
                         height: 44px;
                         top: 0;
@@ -366,7 +366,9 @@ header.app {
         }
 
         .submenu {
-            li { display: block!important;
+            li {
+                display: block !important;
+
                 a {
                     padding-left: 65px;
                     background-color: #eff3f6;
@@ -377,13 +379,12 @@ header.app {
                 }
             }
         }
-
     }
 }
 
 .kit-menu {
     .menu {
-       > li {
+        > li {
             &:first-child,
             &:nth-child(2) {
                 display: none;
@@ -393,6 +394,7 @@ header.app {
                 .items {
                     > li {
                         display: block;
+
                         &:first-child {
                             display: none;
                         }
@@ -457,8 +459,9 @@ header.app {
         min-width: 200px;
         bottom: 0;
         right: 10px;
+
         &:before {
-            background-color: transparent!important;
+            background-color: transparent !important;
         }
     }
 }
@@ -622,7 +625,7 @@ header.app {
     height: 40px;
     border: 1px solid #353439;
     padding: 5px;
-    border-radius:  50%;
+    border-radius: 50%;
     .transition(all ease-in-out .2s);
     color: #fff;
     background-color: #353439;
@@ -632,9 +635,8 @@ header.app {
     span {
         display: block;
         text-align: center;
-        line-height: 28px;  
+        line-height: 28px;
         font-weight: 700;
-        
     }
 
     &:hover {
@@ -647,9 +649,11 @@ header.app {
         0%, 20%, 50%, 80%, 100% {
             .transform(translateY(0));
         }
+
         40% {
             .transform(translateY(-10px));
         }
+
         60% {
             .transform(translateY(-5px));
         }
@@ -667,14 +671,14 @@ header.app {
     background-color: #353439;
     width: 256px;
     height: 100%;
-    z-index:4;
+    z-index: 4;
     cursor: pointer;
     display: none;
 
     span {
         display: inline-block;
         padding: 27px 15px;
-        font-size: 20px
+        font-size: 20px;
     }
 
     p {
@@ -718,7 +722,6 @@ header.app {
         background-color: #fff;
         width: 0;
         animation: fill ease 2s;
-        
     }
 
     @keyframes fill {
@@ -735,7 +738,6 @@ header.app {
         display: block;
         .transform(scale(1));
     }
-    
 }
 
 .hideEl {
@@ -750,7 +752,7 @@ header.app {
     margin: 100px 0;
 }
 
-.ex-2  .header-section {
+.ex-2 .header-section {
     position: absolute;
     background-color: #fff;
     border: 1px solid #ededed;
@@ -760,7 +762,7 @@ header.app {
     position: relative;
 }
 
-.ex-2  .header-section h3 {
+.ex-2 .header-section h3 {
     color: #000;
 }
 
@@ -773,7 +775,7 @@ header.app {
     min-height: 200px;*/
 }
 
- 
+
 
 
 /* PAGE EXAMPLE */
@@ -823,11 +825,14 @@ header.app {
 .cards-holder {
     text-align: center;
     padding-left: 0;
-        li {
-            list-style-type: none;
-            display: inline-block;
-        }
+    float: left;
+    width: 100%;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
     }
+}
 
 .error-page,
 .login {
@@ -849,24 +854,29 @@ header.app {
 
 #spinners ul li h3 {
     margin-top: 12px;
-    padding-left: 30px
+    padding-left: 30px;
 }
 
 .p {
     color: #1a80fc;
 }
+
 .second {
     color: #222224;
 }
+
 .n {
     color: #a2a6a9;
 }
+
 .w {
     color: #ffab00;
 }
+
 .s {
     color: #47CF73;
 }
+
 .d {
     color: #ff5d5e;
 }
@@ -874,6 +884,32 @@ header.app {
 
 .sec {
     margin-bottom: 50px;
+}
+
+// Help classes
+
+#help {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        float: left;
+        width: 100%;
+
+        li {
+            float: left;
+            width: 100%;
+
+            span {
+                float: left;
+            }
+
+            p {
+                display: inline-block;
+                float: right;
+                color: #000;
+            }
+        }
+    }
 }
 
 

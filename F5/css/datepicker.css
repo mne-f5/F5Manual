@@ -128,7 +128,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.dp-holder .right-icon .form-control {
+.dp-holder .left-icon .form-control {
   cursor: pointer;
 }
 .dp-holder.interval {
@@ -136,88 +136,96 @@
   width: 100%;
   border-radius: 4px;
   border: 1px solid #dbe0e4;
-  max-width: 340px;
+  width: 300px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead button {
+.dp-holder.interval .left-icon {
+  float: left;
+  width: 100%;
+}
+.dp-holder.interval .left-icon .dp-wrapper {
+  float: left;
+  width: 100%;
+}
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead button {
   margin: 0;
   padding: 4px 8px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
   font-size: 12px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr th {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr th {
   padding: 16px 0;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
   padding: 8px;
   padding-top: 8px !important;
   font-size: 12px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
   padding-right: 0 !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
   padding-left: 14px !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button {
   margin: 0;
   padding: 8px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
   top: 6px;
   left: 12px;
   width: 20px;
   height: 20px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button span {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button span {
   font-size: 11px;
 }
-.dp-holder.interval .right-icon .dp-wrapper .form-control {
+.dp-holder.interval .left-icon .dp-wrapper .form-control {
   display: inline-block;
-  width: 150px;
-  padding-right: 16px;
+  padding: 8px 16px;
   border: none;
   text-align: center;
 }
-.dp-holder.interval .right-icon .dp-wrapper span {
+.dp-holder.interval .left-icon .dp-wrapper span {
   text-transform: uppercase;
   position: absolute;
   top: 8px;
   font-size: 13px;
+}
+.dp-holder.interval .left-icon .dp-wrapper span.from {
+  left: 34px;
   color: #1980ff;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.from {
-  left: 16px;
-}
-.dp-holder.interval .right-icon .dp-wrapper span.from + input {
+.dp-holder.interval .left-icon .dp-wrapper span.from + input {
   text-align: right;
+  padding-left: 68px;
+  width: 170px;
+  float: left;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.from + input + div ul {
+.dp-holder.interval .left-icon .dp-wrapper span.from + input + div ul {
   left: -25% !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.to {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+.dp-holder.interval .left-icon .dp-wrapper span.to {
+  color: #1980ff;
+  right: 100px;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.to + input {
-  text-align: left;
+.dp-holder.interval .left-icon .dp-wrapper span.to + input {
+  text-align: center;
+  float: right;
+  width: 100px;
 }
 .tp-holder {
   display: inline-block;
   border: 1px solid #dbe0e4;
   border-radius: 4px;
 }
-.tp-holder .right-icon {
+.tp-holder .left-icon {
   position: relative;
-  padding-right: 30px;
+  padding-left: 30px;
 }
-.tp-holder .right-icon .form-control {
+.tp-holder .left-icon .form-control {
   padding: 8px;
 }
-.tp-holder .right-icon .uib-timepicker .form-control {
+.tp-holder .left-icon .uib-timepicker .form-control {
   border: none;
 }

@@ -407,6 +407,7 @@
     <Content Include="css\user-images.less" />
     <Content Include="css\file-upload.less" />
     <Content Include="css\general.less" />
+    <Content Include="css\blocks.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -449,6 +450,7 @@
     <Content Include="scripts\charts\progressChart.js" />
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
+    <Content Include="scripts\kit\elements\blocksPartial.html" />
     <Content Include="scripts\kit\elements\fileuploadPartial.html" />
     <Content Include="scripts\kit\elements\helpPartial.html" />
     <Content Include="scripts\kit\elements\userimgPartial.html" />

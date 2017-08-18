@@ -1,60 +1,33 @@
 ﻿@import 'variables.less';
+
 .panel {
+    border: 1px solid @panel-border;
+
     .panel-heading {
         color: @panel-heading-color;
-    }
-    &.panel-primary {
-        border-color: @primary;
+        background-color: @panel-heading-bg;
 
-        .panel-heading {
-            background-color: @primary;
-            border-color: @primary;
+        .delete-btn {
+            font-size: 20px;
+
+            &:hover {
+                color: @danger;
+            }
+        }
+
+        .expand-btn {
+            font-size: 20px;
         }
     }
 
-    &.panel-secondary {
-        border-color: @secondary;
-
-        .panel-heading {
-            background-color: @secondary;
-            border-color: @secondary;
-        }
-    }
-
-    &.panel-negative {
-        border-color: @negative;
-
-        .panel-heading {
-            background-color: @negative;
-            border-color: @negative;
-        }
-    }
-
-    &.panel-warning {
-        border-color: @warning;
-
-        .panel-heading {
-            background-color: @warning;
-            border-color: @warning;
-        }
-    }
-
-    &.panel-success {
-        border-color: @success;
-
-        .panel-heading {
-            background-color: @success;
-            border-color: @success;
-        }
-    }
-
-    &.panel-danger {
-        border-color: @danger;
-
-        .panel-heading {
-            background-color: @danger;
-            border-color: @danger;
-        }
+    &.expanded {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        margin: 0;
+        border-radius: 0;
     }
 }
-

@@ -48,7 +48,7 @@
 .left-icon .form-control {
   padding-left: 30px;
 }
-.left-icon i {
+.left-icon .icon {
   position: absolute;
   top: 0;
   left: 0;

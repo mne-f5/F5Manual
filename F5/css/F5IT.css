@@ -657,7 +657,7 @@ label {
 .left-icon .form-control {
   padding-left: 30px;
 }
-.left-icon i {
+.left-icon .icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -1215,50 +1215,31 @@ textarea {
   border-color: #222224;
   background-color: #fff;
 }
+.panel {
+  border: 1px solid #dbe0e4;
+}
 .panel .panel-heading {
-  color: #fff;
+  color: #000;
+  background-color: #dbe0e4;
 }
-.panel.panel-primary {
-  border-color: #1980ff;
+.panel .panel-heading .delete-btn {
+  font-size: 20px;
 }
-.panel.panel-primary .panel-heading {
-  background-color: #1980ff;
-  border-color: #1980ff;
+.panel .panel-heading .delete-btn:hover {
+  color: #ff5d5e;
 }
-.panel.panel-secondary {
-  border-color: #222224;
+.panel .panel-heading .expand-btn {
+  font-size: 20px;
 }
-.panel.panel-secondary .panel-heading {
-  background-color: #222224;
-  border-color: #222224;
-}
-.panel.panel-negative {
-  border-color: #a2a6a9;
-}
-.panel.panel-negative .panel-heading {
-  background-color: #a2a6a9;
-  border-color: #a2a6a9;
-}
-.panel.panel-warning {
-  border-color: #ffab00;
-}
-.panel.panel-warning .panel-heading {
-  background-color: #ffab00;
-  border-color: #ffab00;
-}
-.panel.panel-success {
-  border-color: #47CF73;
-}
-.panel.panel-success .panel-heading {
-  background-color: #47CF73;
-  border-color: #47CF73;
-}
-.panel.panel-danger {
-  border-color: #ff5d5e;
-}
-.panel.panel-danger .panel-heading {
-  background-color: #ff5d5e;
-  border-color: #ff5d5e;
+.panel.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  margin: 0;
+  border-radius: 0;
 }
 .badge {
   font-weight: 400;
@@ -2381,7 +2362,7 @@ body.modal-bounce-zoom {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.dp-holder .right-icon .form-control {
+.dp-holder .left-icon .form-control {
   cursor: pointer;
 }
 .dp-holder.interval {
@@ -2389,89 +2370,97 @@ body.modal-bounce-zoom {
   width: 100%;
   border-radius: 4px;
   border: 1px solid #dbe0e4;
-  max-width: 340px;
+  width: 300px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead button {
+.dp-holder.interval .left-icon {
+  float: left;
+  width: 100%;
+}
+.dp-holder.interval .left-icon .dp-wrapper {
+  float: left;
+  width: 100%;
+}
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead button {
   margin: 0;
   padding: 4px 8px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:first-child button {
   font-size: 12px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr th {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr th {
   padding: 16px 0;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th {
   padding: 8px;
   padding-top: 8px !important;
   font-size: 12px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:first-child {
   padding-right: 0 !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table thead tr:nth-child(2) th:last-child {
   padding-left: 14px !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button {
   margin: 0;
   padding: 8px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button:after {
   top: 6px;
   left: 12px;
   width: 20px;
   height: 20px;
 }
-.dp-holder.interval .right-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button span {
+.dp-holder.interval .left-icon .dp-wrapper ul.uib-datepicker-popup.dropdown-menu table tbody button span {
   font-size: 11px;
 }
-.dp-holder.interval .right-icon .dp-wrapper .form-control {
+.dp-holder.interval .left-icon .dp-wrapper .form-control {
   display: inline-block;
-  width: 150px;
-  padding-right: 16px;
+  padding: 8px 16px;
   border: none;
   text-align: center;
 }
-.dp-holder.interval .right-icon .dp-wrapper span {
+.dp-holder.interval .left-icon .dp-wrapper span {
   text-transform: uppercase;
   position: absolute;
   top: 8px;
   font-size: 13px;
+}
+.dp-holder.interval .left-icon .dp-wrapper span.from {
+  left: 34px;
   color: #1980ff;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.from {
-  left: 16px;
-}
-.dp-holder.interval .right-icon .dp-wrapper span.from + input {
+.dp-holder.interval .left-icon .dp-wrapper span.from + input {
   text-align: right;
+  padding-left: 68px;
+  width: 170px;
+  float: left;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.from + input + div ul {
+.dp-holder.interval .left-icon .dp-wrapper span.from + input + div ul {
   left: -25% !important;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.to {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+.dp-holder.interval .left-icon .dp-wrapper span.to {
+  color: #1980ff;
+  right: 100px;
 }
-.dp-holder.interval .right-icon .dp-wrapper span.to + input {
-  text-align: left;
+.dp-holder.interval .left-icon .dp-wrapper span.to + input {
+  text-align: center;
+  float: right;
+  width: 100px;
 }
 .tp-holder {
   display: inline-block;
   border: 1px solid #dbe0e4;
   border-radius: 4px;
 }
-.tp-holder .right-icon {
+.tp-holder .left-icon {
   position: relative;
-  padding-right: 30px;
+  padding-left: 30px;
 }
-.tp-holder .right-icon .form-control {
+.tp-holder .left-icon .form-control {
   padding: 8px;
 }
-.tp-holder .right-icon .uib-timepicker .form-control {
+.tp-holder .left-icon .uib-timepicker .form-control {
   border: none;
 }
 i.success {
@@ -3398,6 +3387,26 @@ i.disabled {
   display: inline-block;
   margin-bottom: 16px;
   color: #1980ff;
+}
+.box {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.box.negative {
+  background-color: #353439;
+  color: #fff;
+}
+.box.negative h3 {
+  color: #1980ff;
+  margin-top: 0;
+}
+.box h3 {
+  margin-top: 0;
 }
 @media all and (max-width: 768px) {
   .btn-holder {

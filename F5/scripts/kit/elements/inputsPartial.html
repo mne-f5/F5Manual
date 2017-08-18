@@ -26,7 +26,7 @@
                 <div class="form-group">
                     <div class="left-icon">
                         <input type="text" class="form-control" placeholder="Input with icon">
-                        <i class="lnr lnr-envelope"></i>
+                        <i class="icon lnr lnr-envelope"></i>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <div class="mb row">
             <div class="col-sm-4">
                 <div class="dp-holder">
-                    <div class="right-icon">
+                    <div class="left-icon">
                         <input type="text" ng-click="openDp()" class="form-control" uib-datepicker-popup="dd.MM.yyyy" ng-model="dt" show-button-bar="false" is-open="popup.opened" datepicker-options="popupOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
                         <i class="icon lnr lnr-calendar-full" ng-click="openDp()"></i>
                     </div>
@@ -52,12 +52,12 @@
             </div>
             <div class="col-sm-4">
                 <div class="dp-holder interval">
-                    <div class="right-icon">
+                    <div class="left-icon">
                         <div class="dp-wrapper">
                             <span class="from">from</span>
-                            <input type="text" ng-click="openInterval()" class="form-control pull-left" uib-datepicker-popup="dd.MM.yyyy" ng-model="start" show-button-bar="false" is-open="interval.opened" datepicker-options="startOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                            <input type="text" ng-click="openInterval()" class="form-control" uib-datepicker-popup="dd.MM.yyyy" ng-model="start" show-button-bar="false" is-open="interval.opened" datepicker-options="startOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
                             <span class="to">to</span>
-                            <input type="text" ng-click="openInterval()" class="form-control pull-right" uib-datepicker-popup="dd.MM.yyyy" ng-model="end" show-button-bar="false" is-open="interval.opened" datepicker-options="endOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                            <input type="text" ng-click="openInterval()" class="form-control" uib-datepicker-popup="dd.MM.yyyy" ng-model="end" show-button-bar="false" is-open="interval.opened" datepicker-options="endOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
                         </div>
                         <i class="icon lnr lnr-calendar-full" ng-click="openInterval()"></i>
                     </div>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="tp-holder">
-                    <div class="right-icon">
+                    <div class="left-icon">
                         <div uib-timepicker ng-model="time" ng-change="changed()" hour-step="1" minute-step="1" show-meridian="false" show-spinners="false"></div>
                         <i class="icon lnr lnr-clock"></i>
                     </div>

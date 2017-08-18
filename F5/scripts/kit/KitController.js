@@ -159,5 +159,19 @@
     // Timepicker
     $scope.time = new Date();
 
+    // Panels
+
+    $scope.deletePanel = function (event) {
+        event.target.offsetParent.remove();
+    };
+
+    $scope.expandPanel = function (event) {
+        var panel = $(event.target.parentNode.parentNode);
+        console.log(event);
+        panel.toggleClass('expanded');
+    };
+
+
+    
 
 });

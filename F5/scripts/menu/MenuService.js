@@ -60,6 +60,7 @@
                                 { name: 'Dropdowns', path: '/kit/dropbtn', active: false },
                                 { name: 'Pagination', path: '/kit/pagination', active: false },
                                 { name: 'Panels', path: '/kit/panels', active: false },
+                                { name: 'Blocks', path: '/kit/blocks', active: false },
                                 { name: 'Badges', path: '/kit/badges', active: false },
                                 { name: 'Charts', path: '/kit/charts', active: false },
                                 { name: 'Navigation', path: '/kit/navigation', active: false },

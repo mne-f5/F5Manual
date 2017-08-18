@@ -158,7 +158,7 @@
         }
     }
 
-    .right-icon {
+    .left-icon {
         .form-control {
             cursor: pointer;
         }
@@ -170,11 +170,17 @@
         width: 100%;
         border-radius: 4px;
         border: 1px solid #dbe0e4;
-        max-width: 340px;
+        width: 300px;
 
 
-        .right-icon {
+        .left-icon {
+            float: left;
+            width: 100%;
+
             .dp-wrapper {
+                float: left;
+                width: 100%;
+
                 ul.uib-datepicker-popup.dropdown-menu {
                     table {
                         thead {
@@ -234,8 +240,7 @@
 
                 .form-control {
                     display: inline-block;
-                    width: 150px;
-                    padding-right: 16px;
+                    padding: 8px 16px;
                     border: none;
                     text-align: center;
                 }
@@ -245,13 +250,17 @@
                     position: absolute;
                     top: 8px;
                     font-size: 13px;
-                    color: @primary;
+
 
                     &.from {
-                        left: 16px;
+                        left: 34px;
+                        color: @primary;
 
                         + input {
                             text-align: right;
+                            padding-left: 68px;
+                            width: 170px;
+                            float: left;
 
                             + div {
                                 ul {
@@ -262,15 +271,13 @@
                     }
 
                     &.to {
-                        left: 50%;
-                        -webkit-transform: translateX(-50%);
-                        -moz-transform: translateX(-50%);
-                        -ms-transform: translateX(-50%);
-                        -o-transform: translateX(-50%);
-                        transform: translateX(-50%);
+                        color: @primary;
+                        right: 100px;
 
                         + input {
-                            text-align: left;
+                            text-align: center;
+                            float: right;
+                            width: 100px;
                         }
                     }
                 }
@@ -284,9 +291,9 @@
     border: 1px solid #dbe0e4;
     border-radius: 4px;
 
-    .right-icon {
+    .left-icon {
         position: relative;
-        padding-right: 30px;
+        padding-left: 30px;
 
         .form-control {
             padding: 8px;

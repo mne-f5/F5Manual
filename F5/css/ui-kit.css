@@ -49,6 +49,10 @@
        display: none;
     }
 
+    .ui-kit .code-holder li a:hover {
+      border-color: transparent  !important;
+    }
+
     .ui-kit .code-holder.open {
         display: block;
     }

@@ -43,18 +43,43 @@
     </a>
 </div>
 
-<div class="code-holder col-sm-12" id="badge">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
+<div class="code-holder col-sm-12" id="tab">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
             <pre>
-            <code class="language-markup">    
+            <code class="language-markup">
+                &lt;uib-tabset active="active" class="line"&gt;
+                    &lt;uib-tab index="0"&gt;
+                        &lt;uib-tab-heading&gt;
+                            &lt;span&gt;Tab title&lt;/span&gt;!
+                        &lt;/uib-tab-heading&gt;I've got an HTML heading, and a select callback. Pretty cool!
+                    &lt;/uib-tab&gt;
+                    &lt;uib-tab index="1"&gt;
+                        &lt;uib-tab-heading&gt;
+                            &lt;span&gt;Tab title&lt;/span&gt;!
+                        &lt;/uib-tab-heading&gt;I've got an HTML heading, and a select callback. Pretty cool!
+                    &lt;/uib-tab&gt;
+                    &lt;uib-tab index="2"&gt;
+                        &lt;uib-tab-heading&gt;
+                            &lt;span&gt;Tab title&lt;/span&gt;!
+                        &lt;/uib-tab-heading&gt;I've got an HTML heading, and a select callback. Pretty cool!
+                    &lt;/uib-tab&gt;
+                    &lt;uib-tab index="3"&gt;
+                        &lt;uib-tab-heading&gt;
+                            &lt;span&gt;Tab title&lt;/span&gt;!
+                        &lt;/uib-tab-heading&gt;I've got an HTML heading, and a select callback. Pretty cool!
+                    &lt;/uib-tab&gt;
+                    &lt;uib-tab index="4"&gt;
+                        &lt;uib-tab-heading&gt;
+                            &lt;span&gt;Tab title&lt;/span&gt;!
+                        &lt;/uib-tab-heading&gt;I've got an HTML heading, and a select callback. Pretty cool!
+                    &lt;/uib-tab&gt;
+                &lt;/uib-tabset&gt;        
             </code>
             </pre>
-        </div>
-    </div>
+        </uib-tab>
+    </uib-tabset>
 </div>

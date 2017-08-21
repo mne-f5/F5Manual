@@ -56,13 +56,11 @@
 </div>
 
 <div class="code-holder col-sm-12" id="alert">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
             <pre>
             <code class="language-markup">
                 &lt;div class="alert alert-primary alert-icon alert-dismissible" role="alert"&gt;
@@ -74,6 +72,7 @@
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
+
                 &lt;div class="alert alert-secondary alert-icon alert-dismissible" role="alert"&gt;
                     &lt;div class="icon"&gt;
                         &lt;span class="lnr lnr-cloud"&gt;&lt;/span&gt;
@@ -83,12 +82,14 @@
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
+
                 &lt;div class="alert alert-negative alert-dismissible" role="alert"&gt;
                     &lt;strong&gt;Negative!&lt;/strong&gt;We wanna let you know something.
                     &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
+
                 &lt;div class="alert alert-warning alert-icon alert-dismissible" role="alert"&gt;
                     &lt;div class="icon"&gt;
                         &lt;span class="lnr lnr-warning"&gt;&lt;/span&gt;
@@ -98,6 +99,7 @@
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
+
                 &lt;div class="alert alert-success alert-icon alert-dismissible" role="alert"&gt;
                     &lt;div class="icon"&gt;
                         &lt;span class="lnr lnr-checkmark-circle"&gt;&lt;/span&gt;
@@ -107,6 +109,7 @@
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
                 &lt;/div&gt;
+
                 &lt;div class="alert alert-danger alert-icon alert-dismissible" role="alert"&gt;
                     &lt;div class="icon"&gt;
                         &lt;span class="lnr lnr-redo"&gt;&lt;/span&gt;
@@ -115,9 +118,9 @@
                     &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;
                         &lt;span class="lnr lnr-cross-circle"&gt;&lt;/span&gt;
                     &lt;/button&gt;
-                &lt;/div&gt;
+                &lt;/div&gt;     
             </code>
             </pre>
-        </div>
-    </div>
+        </uib-tab>
+    </uib-tabset>
 </div>

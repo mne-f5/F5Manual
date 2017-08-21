@@ -55,13 +55,12 @@
         </div>
 
         <div class="code-holder col-sm-12" id="pag">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
-            </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">
+            <uib-tabset active="active">
+                <uib-tab index="0">
+                    <uib-tab-heading>
+                        HTML
+                    </uib-tab-heading>
                     <pre>
                     <code class="language-markup">
                         &lt;nav aria-label=&quot;Page navigation&quot;&gt; 
@@ -93,12 +92,10 @@
                                 &lt;/li&gt; 
                             &lt;/ul&gt; 
                         &lt;/nav&gt;
-                                                   
                     </code>
                     </pre>
-                </div>
-            </div>
+                </uib-tab>
+            </uib-tabset>
         </div>
-
     </div>
 </div>

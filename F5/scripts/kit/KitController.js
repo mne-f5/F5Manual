@@ -167,7 +167,6 @@
 
     $scope.expandPanel = function (event) {
         var panel = $(event.target.parentNode.parentNode);
-        console.log(event);
         panel.toggleClass('expanded');
     };
 

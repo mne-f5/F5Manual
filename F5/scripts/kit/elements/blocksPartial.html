@@ -15,5 +15,56 @@
                 <p>Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.</p>
             </div>
         </div>
+        <div class="col-sm-6">
+            <h3 class="margin-bottom-32 text-center">Negative block popout on hover</h3>
+            <div class="box negative popout">
+                <h3>Block title</h3>
+                <p>Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.</p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h3 class="margin-bottom-32 text-center">Default block popout on hover</h3>
+            <div class="box popout">
+                <h3>Block title</h3>
+                <p>Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.</p>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#box')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="box">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
+            <pre>
+            <code class="language-markup">
+                &lt;div class="box"&gt;
+                    &lt;h3&gt;Block title&lt;/h3&gt;
+                    &lt;p&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/p&gt;
+                &lt;/div&gt; 
+                 &lt;div class="box negative"&gt;
+                    &lt;h3&gt;Block title&lt;/h3&gt;
+                    &lt;p&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/p&gt;
+                &lt;/div&gt;  
+                
+                // For effect on hover add class "popout" 
+                
+                &lt;div class="box popout"&gt;
+                    &lt;h3&gt;Block title&lt;/h3&gt;
+                    &lt;p&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/p&gt;
+                &lt;/div&gt;   
+            </code>
+            </pre>
+        </uib-tab>
+    </uib-tabset>
 </div>

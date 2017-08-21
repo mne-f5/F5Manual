@@ -3,8 +3,6 @@
 
     $scope.view = function (url) {
         url = url.replace('compressed/', '');
-        //console.log(url);
-
         return url;
     }
 

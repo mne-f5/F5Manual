@@ -1,7 +1,17 @@
 ﻿<div class="col-sm-12 wrapper">
     <h3 class="margin-bottom-32"><strong>Panels</strong></h3>
     <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-4 col-md-4">
+            <div class="panel">
+                <div class="panel-heading">
+                    Panel title
+                </div>
+                <div class="panel-body">
+                    Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
             <div class="panel">
                 <div class="panel-heading">
                     Panel title
@@ -12,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-4 col-md-4">
             <div class="panel">
                 <div class="panel-heading">
                     Panel title
@@ -35,65 +45,51 @@
 </div>
 
 <div class="code-holder col-sm-12" id="panel">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
             <pre>
             <code class="language-markup">
-                &lt;div class=&quot;panel panel-primary&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
-                &lt;/div&gt; 
-                &lt;div class=&quot;panel panel-secondary&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
-                &lt;/div&gt; 
-                &lt;div class=&quot;panel panel-negative&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
+                &lt;div class="panel"&gt;
+                    &lt;div class="panel-heading"&gt;Panel title&lt;/div&gt;
+                    &lt;div class="panel-body"&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/div&gt;
                 &lt;/div&gt;
-                &lt;div class=&quot;panel panel-warning&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
-                &lt;/div&gt; 
-                &lt;div class=&quot;panel panel-success&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
-                &lt;/div&gt; 
-                &lt;div class=&quot;panel panel-danger&quot;&gt; 
-                    &lt;div class=&quot;panel-heading&quot;&gt; 
-                        Panel title 
-                    &lt;/div&gt; 
-                    &lt;div class=&quot;panel-body&quot;&gt; 
-                        Panel body 
-                    &lt;/div&gt; 
-                &lt;/div&gt;                    
+                &lt;div class="panel"&gt;
+                    &lt;div class="panel-heading"&gt;Panel title
+                        &lt;i class="delete-btn lnr lnr-trash pull-right" ng-click="deletePanel($event)"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel-body"&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/div&gt;
+                &lt;/div&gt;  
+                &lt;div class="panel"&gt;
+                    &lt;div class="panel-heading"&gt;Panel title
+                        &lt;i class="expand-btn lnr lnr-frame-expand pull-right" ng-click="expandPanel($event)"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel-body"&gt;Integer vel tellus lectus. In hac habitasse platea dictumst. Sed a arcu ultricies, facilisis lacus id, volutpat libero. Nam eget tellus sapien.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus finibus et massa quis gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi accumsan tellus eu orci sagittis pellentesque.&lt;/div&gt;
+                &lt;/div&gt;      
             </code>
             </pre>
-        </div>
-    </div>
+        </uib-tab>
+        <uib-tab index="1">
+            <uib-tab-heading>
+                JS
+            </uib-tab-heading>
+            <pre>
+            <code class="language-javascript">
+                // Delete panel
+
+                     $scope.deletePanel = function (event) {
+                        event.target.offsetParent.remove();
+                    };
+                // Expand panel 
+
+                    $scope.expandPanel = function (event) {
+                        var panel = $(event.target.parentNode.parentNode);
+                        panel.toggleClass('expanded');
+                    };   
+            </code>
+            </pre>
+        </uib-tab>
+    </uib-tabset>
 </div>

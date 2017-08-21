@@ -27,21 +27,19 @@
     </div>
 
     <div class="code-holder col-sm-12" id='buttons'>
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a></li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">
+        <uib-tabset active="active">
+            <uib-tab index="0">
+                <uib-tab-heading>
+                    HTML
+                </uib-tab-heading>
                 <pre>
                 <code class="language-markup">
                     &lt;button class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt; 
                     &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/button&gt; 
-                    &lt;button class=&quot;btn btn-negative&quot;&gt;Negative Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-negative&quot;&gt;Negative Button&lt;/button&gt;      
                 </code>
                 </pre>
-            </div>
-        </div>
+            </uib-tab>
+        </uib-tabset> 
     </div>
 </div>

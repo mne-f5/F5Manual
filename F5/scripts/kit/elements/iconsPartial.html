@@ -15,3 +15,33 @@
         </div>
     </div>
 </div>
+
+<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#icon')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="icon">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
+            <pre>
+            <code class="language-markup">
+                // Active
+                    &lt;i class="lnr lnr-checkmark-circle success"&gt;&lt;/i&gt; 
+
+                // In progress
+                    &lt;i class="lnr lnr-lnr-hourglass pending"&gt;&lt;/i&gt;
+
+                // Disabled
+                    &lt;i class="lnr lnr-cross-circle disabled"&gt;&lt;/i&gt;
+            </code>
+            </pre>
+        </uib-tab>
+    </uib-tabset>
+</div>

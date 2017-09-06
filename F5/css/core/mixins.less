@@ -1,0 +1,17 @@
+﻿.screen-min(@minWidth; @rules) {
+    @media all and (min-width: @minWidth) {
+        @rules();
+    }
+}
+
+.screen-max(@maxWidth; @rules) {
+    @media all and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+
+.screen(@minWidth; @maxWidth; @rules) {
+    @media all and (min-width: @minWidth) and (max-width: @maxWidth) {
+        @rules();
+    }
+}

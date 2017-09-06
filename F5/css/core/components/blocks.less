@@ -1,0 +1,47 @@
+﻿@import url('core/variables.less');
+
+.box {
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+
+    &.negative {
+        background-color: @block-negative-bg;
+        color: @block-negative-color;
+
+
+        h3 {
+            color: @primary;
+            margin-top: 0;
+        }
+
+        &.popout {
+            &:hover {
+                -webkit-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+                box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    &.popout {
+        &:hover {
+            -webkit-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.18), 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}

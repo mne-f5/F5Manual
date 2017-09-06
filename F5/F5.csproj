@@ -94,116 +94,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\alerts.css">
-      <DependentUpon>alerts.less</DependentUpon>
-    </Content>
-    <Content Include="css\alerts.min.css">
-      <DependentUpon>alerts.css</DependentUpon>
-    </Content>
-    <Content Include="css\buttons.css">
-      <DependentUpon>buttons.less</DependentUpon>
-    </Content>
-    <Content Include="css\buttons.min.css">
-      <DependentUpon>buttons.css</DependentUpon>
-    </Content>
-    <Content Include="css\charts.css">
-      <DependentUpon>charts.less</DependentUpon>
-    </Content>
-    <Content Include="css\charts.min.css">
-      <DependentUpon>charts.css</DependentUpon>
-    </Content>
-    <Content Include="css\datepicker.css">
-      <DependentUpon>datepicker.less</DependentUpon>
-    </Content>
-    <Content Include="css\datepicker.min.css">
-      <DependentUpon>datepicker.css</DependentUpon>
-    </Content>
     <Content Include="css\F5IT.css">
       <DependentUpon>F5IT.less</DependentUpon>
     </Content>
     <Content Include="css\F5IT.min.css">
       <DependentUpon>F5IT.css</DependentUpon>
     </Content>
-    <Content Include="css\file-upload.css">
-      <DependentUpon>file-upload.less</DependentUpon>
-    </Content>
-    <Content Include="css\file-upload.min.css">
-      <DependentUpon>file-upload.css</DependentUpon>
-    </Content>
-    <Content Include="css\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="css\general.min.css">
-      <DependentUpon>general.css</DependentUpon>
-    </Content>
-    <Content Include="css\icons.css">
-      <DependentUpon>icons.less</DependentUpon>
-    </Content>
-    <Content Include="css\icons.min.css">
-      <DependentUpon>icons.css</DependentUpon>
-    </Content>
-    <Content Include="css\input-fields.css">
-      <DependentUpon>input-fields.less</DependentUpon>
-    </Content>
-    <Content Include="css\input-fields.min.css">
-      <DependentUpon>input-fields.css</DependentUpon>
-    </Content>
-    <Content Include="css\login.css">
-      <DependentUpon>login.less</DependentUpon>
-    </Content>
-    <Content Include="css\login.min.css">
-      <DependentUpon>login.css</DependentUpon>
-    </Content>
-    <Content Include="css\modal.css">
-      <DependentUpon>modal.less</DependentUpon>
-    </Content>
-    <Content Include="css\modal.min.css">
-      <DependentUpon>modal.css</DependentUpon>
-    </Content>
-    <Content Include="css\navigation.css">
-      <DependentUpon>navigation.less</DependentUpon>
-    </Content>
-    <Content Include="css\navigation.min.css">
-      <DependentUpon>navigation.css</DependentUpon>
-    </Content>
-    <Content Include="css\pagination.css">
-      <DependentUpon>pagination.less</DependentUpon>
-    </Content>
-    <Content Include="css\pagination.min.css">
-      <DependentUpon>pagination.css</DependentUpon>
-    </Content>
     <Content Include="css\prism.css" />
-    <Content Include="css\responsive.css">
-      <DependentUpon>responsive.less</DependentUpon>
-    </Content>
-    <Content Include="css\responsive.min.css">
-      <DependentUpon>responsive.css</DependentUpon>
-    </Content>
-    <Content Include="css\tables.css">
-      <DependentUpon>tables.less</DependentUpon>
-    </Content>
-    <Content Include="css\tables.min.css">
-      <DependentUpon>tables.css</DependentUpon>
-    </Content>
-    <Content Include="css\tabs.css">
-      <DependentUpon>tabs.less</DependentUpon>
-    </Content>
-    <Content Include="css\tabs.min.css">
-      <DependentUpon>tabs.css</DependentUpon>
-    </Content>
-    <Content Include="css\tooltip.css">
-      <DependentUpon>tooltip.less</DependentUpon>
-    </Content>
-    <Content Include="css\tooltip.min.css">
-      <DependentUpon>tooltip.css</DependentUpon>
-    </Content>
     <Content Include="css\ui-kit.css" />
-    <Content Include="css\user-images.css">
-      <DependentUpon>user-images.less</DependentUpon>
-    </Content>
-    <Content Include="css\user-images.min.css">
-      <DependentUpon>user-images.css</DependentUpon>
-    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Linearicons-Free.svg" />
     <Content Include="images\brand\Business Card Mockup 01.jpg" />
@@ -383,31 +281,37 @@
     <Content Include="js\maps\europe.json" />
     <Content Include="js\topojson\LICENSE.md" />
     <Content Include="js\topojson\README.md" />
-    <Content Include="css\navigation.less" />
-    <Content Include="css\variables.less" />
-    <Content Include="css\buttons.less" />
-    <Content Include="css\input-fields.less" />
-    <Content Include="css\tables.less" />
+    <Content Include="css\core\components\navigation.less" />
+    <Content Include="css\core\variables.less" />
+    <Content Include="css\core\components\buttons.less" />
+    <Content Include="css\core\components\input-fields.less" />
+    <Content Include="css\core\components\tables.less" />
+    <Content Include="css\core\components\pagination.less" />
+    <Content Include="css\core\components\panels.less" />
+    <Content Include="css\core\components\badges.less" />
+    <Content Include="css\core\components\charts.less" />
+    <Content Include="css\core\components\spinners.less" />
+    <Content Include="css\core\components\alerts.less" />
+    <Content Include="css\core\components\progress-bars.less" />
+    <Content Include="css\core\pages\login.less" />
+    <Content Include="css\core\pages\404.less" />
+    <Content Include="css\core\responsive\responsive.less" />
+    <Content Include="css\core\components\modal.less" />
+    <Content Include="css\core\components\tabs.less" />
+    <Content Include="css\core\components\tooltip.less" />
+    <Content Include="css\core\components\datepicker.less" />
+    <Content Include="css\core\components\icons.less" />
+    <Content Include="css\core\components\user-images.less" />
+    <Content Include="css\core\components\file-upload.less" />
+    <Content Include="css\core\utils.less" />
+    <Content Include="css\core\components\blocks.less" />
     <Content Include="css\F5IT.less" />
-    <Content Include="css\pagination.less" />
-    <Content Include="css\panels.less" />
-    <Content Include="css\badges.less" />
-    <Content Include="css\charts.less" />
-    <Content Include="css\spinners.less" />
-    <Content Include="css\alerts.less" />
-    <Content Include="css\progress-bars.less" />
-    <Content Include="css\login.less" />
-    <Content Include="css\404.less" />
-    <Content Include="css\responsive.less" />
-    <Content Include="css\modal.less" />
-    <Content Include="css\tabs.less" />
-    <Content Include="css\tooltip.less" />
-    <Content Include="css\datepicker.less" />
-    <Content Include="css\icons.less" />
-    <Content Include="css\user-images.less" />
-    <Content Include="css\file-upload.less" />
-    <Content Include="css\general.less" />
-    <Content Include="css\blocks.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="css\core\mixins.less" />
+    <Content Include="downloads\F5IT.v1.zip" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -420,10 +324,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <None Include="compilerconfig.json" />
-    <None Include="compilerconfig.json.defaults">
-      <DependentUpon>compilerconfig.json</DependentUpon>
-    </None>
     <Content Include="css\app.css">
       <DependentUpon>app.less</DependentUpon>
     </Content>

@@ -1,0 +1,30 @@
+﻿@import url('core/variables.less');
+
+
+.user-img {
+    position: relative;
+    display: inline-block;
+    width: @img-width;
+    height: @img-height;
+    padding: 0;
+    overflow: hidden;
+    line-height: inherit;
+    vertical-align: middle;
+    background-color: @img-bg;
+    border-radius: 100%;
+
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    &.medium {
+        width: 56px;
+        height: 56px;
+    }
+
+    &.large {
+        width: 64px;
+        height: 64px;
+    }
+}

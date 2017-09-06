@@ -1,0 +1,90 @@
+﻿@import url('core/variables.less');
+.line {
+    .nav-tabs {
+        border: none;
+
+        li {
+            a {
+                border: none;
+                font-weight: 500;
+                text-transform: uppercase;
+                position: relative;
+                padding: 16px;
+                margin-right: 12px;
+                color: @tab-link-color;
+                -webkit-transition: all ease-in .3s;
+                -moz-transition: all ease-in .3s;
+                -ms-transition: all ease-in .3s;
+                -o-transition: all ease-in .3s;
+                transition: all ease-in .3s;
+                overflow: hidden;
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: @tab-hover-color;
+
+                    &:after {
+                        background-color: @tab-hover-color;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: @tab-line-color;
+                    -webkit-transition: background-color 0.3s, transform 0.3s;
+                    -moz-transition: background-color 0.3s, transform 0.3s;
+                    -ms-transition: background-color 0.3s, transform 0.3s;
+                    -o-transition: background-color ease-in .3s;
+                    transition: background-color 0.3s, transform 0.3s;
+                    -webkit-transform: translate3d(0,100%,0) translate3d(0,-3px,0);
+                    -moz-transform: translate3d(0,100%,0) translate3d(0,-3px,0);
+                    -ms-transform: translate3d(0,100%,0) translate3d(0,-3px,0);
+                    -o-transform: translate3d(0,100%,0) translate3d(0,-3px,0);
+                    transform: translate3d(0,100%,0) translate3d(0,-3px,0);
+                }
+            }
+
+            &.active {
+                a {
+                    border: none;
+
+                    span {
+                        color: @tab-link-hover-color;
+                    }
+
+                    &:after {
+                        -webkit-transform: translate3d(0,0,0);
+                        -moz-transform: translate3d(0,0,0);
+                        -ms-transform: translate3d(0,0,0);
+                        -o-transform: translate3d(0,0,0);
+                        transform: translate3d(0,0,0);
+                        background-color: @tab-hover-color;
+                    }
+
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        margin-bottom: 8px;
+        padding: 16px;
+        min-height: 150px;
+        border-bottom: 1px solid @tab-line-color;
+        color: #000;
+    }
+}

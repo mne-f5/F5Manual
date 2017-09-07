@@ -1,4 +1,36 @@
-﻿.screen-min(@minWidth; @rules) {
+﻿.transform(@string) {
+    -webkit-transform: @string;
+    -moz-transform: @string;
+    -ms-transform: @string;
+    -o-transform: @string;
+    transform: @string;
+}
+
+.transition(@string) {
+    -webkit-transition: @string;
+    -moz-transition: @string;
+    -ms-transition: @string;
+    -o-transition: @string;
+    transition: @string;
+}
+
+.vertical-align (@position) {
+    position: @position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.no-shadow (@string: none) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow: @string;
+    box-shadow: @string;
+}
+
+.screen-min(@minWidth; @rules) {
     @media all and (min-width: @minWidth) {
         @rules();
     }

@@ -2,5 +2,9 @@
   {
     "outputFile": "css/F5IT.css",
     "inputFile": "css/F5IT.less"
+  },
+  {
+    "outputFile": "css/app.css",
+    "inputFile": "css/app.less"
   }
 ]

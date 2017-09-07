@@ -1,6 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 * {
   outline: none !important;
+  text-decoration: none!important;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -197,6 +198,10 @@ h3 {
 .italic {
   font-style: italic;
 }
+/*************************************************/
+.db {
+  display: block;
+}
 .navigation {
   position: relative;
   background-color: #fff;
@@ -241,6 +246,7 @@ h3 {
   -ms-transition: all ease-in 0.3s;
   -o-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
+  min-height: 80px;
 }
 .navigation .menu.left li a i {
   margin-right: 5px;
@@ -284,7 +290,7 @@ h3 {
 .navigation .menu.right li a {
   font-size: 12px;
   display: block;
-  padding: 31px 16px;
+  padding: 30px 16px;
   color: #000;
   cursor: pointer;
 }
@@ -502,7 +508,7 @@ h3 {
   padding-top: 65px;
 }
 .main-content {
-  padding-top: 70px;
+  padding-top: 95px;
 }
 .top-fixed {
   position: fixed;
@@ -1116,7 +1122,13 @@ textarea {
 .card.widget {
   float: left;
   width: 100%;
-  margin: 0 0 16px 0;
+  margin: 4px;
+  height: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  width: 250px;
+  min-width: 200px;
+  max-width: 300px;
 }
 .card.widget:before {
   background-color: transparent !important;
@@ -1124,6 +1136,7 @@ textarea {
 .card.widget .card-content {
   float: left;
   width: 100%;
+  padding: 16px 13px;
 }
 .card.widget .card-content .tile {
   float: left;
@@ -1132,7 +1145,7 @@ textarea {
 .card.widget .card-content .tile .content {
   float: right;
   width: 100%;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 .card.widget .card-content .tile .content h3 {
   margin: 8px 0;
@@ -1149,7 +1162,7 @@ textarea {
 }
 .card.widget .card-content .tile .content a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   color: #1980ff;
 }
@@ -3427,7 +3440,7 @@ i.disabled {
   body .btn-holder {
     position: absolute;
     left: 0;
-    margin: 0 0 0 15px;
+    margin: 0;
     height: 49px;
     width: 49px;
     background-color: transparent;
@@ -3480,7 +3493,15 @@ i.disabled {
     background-color: transparent;
   }
   body .navigation .btn-holder {
-    margin: 0;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  body .navigation .btn-holder .menu-btn span {
+    background-color: #353439;
+  }
+  body .navigation .btn-holder .menu-btn span:before,
+  body .navigation .btn-holder .menu-btn span:after {
+    background-color: #353439;
   }
   body .navigation .logo-holder {
     float: none;
@@ -3497,6 +3518,14 @@ i.disabled {
     -o-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     opacity: 0;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    overflow: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: auto;
   }
   body .navigation .navbar-content .menu ul {
     padding: 0;
@@ -3524,6 +3553,24 @@ i.disabled {
   body .navigation .navbar-content .menu.right {
     float: none;
     width: 100%;
+  }
+  body .navigation .navbar-content .menu.left li a {
+    font-size: 14px;
+    padding: 16px;
+  }
+  body .navigation .navbar-content .menu.left li a i {
+    font-size: 18px;
+  }
+  body .navigation .navbar-content .menu.left li a:after {
+    height: 2px;
+  }
+  body .navigation .navbar-content .menu.right li a {
+    padding: 16px;
+  }
+  body .navigation .navbar-content .menu .dropdown-menu {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   body .side-navbar .side-menu {
     -webkit-box-shadow: none;
@@ -3612,28 +3659,89 @@ i.disabled {
     padding-left: 215px;
   }
 }
-@media all and (min-width: 768px) and (max-width: 1730px) {
-  body .navigation .logo-holder {
-    float: none;
-    display: block;
-  }
-  body .navigation .menu.left {
-    float: none;
-    padding-top: 10px;
-  }
-  body .navigation .menu.right {
-    float: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  body .navigation .menu ul li {
-    float: none;
-    display: inline-block;
-  }
-}
 @media all and (min-width: 1200px) {
   body .chart-container {
     height: 400px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  body .navigation .logo-holder {
+    float: left;
+    display: inline-block;
+  }
+  body .navigation .menu.left {
+    padding-top: 0;
+  }
+  body .navigation .menu.left ul {
+    padding: 0;
+  }
+  body .navigation .menu.left ul li a {
+    font-size: 13px;
+    padding: 16px;
+    min-height: 80px;
+    text-align: center;
+  }
+  body .navigation .menu.left ul li a i {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+  }
+  body .navigation .menu.right ul {
+    padding-left: 0;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1300px) {
+  body .navigation .menu.left ul li a {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  body .navigation .menu.left ul {
+    padding: 0;
+  }
+  body .navigation .menu.left ul li a {
+    font-size: 13px;
+    padding: 16px;
+    min-height: 80px;
+    text-align: center;
+  }
+  body .navigation .menu.left ul li a i {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+  }
+  body .navigation .menu.right ul {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 640px) {
+  body .card.widget .card-content {
+    padding: 6px;
+  }
+  body .card.widget .card-content .tile .icon {
+    position: relative;
+    top: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    padding: 0 8px;
+    text-align: center;
+  }
+  body .card.widget .card-content .tile .icon i {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  body .card.widget .card-content .tile .content {
+    float: none;
+    padding: 0 8px;
+    text-align: center;
+  }
+  body .card.widget .card-content .tile .content span {
+    font-size: 20px;
+  }
+  body .card.widget .card-content .tile .content a {
+    font-size: 10px;
   }
 }

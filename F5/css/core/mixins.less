@@ -24,6 +24,18 @@
     transform: translateY(-50%);
 }
 
+.shadows (@string: 0 2px 5px 0 rgba(0,0,0,0.16), @string: 0 2px 10px 0 rgba(0,0,0,0.12)) {
+    -webkit-box-shadow: @string, @string;
+    -moz-box-shadow: @string, @string;
+    box-shadow: @string, @string;
+}
+
+.shadow (@string: 0 2px 5px rgba(0,0,0,.26)) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow: @string;
+    box-shadow: @string;
+}
+
 .no-shadow (@string: none) {
     -webkit-box-shadow: @string;
     -moz-box-shadow: @string;

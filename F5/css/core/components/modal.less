@@ -3,14 +3,10 @@
 
     .modal-dialog {
         position: absolute;
-        top: 50%;
-        -webkit-transform: translate(-50%,-50%) !important;
-        -moz-transform: translate(-50%,-50%) !important;
-        -ms-transform: translate(-50%,-50%) !important;
-        -o-transform: translate(-50%,-50%) !important;
-        transform: translate(-50%,-50%) !important;
-        left: 50%;
+        left: 0;
+        right: 0;
         transition: all .5s ease !important;
+        margin: 0 auto;
 
         .modal-header {
             background: white;
@@ -27,8 +23,8 @@
             }
 
             .close {
-                margin-top:8px;
-                    margin-right: 8px;
+                margin-top: 8px;
+                margin-right: 8px;
             }
         }
 
@@ -51,12 +47,28 @@
         display: block;
     }
 
+    &.fade {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+
+        .modal-dialog {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+    }
+
     &.fade.in {
-        -webkit-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -o-transform: none !important;
-        transform: none !important;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
     }
 
     &.hiding {
@@ -65,12 +77,21 @@
 
     &.modal-scale {
         &.in {
-            animation: modal-scale-animation .5s ease;
+            .modal-dialog {
+                animation: modal-scale-animation .5s ease;
+                .transform(translateY(-50%));
+                top: 50%;
+            }
         }
 
         &.hiding {
-            animation: modal-scale-animation-out .25s ease;
-            display: block;
+
+            .modal-dialog {
+                .transform(translateY(-50%));
+                top: 50%;
+                animation: modal-scale-animation-out .25s ease;
+                display: block;
+            }
         }
     }
 
@@ -176,9 +197,6 @@
         &.in {
             .modal-dialog {
                 animation: modal-sticky-top-animation .5s ease;
-                margin-top: 0 !important;
-                top: 0;
-                transform: translate(-50%, 0) !important;
             }
         }
 
@@ -192,20 +210,17 @@
     &.sticky-bottom {
         &.in {
             .modal-dialog {
-                animation: modal-sticky-bottom-animation .5s ease;
-                bottom: 0;
-                margin-bottom: 0;
-                top: auto;
-                transform: translate(-50%, 0) !important;
+                /*animation: modal-sticky-bottom-animation .5s ease;*/
+                top: 100%;
+                .transform(translateY(-100%));
             }
         }
 
         &.hiding {
             .modal-dialog {
-                animation: modal-sticky-bottom-animation-out .25s ease;
-                bottom: 0;
-                margin-bottom: 0;
-                top: auto;
+                /*animation: modal-sticky-bottom-animation-out .25s ease;*/
+                top: 100%;
+                .transform(translateY(100%));
             }
         }
     }
@@ -266,24 +281,26 @@ body.modal-bounce-zoom {
 @keyframes modal-scale-animation {
     from {
         opacity: 0;
-        transform: scale(2, 2);
+        .transform(scale(2, 2), translateY(-50%));
+        top: 50%;
     }
 
     to {
         opacity: 1;
-        transform: scale(1, 1);
+        .transform(scale(1, 1), translateY(-50%));
+        top: 50%;
     }
 }
 
 @keyframes modal-scale-animation-out {
     from {
         opacity: 1;
-        transform: scale(1, 1);
+        .transform(scale(1, 1));
     }
 
     to {
         opacity: 0;
-        transform: scale(2, 2);
+        .transform(scale(2, 2));
     }
 }
 
@@ -433,33 +450,33 @@ body.modal-bounce-zoom {
 
 @keyframes modal-sticky-top-animation {
     from {
-        top: -100%;
+        .transform(translateY(-100%));
     }
 
     to {
-        top: 0%;
+        .transform(translateY(0));
     }
 }
 
 @keyframes modal-sticky-top-animation-out {
     from {
-        top: 0;
+        .transform(translateY(0));
     }
 
     to {
-        top: -100%;
+        .transform(translateY(-100%));
     }
 }
 
-@keyframes modal-sticky-bottom-animation {
+/*@keyframes modal-sticky-bottom-animation {
     from {
-        bottom: -100%;
+        .transform(translateY(0));
     }
 
     to {
-        bottom: 0;
+        .transform(translateY(-100%));
     }
-}
+}*/
 
 @keyframes modal-sticky-bottom-animation-out {
     from {

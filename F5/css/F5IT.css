@@ -1778,14 +1778,10 @@ textarea {
 }
 .modal .modal-dialog {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%) !important;
-  -moz-transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%) !important;
-  -o-transform: translate(-50%, -50%) !important;
-  transform: translate(-50%, -50%) !important;
-  left: 50%;
+  left: 0;
+  right: 0;
   transition: all .5s ease !important;
+  margin: 0 auto;
 }
 .modal .modal-dialog .modal-header {
   background: white;
@@ -1819,20 +1815,46 @@ textarea {
 .modal.hiding {
   display: block;
 }
+.modal.fade {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
 .modal.fade.in {
-  -webkit-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -o-transform: none !important;
-  transform: none !important;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 .modal.hiding {
   animation: modal-fade-animation-out 0.25s ease;
 }
-.modal.modal-scale.in {
+.modal.modal-scale.in .modal-dialog {
   animation: modal-scale-animation 0.5s ease;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
 }
-.modal.modal-scale.hiding {
+.modal.modal-scale.hiding .modal-dialog {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
   animation: modal-scale-animation-out 0.25s ease;
   display: block;
 }
@@ -1880,25 +1902,27 @@ textarea {
 }
 .modal.sticky-top.in .modal-dialog {
   animation: modal-sticky-top-animation 0.5s ease;
-  margin-top: 0 !important;
-  top: 0;
-  transform: translate(-50%, 0) !important;
 }
 .modal.sticky-top.hiding .modal-dialog {
   animation: modal-sticky-top-animation-out 0.25s ease;
 }
 .modal.sticky-bottom.in .modal-dialog {
-  animation: modal-sticky-bottom-animation 0.5s ease;
-  bottom: 0;
-  margin-bottom: 0;
-  top: auto;
-  transform: translate(-50%, 0) !important;
+  /*animation: modal-sticky-bottom-animation .5s ease;*/
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .modal.sticky-bottom.hiding .modal-dialog {
-  animation: modal-sticky-bottom-animation-out 0.25s ease;
-  bottom: 0;
-  margin-bottom: 0;
-  top: auto;
+  /*animation: modal-sticky-bottom-animation-out .25s ease;*/
+  top: 100%;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
 }
 .modal.rotate-top {
   perspective: 200px;
@@ -1939,20 +1963,38 @@ body.modal-bounce-zoom {
 @keyframes modal-scale-animation {
   from {
     opacity: 0;
-    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2) translateY(-50%);
+    -moz-transform: scale(2, 2) translateY(-50%);
+    -ms-transform: scale(2, 2) translateY(-50%);
+    -o-transform: scale(2, 2) translateY(-50%);
+    transform: scale(2, 2) translateY(-50%);
+    top: 50%;
   }
   to {
     opacity: 1;
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1) translateY(-50%);
+    -moz-transform: scale(1, 1) translateY(-50%);
+    -ms-transform: scale(1, 1) translateY(-50%);
+    -o-transform: scale(1, 1) translateY(-50%);
+    transform: scale(1, 1) translateY(-50%);
+    top: 50%;
   }
 }
 @keyframes modal-scale-animation-out {
   from {
     opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   to {
     opacity: 0;
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
     transform: scale(2, 2);
   }
 }
@@ -2074,28 +2116,45 @@ body.modal-bounce-zoom {
 }
 @keyframes modal-sticky-top-animation {
   from {
-    top: -100%;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
   to {
-    top: 0%;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes modal-sticky-top-animation-out {
   from {
-    top: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
   }
   to {
-    top: -100%;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
-@keyframes modal-sticky-bottom-animation {
-  from {
-    bottom: -100%;
-  }
-  to {
-    bottom: 0;
-  }
-}
+/*@keyframes modal-sticky-bottom-animation {
+    from {
+        .transform(translateY(0));
+    }
+
+    to {
+        .transform(translateY(-100%));
+    }
+}*/
 @keyframes modal-sticky-bottom-animation-out {
   from {
     bottom: 0;
@@ -3561,11 +3620,11 @@ i.disabled {
     top: 50%;
   }
   body .navigation .btn-holder .menu-btn span {
-    background-color: #fff;
+    background-color: #353439;
   }
   body .navigation .btn-holder .menu-btn span:before,
   body .navigation .btn-holder .menu-btn span:after {
-    background-color: #fff;
+    background-color: #353439;
   }
   body .navigation .logo-holder {
     float: none;
@@ -3862,6 +3921,17 @@ i.disabled {
   body .side-navbar .side-menu .items-holder .overlay {
     width: 30%;
     left: 70%;
+  }
+  body .modal .modal-dialog {
+    width: 100%;
+  }
+  body .modal .modal-dialog .modal-body {
+    padding: 16px;
+    font-size: 12px;
+    margin: 0;
+  }
+  body .modal .modal-dialog .modal-body button {
+    font-size: 12px;
   }
 }
 @media all and (min-width: 769px) {

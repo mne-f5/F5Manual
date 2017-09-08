@@ -36,7 +36,7 @@
   display: inline-block;
   width: 18px;
   height: 2px;
-  background-color: #fff;
+  background-color: #fff!important;
   position: absolute;
   top: 24px;
   left: 0;
@@ -57,7 +57,7 @@
   margin: 0 auto;
   width: inherit;
   height: inherit;
-  background-color: #fff;
+  background-color: #fff!important;
   transition: transform .35s;
 }
 .menu-holder .menu-btn span:before {
@@ -620,6 +620,12 @@ header.app .header-wrapper h3 {
     bottom: 0;
     min-height: 200px;*/
 }
+.ex-2 .items-holder {
+  min-height: 400px;
+}
+.ex-2 .menu-side {
+  width: 256px;
+}
 /* PAGE EXAMPLE */
 .top-menu-example,
 .side-menu-example {
@@ -727,7 +733,7 @@ header.app .header-wrapper h3 {
   color: #000;
 }
 .db {
-  display: block!important;
+  display: block !important;
 }
 /* Media queries  */
 @media all and (max-width: 360px) {
@@ -840,7 +846,7 @@ header.app .header-wrapper h3 {
   }
   .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span {
     transform: rotate(-180deg);
-    background-color: #fff;
+    background-color: #fff!important;
   }
   .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span::before {
     transform: translate(5px, 3px) rotate(45deg);

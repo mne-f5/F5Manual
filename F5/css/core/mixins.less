@@ -1,17 +1,17 @@
-﻿.transform(@string) {
-    -webkit-transform: @string;
-    -moz-transform: @string;
-    -ms-transform: @string;
-    -o-transform: @string;
-    transform: @string;
+﻿.transform(@rest...) {
+    -webkit-transform: @rest;
+    -moz-transform: @rest;
+    -ms-transform: @rest;
+    -o-transform: @rest;
+    transform: @rest;
 }
 
-.transition(@string) {
-    -webkit-transition: @string;
-    -moz-transition: @string;
-    -ms-transition: @string;
-    -o-transition: @string;
-    transition: @string;
+.transition(@rules) {
+    -webkit-transition: @rules;
+    -moz-transition: @rules;
+    -ms-transition: @rules;
+    -o-transition: @rules;
+    transition: @rules;
 }
 
 .vertical-align (@position) {

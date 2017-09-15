@@ -127,12 +127,18 @@
         &.in {
             .modal-dialog {
                 animation: modal-slide-left-animation .5s ease;
+                top: 50%;
+                left: 0;
+                .transform(translate(0,-50%));
             }
         }
 
         &.hiding {
             .modal-dialog {
                 animation: modal-slide-left-animation-out .25s ease;
+                top: 50%;
+                left: -100%;
+                .transform(translate(-100%,-50%));
             }
         }
     }
@@ -141,12 +147,18 @@
         &.in {
             .modal-dialog {
                 animation: modal-slide-right-animation .5s ease;
+                top: 50%;
+                right: 0;
+                .transform(translate(0,-50%));
             }
         }
 
         &.hiding {
             .modal-dialog {
                 animation: modal-slide-right-animation-out .25s ease;
+                top: 50%;
+                right: -100%;
+                .transform(translate(-100%,-50%));
             }
         }
     }
@@ -155,6 +167,7 @@
         &.in {
             .modal-dialog {
                 animation: modal-slide-bottom-animation .5s ease;
+                bottom: 0;
             }
         }
 
@@ -329,82 +342,110 @@ body.modal-bounce-zoom {
 }
 
 @keyframes modal-slide-top-animation {
-    from {
-        top: -100%;
+    0% {
+        .transform(translateY(-100%));
     }
 
-    to {
-        top: 50%;
+    50% {
+        .transform(translateY(50%));
+    }
+
+    100% {
+        .transform(translateY(0));
     }
 }
 
 @keyframes modal-slide-top-animation-out {
-    from {
-        top: 50%;
+    0% {
+        .transform(translateY(0));
     }
 
-    to {
-        top: -100%;
+    100% {
+        .transform(translateY(-100%));
     }
 }
 
 @keyframes modal-slide-left-animation {
-    from {
+    0% {
         left: -100%;
+        top: 50%;
+        .transform(translate(-100%,-50%));
     }
 
-    to {
-        left: 50%;
+    100% {
+        left: 0;
+        top: 50%;
+        .transform(translate(0,-50%));
     }
 }
 
 @keyframes modal-slide-left-animation-out {
-    from {
-        left: 50%;
+    0% {
+        left: 0;
+        top: 50%;
+        .transform(translate(0,-50%));
     }
 
-    to {
+    100% {
         left: -100%;
+        top: 50%;
+        .transform(translate(-100%,-50%));
     }
 }
 
 @keyframes modal-slide-right-animation {
     from {
-        left: 100%;
+        right: -100%;
+        top: 50%;
+        .transform(translate(100%,-50%));
     }
 
     to {
-        left: 50%;
+        right: 0;
+        top: 50%;
+        .transform(translate(0,-50%));
     }
 }
 
 @keyframes modal-slide-right-animation-out {
     from {
-        left: 50%;
+        left: 0;
+        top: 50%;
+        .transform(translate(0,-50%));
     }
 
     to {
-        left: 100%;
+        left: 0;
+        top: 50%;
+        .transform(translate(0,-50%));
     }
 }
 
 @keyframes modal-slide-bottom-animation {
-    from {
-        top: 100%;
+    0% {
+        bottom: -100%;
     }
 
-    to {
-        top: 50%;
+    50% {
+        bottom: 30%;
+    }
+
+    100% {
+        bottom: 0;
     }
 }
 
 @keyframes modal-slide-bottom-animation-out {
-    from {
-        top: 50%;
+    0% {
+        bottom: 0;
     }
 
-    to {
-        top: 100%;
+    50% {
+        bottom: -30%;
+    }
+
+    100% {
+        bottom: -100%;
     }
 }
 

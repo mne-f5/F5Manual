@@ -1872,18 +1872,47 @@ textarea {
 }
 .modal.slide-in-left.in .modal-dialog {
   animation: modal-slide-left-animation 0.5s ease;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .modal.slide-in-left.hiding .modal-dialog {
   animation: modal-slide-left-animation-out 0.25s ease;
+  top: 50%;
+  left: -100%;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
 }
 .modal.slide-in-right.in .modal-dialog {
   animation: modal-slide-right-animation 0.5s ease;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .modal.slide-in-right.hiding .modal-dialog {
   animation: modal-slide-right-animation-out 0.25s ease;
+  top: 50%;
+  right: -100%;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
 }
 .modal.slide-in-bottom.in .modal-dialog {
   animation: modal-slide-bottom-animation 0.5s ease;
+  bottom: 0;
 }
 .modal.slide-in-bottom.hiding .modal-dialog {
   animation: modal-slide-bottom-animation-out 0.25s ease;
@@ -2019,67 +2048,144 @@ body.modal-bounce-zoom {
   }
 }
 @keyframes modal-slide-top-animation {
-  from {
-    top: -100%;
+  0% {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
-  to {
-    top: 50%;
+  50% {
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes modal-slide-top-animation-out {
-  from {
-    top: 50%;
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
   }
-  to {
-    top: -100%;
+  100% {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 }
 @keyframes modal-slide-left-animation {
-  from {
+  0% {
     left: -100%;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
   }
-  to {
-    left: 50%;
+  100% {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 }
 @keyframes modal-slide-left-animation-out {
-  from {
-    left: 50%;
+  0% {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
-  to {
+  100% {
     left: -100%;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
   }
 }
 @keyframes modal-slide-right-animation {
   from {
-    left: 100%;
+    right: -100%;
+    top: 50%;
+    -webkit-transform: translate(100%, -50%);
+    -moz-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    -o-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
   }
   to {
-    left: 50%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 }
 @keyframes modal-slide-right-animation-out {
   from {
-    left: 50%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
   to {
-    left: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 }
 @keyframes modal-slide-bottom-animation {
-  from {
-    top: 100%;
+  0% {
+    bottom: -100%;
   }
-  to {
-    top: 50%;
+  50% {
+    bottom: 30%;
+  }
+  100% {
+    bottom: 0;
   }
 }
 @keyframes modal-slide-bottom-animation-out {
-  from {
-    top: 50%;
+  0% {
+    bottom: 0;
   }
-  to {
-    top: 100%;
+  50% {
+    bottom: -30%;
+  }
+  100% {
+    bottom: -100%;
   }
 }
 @keyframes modal-expand-horiz-animation {

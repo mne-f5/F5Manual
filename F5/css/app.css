@@ -16,6 +16,9 @@
 .radios .radio-holder {
   display: block;
 }
+#navigation .ex-1 a {
+  font-size: 14px;
+}
 .menu-holder {
   position: absolute;
   top: 0;
@@ -36,7 +39,7 @@
   display: inline-block;
   width: 18px;
   height: 2px;
-  background-color: #fff!important;
+  background-color: #fff !important;
   position: absolute;
   top: 24px;
   left: 0;
@@ -57,7 +60,7 @@
   margin: 0 auto;
   width: inherit;
   height: inherit;
-  background-color: #fff!important;
+  background-color: #fff !important;
   transition: transform .35s;
 }
 .menu-holder .menu-btn span:before {
@@ -604,7 +607,6 @@ header.app .header-wrapper h3 {
 .ex-2 .header-section {
   position: absolute;
   background-color: #fff;
-  border: 1px solid #ededed;
 }
 .ex-2 .side-navbar {
   position: relative;
@@ -846,7 +848,7 @@ header.app .header-wrapper h3 {
   }
   .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span {
     transform: rotate(-180deg);
-    background-color: #fff!important;
+    background-color: #fff !important;
   }
   .navigation-menu .menu-holder .slide.open .btn-holder .menu-btn span::before {
     transform: translate(5px, 3px) rotate(45deg);
@@ -903,6 +905,24 @@ header.app .header-wrapper h3 {
     -ms-transform: none;
     -o-transform: none;
     transform: none;
+  }
+  #navigation .navbar-content {
+    position: absolute !important;
+    min-height: 400px;
+  }
+  #navigation .ex-1 {
+    min-height: 400px;
+  }
+  #navigation .ex-2 {
+    min-height: 400px;
+  }
+  #navigation .ex-2 .side-navbar {
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  #navigation .ex-2 .items-holder {
+    position: absolute !important;
   }
 }
 @media all and (min-width: 768px) {

@@ -2748,6 +2748,7 @@ i.disabled {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
 }
 .drop-box-holder .head-section {
   background-color: #1980ff;

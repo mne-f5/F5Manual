@@ -716,6 +716,23 @@ header.app .header-wrapper h3 {
 .sec {
   margin-bottom: 50px;
 }
+.wrapped li {
+  border: 2px solid #e7eaf1;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.wrapped li span,
+.wrapped li p {
+  float: none!important;
+}
+.wrapped li p {
+  display: block!important;
+}
+.wrapped li span {
+  text-align: center;
+  margin: 0 auto;
+}
 #help ul {
   list-style-type: none;
   padding: 0;
@@ -732,6 +749,8 @@ header.app .header-wrapper h3 {
 #help ul li p {
   display: inline-block;
   float: right;
+}
+#help p {
   color: #000;
 }
 .db {

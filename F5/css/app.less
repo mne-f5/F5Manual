@@ -901,6 +901,28 @@ header.app {
     margin-bottom: 50px;
 }
 
+.wrapped {
+    li {
+    border: 2px solid #e7eaf1;
+        padding: 16px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+
+        span,p {
+            float: none!important;
+        }
+
+        p {
+            display: block!important;
+        }
+
+        span {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
 // Help classes
 
 #help {
@@ -921,9 +943,12 @@ header.app {
             p {
                 display: inline-block;
                 float: right;
-                color: #000;
             }
         }
+    }
+
+    p {
+        color: #000;
     }
 }
 

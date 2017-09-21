@@ -305,13 +305,13 @@
     <Content Include="css\core\components\file-upload.less" />
     <Content Include="css\core\utils.less" />
     <Content Include="css\core\components\blocks.less" />
+    <Content Include="css\core\mixins.less" />
+    <Content Include="downloads\F5IT.v1.zip" />
+    <Content Include="css\core\F5IT.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="css\core\mixins.less" />
-    <Content Include="downloads\F5IT.v1.zip" />
-    <Content Include="css\core\F5IT.less" />
     <None Include="Properties\PublishProfiles\dd.pubxml" />
     <None Include="Properties\PublishProfiles\ss.pubxml" />
     <None Include="Properties\PublishProfiles\zas.pubxml" />
@@ -350,6 +350,10 @@
     <Content Include="scripts\charts\progressChart.js" />
     <Content Include="scripts\charts\pieChart.js" />
     <Content Include="scripts\homePartial.html" />
+    <Content Include="scripts\kit\code\charts\donutCode.html" />
+    <Content Include="scripts\kit\code\charts\lineCode.html" />
+    <Content Include="scripts\kit\code\charts\pieCode.html" />
+    <Content Include="scripts\kit\code\charts\columnCode.html" />
     <Content Include="scripts\kit\elements\blocksPartial.html" />
     <Content Include="scripts\kit\elements\fileuploadPartial.html" />
     <Content Include="scripts\kit\elements\gchartsPartial.html" />

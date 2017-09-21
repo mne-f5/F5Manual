@@ -1,7 +1,7 @@
 ﻿[
   {
-    "outputFile": "css/F5IT.css",
-    "inputFile": "css/F5IT.less"
+    "outputFile": "css/core/F5IT.css",
+    "inputFile": "css/core/F5IT.less"
   },
   {
     "outputFile": "css/app.css",

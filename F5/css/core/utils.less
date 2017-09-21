@@ -1,4 +1,6 @@
-﻿.no-margin {
+﻿@import 'variables.less';
+
+.no-margin {
     margin: 0;
 }
 
@@ -219,22 +221,46 @@
 }
 
 .uppercase {
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .lowercase {
-    text-transform: lowercase
+    text-transform: lowercase;
 }
 
 .capitalize {
-        text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .italic {
     font-style: italic;
 }
 
+.color-primary {
+    color: @primary!important;
+}
+
+.color-secondary {
+    color: @secondary!important;
+}
+
+.color-negative {
+    color: @negative!important;
+}
+
+.color-success {
+    color: @success!important;
+}
+
+.color-warning {
+    color: @warning!important;
+}
+
+.color-danger {
+    color: @danger!important;
+}
+
 /*************************************************/
 .db {
-    display:block;
-} 
+    display: block;
+}

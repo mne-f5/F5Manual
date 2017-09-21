@@ -201,6 +201,24 @@ h3 {
 .italic {
   font-style: italic;
 }
+.color-primary {
+  color: #1980ff !important;
+}
+.color-secondary {
+  color: #222224 !important;
+}
+.color-negative {
+  color: #a2a6a9 !important;
+}
+.color-success {
+  color: #47CF73 !important;
+}
+.color-warning {
+  color: #ffab00 !important;
+}
+.color-danger {
+  color: #ff5d5e !important;
+}
 /*************************************************/
 .db {
   display: block;
@@ -1348,6 +1366,74 @@ textarea {
   padding: 16px;
   border-radius: 4px;
   margin-bottom: 32px;
+  /*.bar {
+        fill: @primary;
+        transition: fill .3s ease-in-out;
+
+        &:hover {
+            fill: @bar-chart-hover;
+        }
+    }
+
+
+    .name {
+        font-weight: 300;
+        font-size: 35px;
+    }
+
+    .percentage {
+        font-size: 16px;
+    }
+
+    .value {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .middleText {
+        .number {
+            font-size: 35px;
+        }
+
+        .status {
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    .country {
+        stroke: @map-borders;
+        stroke-width: 1;
+        fill: @map-bg;
+        fill-opacity: .7;
+
+        &:hover {
+            fill-opacity: 1;
+        }
+    }
+
+
+
+    .line {
+        fill: none;
+        stroke: @primary;
+        stroke-width: 2px;
+    }
+
+    svg {
+        g {
+            &.tick {
+                line {
+                    stroke: @chart-line-color;
+                }
+
+                text {
+                    fill: @chart-axis-text-color;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }*/
 }
 .chart-container .google-visualization-tooltip {
   -webkit-box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.2);
@@ -1374,69 +1460,23 @@ textarea {
 .chart-container.col-chart svg g g g g rect {
   stroke-width: 0!important;
 }
-.chart-container .bar {
-  fill: #1980ff;
-  transition: fill 0.3s ease-in-out;
-}
-.chart-container .bar:hover {
-  fill: #87a6bf;
-}
-.chart-container .name {
-  font-weight: 300;
-  font-size: 35px;
-}
-.chart-container .percentage {
-  font-size: 16px;
-}
-.chart-container .value {
-  font-weight: 300;
-  font-size: 18px;
-}
-.chart-container .middleText .number {
-  font-size: 35px;
-}
-.chart-container .middleText .status {
-  font-size: 15px;
-  font-weight: 300;
-}
-.chart-container .country {
-  stroke: #fff;
-  stroke-width: 1;
-  fill: #5b5b5b;
-  fill-opacity: .7;
-}
-.chart-container .country:hover {
-  fill-opacity: 1;
-}
-.chart-container .line {
-  fill: none;
-  stroke: #1980ff;
-  stroke-width: 2px;
-}
-.chart-container svg g.tick line {
-  stroke: #e7eaf1;
-}
-.chart-container svg g.tick text {
-  fill: #b5b9c5;
-  font-family: 'Montserrat', sans-serif;
-}
-.ctooltip {
-  position: absolute;
-  text-align: center;
-  width: 60px;
-  height: 28px;
-  padding: 2px;
-  font: 11px sans-serif;
-  background: #ffab00;
-  color: #7d7d7d;
-  border: 0px;
-  border-radius: 8px;
-  pointer-events: none;
-  line-height: 25px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
-}
+/*.ctooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 11px sans-serif;
+    background: @warning;
+    color: @tooltip-color;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    line-height: 25px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}*/
 .spinner {
   float: left;
   border-radius: 50%;

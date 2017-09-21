@@ -1,0 +1,110 @@
+﻿<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#pie')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="pie">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
+            <pre>
+            <code class="language-markup">
+                &lt;div ng-controller="pieChartController"&gt;
+                    &lt;div class="chart-container"&gt;
+                        &lt;pie-chart data="pieData"&gt;&lt;/pie-chart&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+            </pre>
+        </uib-tab>
+
+        <uib-tab index="1">
+            <uib-tab-heading>
+                JS
+            </uib-tab-heading>
+            <pre>
+            <code class="language-javascript">
+                // Controller
+                pieChart.controller('pieChartController', function ($scope) {
+                    $scope.pieData = [
+                        ['Task', 'Hours per Day'],
+                        ['Work', 11],
+                        ['Eat', 2],
+                        ['Commute', 2],
+                        ['Watch TV', 2],
+                        ['Sleep', 7]
+                    ];
+                });
+
+                // Directive
+                pieChart.directive('pieChart', function ($window) {
+                    return {
+                        restrict: 'E',
+                        scope: {
+                            data: '='
+                        },
+                        link: function (scope, element, attrs) {
+                            // Load the Visualization API and the corechart package.
+                            google.charts.load('current', { 'packages': ['corechart'] });
+                            // Set a callback to run when the Google Visualization API is loaded.
+                            google.charts.setOnLoadCallback(drawChart);
+
+                            function drawChart() {
+                                var chartData = google.visualization.arrayToDataTable(scope.data);
+                                var options = {
+                                    title: 'Pie chart',
+                                    is3D: true,
+                                    fontName: 'Montserrat',
+                                    titleTextStyle: {
+                                        color: '#000',
+                                        fontSize: 18,
+                                        bold: false
+                                    },
+                                    colors: ['#1980ff', '#222224', '#a2a6a9', '#ffab00', '#47CF73', '#ff5d5e'],
+                                    vAxis: {
+                                        textStyle: {
+                                            color: '#a2a6a9',
+                                            fontSize: 11
+                                        },
+                                        gridlines: {
+                                            color: '#e7eaf1'
+                                        }
+                                    },
+                                    hAxis: {
+                                        textStyle: {
+                                            color: '#a2a6a9',
+                                            fontSize: 11
+                                        }
+                                    },
+                                    tooltip: {
+                                        isHtml: true
+                                    },
+                                    legend: {
+                                        textStyle: {
+                                            color: '#000',
+                                            fontSize: 14
+                                        }
+                                    }
+                                };
+
+                                var chart = new google.visualization.PieChart(element[0].parentElement);
+
+                                chart.draw(chartData, options);
+
+                                angular.element($window).on('resize', function () {
+                                    chart.draw(chartData, options);
+                                });
+                            }
+                        }
+                    }
+                });
+            </code>
+            </pre>
+        </uib-tab>
+    </uib-tabset>
+</div>

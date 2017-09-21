@@ -1,4 +1,4 @@
-﻿angular.module('lineChartModule').controller('lineChartController', function ($scope) {
+﻿lineChart.controller('lineChartController', function ($scope) {
     $scope.data = [
         { 'id': 1, 'x': 15, 'y': 35 },
         { 'id': 1, 'x': 20, 'y': 20 },
@@ -22,7 +22,7 @@
     ]
 });
 
-angular.module('lineChartModule').directive('lineChart', function () {
+lineChart.directive('lineChart', function () {
     return {
         restrict: 'E',
         template: '<svg></svg>',

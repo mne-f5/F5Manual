@@ -1,0 +1,121 @@
+﻿<div class="col-sm-12 text-right">
+    <a class="primary-link show-code" ng-click="openCode('#column')">
+        <i class="lnr lnr-chevron-left"></i>
+        <i class="lnr lnr-chevron-right"></i>
+        <span>CODE</span>
+    </a>
+</div>
+
+<div class="code-holder col-sm-12" id="column">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                HTML
+            </uib-tab-heading>
+            <pre>
+            <code class="language-markup">
+                &lt;div ng-controller="columnChartController"&gt;
+                    &lt;div class="chart-container col-chart"&gt;
+                        &lt;column-chart data="cData"&gt;&lt;/column-chart&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+            </pre>
+        </uib-tab>
+
+        <uib-tab index="1">
+            <uib-tab-heading>
+                JS
+            </uib-tab-heading>
+            <pre>
+            <code class="language-javascript">
+               // Controller
+                columnChart.controller('columnChartController', function ($scope) {
+                    $scope.cData = [
+                           ['Year', 'Sales'],
+                           ['2008', 1000],
+                           ['2009', 1170],
+                           ['2010', 660],
+                           ['2011', 1300],
+                           ['2012', 1170],
+                           ['2013', 660],
+                           ['2014', 900],
+                           ['2015', 1170],
+                           ['2016', 660],
+                           ['2017', 1030]
+                    ];
+                });
+
+                // Directive
+                columnChart.directive('columnChart', function ($window) {
+                    return {
+                        restrict: 'E',
+                        scope: {
+                            data: '='
+                        },
+                        link: function (scope, element, attrs) {
+                            // Load the Visualization API and the corechart package.
+                            google.charts.load('current', { 'packages': ['corechart'] });
+                            // Set a callback to run when the Google Visualization API is loaded.
+                            google.charts.setOnLoadCallback(drawChart);
+
+                            function drawChart() {
+                                var chartData = google.visualization.arrayToDataTable(scope.data);
+                                var options = {
+                                    animation: {
+                                        duration: 1500,
+                                        easing: 'linear',
+                                        startup: true
+                                    },
+                                    title: 'Column chart',
+                                    fontName: 'Montserrat',
+                                    titleTextStyle: {
+                                        color: '#000',
+                                        fontSize: 18,
+                                        bold: false
+                                    },
+                                    colors: ['#1980ff', '#222224', '#a2a6a9', '#ffab00', '#47CF73', '#ff5d5e'],
+                                    vAxis: {
+                                        textStyle: {
+                                            color: '#a2a6a9',
+                                            fontSize: 11
+                                        },
+                                        gridlines: {
+                                            color: '#e7eaf1'
+                                        }
+                                    },
+                                    hAxis: {
+                                        textStyle: {
+                                            color: '#a2a6a9',
+                                            fontSize: 11
+                                        }
+                                    },
+                                    tooltip: {
+                                        isHtml: true
+                                    },
+                                    legend: {
+                                        textStyle: {
+                                            color: '#000',
+                                            fontSize: 14
+                                        }
+                                    }
+                                };
+
+                                var chart = new google.visualization.ColumnChart(element[0].parentElement);
+
+                                chart.draw(chartData, options);
+
+                                angular.element($window).on('resize', function () {
+                                    chart.draw(chartData, options);
+                                });
+                            }
+                        }
+                    }
+                });
+            </code>
+            </pre>
+        </uib-tab>
+    </uib-tabset>
+</div>
+
+<script src="js/prism.js"></script>

@@ -1,5 +1,11 @@
 ﻿<div class="col-sm-12 wrapper">
     <h3 class="margin-bottom-32"><strong>Charts</strong></h3>
+    <p>
+        To use Google Charts include the following line in the   <span class="color-primary bold">&lt;head&gt;</span>   of   <span class="color-primary bold">index.html</span>   page:
+    </p>
+    <div class="box negative text-center">
+        <p>&lt;script type="text/javascript" src="<span class="color-primary">https://www.gstatic.com/charts/loader.js</span>"&gt;&lt;/script&gt;</p>
+    </div>
 
     <div class="row">
         <div class="col-sm-12 col-md-7">
@@ -9,14 +15,21 @@
                     <column-chart data="cData"></column-chart>
                 </div>
             </div>
+
+            <!-- Code -->
+            <div ng-include="'scripts/kit/code/charts/columnCode.html'"></div>
+
         </div>
         <div class="col-sm-12 col-md-5">
             <div class="wrapper" ng-controller="pieChartController">
                 <h3><strong>Pie chart</strong></h3>
-                <div class="chart-container pie-chart">
+                <div class="chart-container">
                     <pie-chart data="pieData"></pie-chart>
                 </div>
             </div>
+
+            <!-- Code -->
+            <div ng-include="'scripts/kit/code/charts/pieCode.html'"></div>
         </div>
     </div>
 
@@ -24,18 +37,24 @@
         <div class="col-sm-12 col-md-6">
             <div class="wrapper" ng-controller="donutChartController">
                 <h3><strong>Donut chart</strong></h3>
-                <div class="chart-container donut-chart">
+                <div class="chart-container">
                     <donut-chart data="donutData"></donut-chart>
                 </div>
             </div>
+
+            <!-- Code -->
+            <div ng-include="'scripts/kit/code/charts/donutCode.html'"></div>
         </div>
         <div class="col-sm-12 col-md-6">
             <div class="wrapper" ng-controller="lineChartController">
                 <h3><strong>Line chart</strong></h3>
-                <div class="chart-container line-chart">
+                <div class="chart-container">
                     <line-chart data="lineData"></line-chart>
                 </div>
             </div>
+
+            <!-- Code -->
+            <div ng-include="'scripts/kit/code/charts/lineCode.html'"></div>
         </div>
     </div>
 </div>

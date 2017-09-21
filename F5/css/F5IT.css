@@ -1348,6 +1348,9 @@ textarea {
   padding: 16px;
   border-radius: 4px;
   margin-bottom: 32px;
+  /*line {
+        stroke: #e7eaf1;
+    }*/
 }
 .chart-container .bar {
   fill: #1980ff;

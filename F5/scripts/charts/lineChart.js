@@ -21,6 +21,7 @@
 
     ]
 });
+
 angular.module('lineChartModule').directive('lineChart', function () {
     return {
         restrict: 'E',

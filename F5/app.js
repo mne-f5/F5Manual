@@ -1,4 +1,4 @@
-﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule', 'barChartModule', 'donutChartModule', 'lineChartModule', 'progressChartModule', 'pieChartModule', 'mapModule','ngFileUpload']);
+﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule','ngFileUpload','columnChartModule']);
 var mainModule = angular.module('MainModule',[]);
 var loginModule = angular.module('LoginModule', []);
 var menuModule = angular.module('MenuModule', []);
@@ -6,12 +6,14 @@ var galleryModule = angular.module('GalleryModule', []);
 var kitModule = angular.module('KitModule', []);
 var scrollModule = angular.module('ScrollModule', []);
 var loaderModule = angular.module('LoaderModule', []);
-var barChart = angular.module('barChartModule', []);
-var donutChart = angular.module('donutChartModule', []);
-var lineChart = angular.module('lineChartModule', []);
-var progressChart = angular.module('progressChartModule', []);
-var pieChart = angular.module('pieChartModule', []);
-var map = angular.module('mapModule', []);
+//var barChart = angular.module('barChartModule', []);
+//var donutChart = angular.module('donutChartModule', []);
+//var lineChart = angular.module('lineChartModule', []);
+//var progressChart = angular.module('progressChartModule', []);
+//var pieChart = angular.module('pieChartModule', []);
+//var map = angular.module('mapModule', []);
+
+var columnChart = angular.module('columnChartModule', []);
 
 app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.when('/login', {

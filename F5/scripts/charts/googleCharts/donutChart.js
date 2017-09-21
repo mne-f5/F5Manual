@@ -1,20 +1,15 @@
-﻿columnChart.controller('columnChartController', function ($scope) {
-    $scope.cData = [
-           ['Year', 'Sales'],
-           ['2008', 1000],
-           ['2009', 1170],
-           ['2010', 660],
-           ['2011', 1300],
-           ['2012', 1170],
-           ['2013', 660],
-           ['2014', 900],
-           ['2015', 1170],
-           ['2016', 660],
-           ['2017', 1030]
+﻿donutChart.controller('donutChartController', function ($scope) {
+    $scope.donutData = [
+        ['Task', 'Hours per Day'],
+        ['Work', 11],
+        ['Eat', 2],
+        ['Commute', 2],
+        ['Watch TV', 2],
+        ['Sleep', 7]
     ];
 });
 
-columnChart.directive('columnChart', function ($window) {
+donutChart.directive('donutChart', function ($window) {
     return {
         restrict: 'E',
         scope: {
@@ -34,12 +29,8 @@ columnChart.directive('columnChart', function ($window) {
                 var chartData = google.visualization.arrayToDataTable(scope.data);
 
                 var options = {
-                    animation: {
-                        duration: 1500,
-                        easing: 'linear',
-                        startup: true
-                    },
-                    title: 'Column chart',
+                    title: 'Donut chart',
+                    pieHole: 0.5,
                     fontName: 'Montserrat',
                     titleTextStyle: {
                         color: '#000',
@@ -73,13 +64,14 @@ columnChart.directive('columnChart', function ($window) {
                     }
 
                 };
-                var chart = new google.visualization.ColumnChart(element[0].parentElement);
+                var chart = new google.visualization.PieChart(element[0].parentElement);
 
                 chart.draw(chartData, options);
 
                 angular.element($window).on('resize', function () {
                     chart.draw(chartData, options);
                 });
+
             }
 
         }

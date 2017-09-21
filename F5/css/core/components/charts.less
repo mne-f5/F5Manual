@@ -5,9 +5,46 @@
     border-radius: 4px;
     margin-bottom: 32px;
 
-    /*line {
-        stroke: #e7eaf1;
-    }*/
+    .google-visualization-tooltip {
+        .shadow(0 0 30px 3px rgba(0,0,0,0.2));
+        min-width: 100px;
+        border: none !important;
+        border-radius: 4px;
+
+
+        .google-visualization-tooltip-item-list {
+            .google-visualization-tooltip-item {
+                padding: 0 2em !important;
+                margin: 5px 0!important;
+
+                span {
+                    font-size: 13px !important;
+                    display: block;
+                    text-align: center;
+                    color: @tooltip-color !important;
+                }
+
+                &:first-child {
+
+                    span {
+                        font-weight: 400 !important;
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &.col-chart {
+        svg g g g g rect {
+            stroke-width: 0!important;
+        }
+    }
+
+
+
+
+
 
     .bar {
         fill: @primary;
@@ -27,6 +64,7 @@
     .percentage {
         font-size: 16px;
     }
+
     .value {
         font-weight: 300;
         font-size: 18px;
@@ -95,5 +133,3 @@
     -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
-
-

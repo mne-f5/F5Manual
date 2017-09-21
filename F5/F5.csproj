@@ -249,7 +249,10 @@
     <Content Include="js\charts\d3.min.js" />
     <Content Include="js\ng-file-upload-shim.js" />
     <Content Include="js\ng-file-upload.js" />
-    <Content Include="scripts\charts\__lineChart.js" />
+    <Content Include="scripts\charts\googleCharts\columnChart.js" />
+    <Content Include="scripts\charts\googleCharts\donutChart.js" />
+    <Content Include="scripts\charts\googleCharts\lineChart.js" />
+    <Content Include="scripts\charts\googleCharts\pieChart.js" />
     <Content Include="scripts\charts\map.js" />
     <Content Include="js\geo-projection\d3-geo-projection.min.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
@@ -353,6 +356,7 @@
     <Content Include="scripts\homePartial.html" />
     <Content Include="scripts\kit\elements\blocksPartial.html" />
     <Content Include="scripts\kit\elements\fileuploadPartial.html" />
+    <Content Include="scripts\kit\elements\gchartsPartial.html" />
     <Content Include="scripts\kit\elements\helpPartial.html" />
     <Content Include="scripts\kit\elements\userimgPartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />

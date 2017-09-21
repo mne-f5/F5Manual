@@ -2,15 +2,40 @@
     <h3 class="margin-bottom-32"><strong>Charts</strong></h3>
 
     <div class="row">
-        <div class="col-sm-6 col-md-8">
+        <div class="col-sm-12 col-md-7">
             <div class="wrapper" ng-controller="columnChartController">
                 <h3><strong>Bar chart</strong></h3>
-                <div class="chart-container">
-                    <column-chart data="cData"><column-chart />
+                <div class="chart-container col-chart">
+                    <column-chart data="cData"></column-chart>
                 </div>
             </div>
         </div>
-
+        <div class="col-sm-12 col-md-5">
+            <div class="wrapper" ng-controller="pieChartController">
+                <h3><strong>Pie chart</strong></h3>
+                <div class="chart-container pie-chart">
+                    <pie-chart data="pieData"></pie-chart>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="wrapper" ng-controller="donutChartController">
+                <h3><strong>Donut chart</strong></h3>
+                <div class="chart-container donut-chart">
+                    <donut-chart data="donutData"></donut-chart>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="wrapper" ng-controller="lineChartController">
+                <h3><strong>Line chart</strong></h3>
+                <div class="chart-container line-chart">
+                    <line-chart data="lineData"></line-chart>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

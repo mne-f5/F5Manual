@@ -1,4 +1,4 @@
-﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule','ngFileUpload','columnChartModule']);
+﻿var app = angular.module('F5', ["ngRoute", 'ui.bootstrap', 'MainModule', 'LoginModule', 'MenuModule', 'GalleryModule', 'KitModule', 'ScrollModule', 'LoaderModule', 'ngFileUpload', 'columnChartModule', 'pieChartModule','donutChartModule', 'lineChartModule', 'geoChartModule']);
 var mainModule = angular.module('MainModule',[]);
 var loginModule = angular.module('LoginModule', []);
 var menuModule = angular.module('MenuModule', []);
@@ -14,6 +14,10 @@ var loaderModule = angular.module('LoaderModule', []);
 //var map = angular.module('mapModule', []);
 
 var columnChart = angular.module('columnChartModule', []);
+var pieChart = angular.module('pieChartModule', []);
+var donutChart = angular.module('donutChartModule', []);
+var lineChart = angular.module('lineChartModule', []);
+var geoChart = angular.module('geoChartModule', []);
 
 app.config(['$routeProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.when('/login', {

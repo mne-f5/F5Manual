@@ -15,39 +15,5 @@
         </div>
     </div>
 </div>
-
-
-<div class="col-sm-12 text-right">
-    <a class="primary-link show-code" ng-click="openCode('#tooltip')">
-        <i class="lnr lnr-chevron-left"></i>
-        <i class="lnr lnr-chevron-right"></i>
-        <span>CODE</span>
-    </a>
-</div>
-
-<div class="code-holder col-sm-12" id="tooltip">
-
-    <uib-tabset active="active">
-        <uib-tab index="0">
-            <uib-tab-heading>
-                HTML
-            </uib-tab-heading>
-            <pre>
-            <code class="language-markup">
-                //Tooltip on top
-                    &lt;button class="btn btn-primary" type="button" tooltip-placement="top" uib-tooltip="Tooltip on top"&gt;Tooltip on top&lt;/button&gt;
-
-                //Tooltip on bottom
-                    &lt;button class="btn btn-primary" type="button" tooltip-placement="bottom" uib-tooltip="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
-
-                //Tooltip on left
-                    &lt;button class="btn btn-primary" type="button" tooltip-placement="left" uib-tooltip="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;
-
-                //Tooltip on right
-                    &lt;button class="btn btn-primary" type="button" tooltip-placement="right" uib-tooltip="Tooltip on right"&gt;Tooltip on right&lt;/button&gt; 
-            </code>
-            </pre>
-        </uib-tab>
-    </uib-tabset>
-</div>
-
+<!-- HTML Code -->
+<div ng-include="'scripts/kit/code/elements/tooltips/tooltipsCode.html'"></div>

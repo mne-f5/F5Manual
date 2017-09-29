@@ -21,40 +21,6 @@
         </div>
     </div>
 </div>
-
-<div class="col-sm-12 text-right">
-    <a class="primary-link show-code" ng-click="openCode('#uimg')">
-        <i class="lnr lnr-chevron-left"></i>
-        <i class="lnr lnr-chevron-right"></i>
-        <span>CODE</span>
-    </a>
-</div>
-
-<div class="code-holder col-sm-12" id="uimg">
-    <uib-tabset active="active">
-        <uib-tab index="0">
-            <uib-tab-heading>
-                HTML
-            </uib-tab-heading>
-            <pre>
-            <code class="language-markup">
-                // Default
-                &lt;div class="user-img"&gt;
-                    &lt;img src="images/user.png" /&gt;
-                &lt;/div&gt;
-
-                // Medium
-                &lt;div class="user-img medium"&gt;
-                    &lt;img src="images/user.png" /&gt;
-                &lt;/div&gt;
-
-                // Large
-                &lt;div class="user-img large"&gt;
-                    &lt;img src="images/user.png" /&gt;
-                &lt;/div&gt;
-            </code>
-            </pre>
-        </uib-tab>
-    </uib-tabset>
-</div>
+<!-- HTML Code -->
+<div ng-include="'scripts/kit/code/elements/user-images/userImgCode.html'"></div>
 

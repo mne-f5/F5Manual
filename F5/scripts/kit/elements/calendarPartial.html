@@ -9,39 +9,6 @@
     </div>  
 </div>
 
-<div class="col-sm-12 text-right">
-    <a class="primary-link show-code" ng-click="openCode('#datepicker')">
-        <i class="lnr lnr-chevron-left"></i>
-        <i class="lnr lnr-chevron-right"></i>
-        <span>CODE</span>
-    </a>
-</div>
 
-<div class="code-holder col-sm-12" id="datepicker">
-
-    <uib-tabset active="active">
-        <uib-tab index="0">
-            <uib-tab-heading>
-                HTML
-            </uib-tab-heading>
-            <pre>
-            <code class="language-markup">
-                &lt;div uib-datepicker ng-model="dt" datepicker-options="options" class="dp"&gt;&lt;/div&gt;
-            </code>
-            </pre>
-        </uib-tab>
-        <uib-tab index="1">
-            <uib-tab-heading>
-                JS
-            </uib-tab-heading>
-            <pre>
-            <code class="language-javascript">
-                $scope.options = {
-                    minDate: new Date(),
-                    showWeeks: false
-                };
-            </code>
-            </pre>
-        </uib-tab>
-    </uib-tabset>
-</div>
+<!-- HTML Code -->
+<div ng-include="'scripts/kit/code/elements/calendar/calendarCode.html'"></div>

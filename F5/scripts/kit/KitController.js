@@ -6,6 +6,7 @@
 
 
 
+    /******************************  Files upload  *************************************/
     $scope.attachments = [];
 
     $scope.upload = function (file) {
@@ -63,6 +64,7 @@
     };
 
 
+    /******************************  Smooth scroll  *************************************/
     var counter = 0;
     var elements = document.getElementsByClassName('sec');
 
@@ -72,6 +74,9 @@
             smoothScroll.setElements(elements);
         }
     });
+
+
+    /******************************  Modal animation  *************************************/
 
     var modalAnimations = [
         { effect: 'modal-scale', time: 500 },
@@ -111,6 +116,9 @@
 
 
     }
+
+
+    /******************************  Datepicker and timepicker  *************************************/
 
 
     $scope.options = {
@@ -159,7 +167,8 @@
     // Timepicker
     $scope.time = new Date();
 
-    // Panels
+
+    /******************************  Panels  *************************************/
 
     $scope.deletePanel = function (event) {
         event.target.offsetParent.remove();
@@ -171,6 +180,183 @@
     };
 
 
-    
+    /******************************  Linearicons  *************************************/
+    $scope.icons = [
+        { name: 'home' },
+        { name: 'magic-wand' },
+        { name: 'poop' },
+        { name: 'cloud' },
+        { name: 'cloud-sync' },
+        { name: 'cloud-upload' },
+        { name: 'cloud-check' },
+        { name: 'cloud-download' },
+        { name: 'lock' },
+        { name: 'dice' },
+        { name: 'star-half' },
+        { name: 'star' },
+        { name: 'star-empty' },
+        { name: 'envelope' },
+        { name: 'eye' },
+        { name: 'file-add' },
+        { name: 'graduation-hat' },
+        { name: 'film-play' },
+        { name: 'picture' },
+        { name: 'user' },
+        { name: 'store' },
+        { name: 'phone-handset' },
+        { name: 'map-marker' },
+        { name: 'calendar-full' },
+        { name: 'screen' },
+        { name: 'laptop' },
+        { name: 'bubble' },
+        { name: 'pie-chart' },
+        { name: 'diamond' },
+        { name: 'coffee-cup' },
+        { name: 'rocket' },
+        { name: 'car' },
+        { name: 'wheelchair' },
+        { name: 'smile' },
+        { name: 'mustache' },
+        { name: 'volume-high' },
+        { name: 'volume' },
+        { name: 'undo' },
+        { name: 'history' },
+        { name: 'upload' },
+        { name: 'bug' },
+        { name: 'unlink' },
+        { name: 'magnifier' },
+        { name: 'list' },
+        { name: 'chevron-left' },
+        { name: 'chevron-right' },
+        { name: 'chevron-up' },
+        { name: 'chevron-down' },
+        { name: 'arrow-left' },
+        { name: 'arrow-right' },
+        { name: 'arrow-up' },
+        { name: 'arrow-down' },
+        { name: 'move' },
+        { name: 'menu-circle' },
+        { name: 'plus-circle' },
+        { name: 'arrow-left-circle' },
+        { name: 'arrow-right-circle' },
+        { name: 'arrow-up-circle' },
+        { name: 'arrow-down-circle' },
+        { name: 'chevron-left-circle' },
+        { name: 'chevron-right-circle' },
+        { name: 'chevron-up-circle' },
+        { name: 'chevron-down-circle' },
+        { name: 'frame-contract' },
+        { name: 'text-format' },
+        { name: 'text-format-remove' },
+        { name: 'text-size' },
+        { name: 'bold' },
+        { name: 'italic' },
+        { name: 'underline' },
+        { name: 'strikethrough' },
+        { name: 'highlight' },
+        { name: 'text-align-left' },
+        { name: 'text-align-center' },
+        { name: 'text-align-right' },
+        { name: 'text-align-justify' },
+        { name: 'line-spacing' },
+        { name: 'indent-increase' },
+        { name: 'indent-decrease' },
+        { name: 'pilcrow' },
+        { name: 'direction-ltr' },
+        { name: 'direction-rtl' },
+        { name: 'page-break' },
+        { name: 'sort-alpha-asc' },
+        { name: 'sort-amount-asc' },
+        { name: 'pointer-up' },
+        { name: 'pointer-down' },
+        { name: 'pointer-left' },
+        { name: 'pointer-right' },
+        { name: 'hand' },
+        { name: 'apartament' },
+        { name: 'drop' },
+        { name: 'sun' },
+        { name: 'cog' },
+        { name: 'heart' },
+        { name: 'paperclip' },
+        { name: 'printer' },
+        { name: 'enter' },
+        { name: 'exit' },
+        { name: 'license' },
+        { name: 'camera-video' },
+        { name: 'book' },
+        { name: 'users' },
+        { name: 'cart' },
+        { name: 'phone' },
+        { name: 'map' },
+        { name: 'keyboard' },
+        { name: 'smartphone' },
+        { name: 'laptop-phone' },
+        { name: 'heart-pulse' },
+        { name: 'chart-bars' },
+        { name: 'linearicons' },
+        { name: 'leaf' },
+        { name: 'briefcase' },
+        { name: 'train' },
+        { name: 'select' },
+        { name: 'sad' },
+        { name: 'alarm' },
+        { name: 'volume-medium' },
+        { name: 'volume-low' },
+        { name: 'mic' },
+        { name: 'redo' },
+        { name: 'clock' },
+        { name: 'enter-down' },
+        { name: 'code' },
+        { name: 'thumbs-up' },
+        { name: 'thumbs-down' },
+        { name: 'cross' },
+        { name: 'warning' },
+        { name: 'checkmark-circle' },
+        { name: 'circle-minus' },
+        { name: 'crop' },
+        { name: 'layers' },
+        { name: 'pencil' },
+        { name: 'lighter' },
+        { name: 'moon' },
+        { name: 'database' },
+        { name: 'trash' },
+        { name: 'flag' },
+        { name: 'inbox' },
+        { name: 'file-empty' },
+        { name: 'music-note' },
+        { name: 'camera' },
+        { name: 'bookmark' },
+        { name: 'shirt' },
+        { name: 'tag' },
+        { name: 'pushpin' },
+        { name: 'location' },
+        { name: 'spell-check' },
+        { name: 'tablet' },
+        { name: 'power-switch' },
+        { name: 'construction' },
+        { name: 'gift' },
+        { name: 'dinner' },
+        { name: 'paw' },
+        { name: 'bus' },
+        { name: 'bicycle' },
+        { name: 'earth' },
+        { name: 'neutral' },
+        { name: 'bullhorn' },
+        { name: 'hourglass' },
+        { name: 'sync' },
+        { name: 'download' },
+        { name: 'exit-up' },
+        { name: 'link' },
+        { name: 'question-circle' },
+        { name: 'cross-circle' },
+        { name: 'frame-expand' },
+        { name: 'funnel' }
+    ];
+
+    $scope.icon = 'home';
+
+    $scope.changeIcon = function (selectedIcon) {
+        $scope.icon = selectedIcon;
+    }
 
 });

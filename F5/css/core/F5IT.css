@@ -202,26 +202,64 @@ h3 {
   font-style: italic;
 }
 .color-primary {
-  color: #1980ff !important;
+  color: #1980ff;
 }
 .color-secondary {
-  color: #222224 !important;
+  color: #222224;
 }
 .color-negative {
-  color: #a2a6a9 !important;
+  color: #a2a6a9;
 }
 .color-success {
-  color: #47CF73 !important;
+  color: #47CF73;
 }
 .color-warning {
-  color: #ffab00 !important;
+  color: #ffab00;
 }
 .color-danger {
-  color: #ff5d5e !important;
+  color: #ff5d5e;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-25 {
+  font-size: 25px;
 }
 /*************************************************/
 .db {
   display: block;
+}
+.dib {
+  display: inline-block;
+}
+.shadow {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.border-primary {
+  border: 1px solid #1980ff;
+  border-radius: 4px;
+}
+.border-secondary {
+  border: 1px solid #222224;
+  border-radius: 4px;
+}
+.border-negative {
+  border: 1px solid #a2a6a9;
+  border-radius: 4px;
+}
+.border-success {
+  border: 1px solid #47CF73;
+  border-radius: 4px;
+}
+.border-warning {
+  border: 1px solid #ffab00;
+  border-radius: 4px;
+}
+.border-danger {
+  border: 1px solid #ff5d5e;
+  border-radius: 4px;
 }
 .navigation {
   position: relative;

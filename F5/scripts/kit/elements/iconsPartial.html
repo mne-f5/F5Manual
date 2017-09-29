@@ -1,19 +1,20 @@
-﻿<div class="col-sm-12 wrapper">
-    <h3 class="margin-bottom-32"><strong>Status icons</strong></h3>
-    <div class="row">
-        <div class="col-sm-4 text-center">
-            <h3>Active</h3>
-            <i class="lnr lnr-checkmark-circle success"></i>
-        </div>
-        <div class="col-sm-4 text-center">
-            <h3>In progress</h3>
-            <i class="lnr lnr-hourglass pending"></i>
-        </div>
-        <div class="col-sm-4 text-center">
-            <h3>Disabled</h3>
-            <i class="lnr lnr-cross-circle disabled"></i>
-        </div>
+﻿<div class="wrapper col-sm-12">
+    <h3 class="margin-bottom-32">
+        <strong>Icons</strong>
+    </h3>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="lnr lnr-{{icon}} margin-right-8 font-size-25"></span><span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="icon in icons">
+                <a href="" ng-click="changeIcon(icon.name)" class="text-center">
+                    <span class="lnr lnr-{{icon.name}} font-size-20"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="shadow margin-left-32 padding-8 dib border-primary">
+        <p class="margin-bottom-0 color-primary">lnr lnr-{{icon}}</p>
     </div>
 </div>
-<!-- HTML Code -->
-<div ng-include="'scripts/kit/code/elements/icons/statusIconsCode.html'"></div>

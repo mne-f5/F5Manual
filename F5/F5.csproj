@@ -378,10 +378,11 @@
     <Content Include="scripts\kit\elements\fileuploadPartial.html" />
     <Content Include="scripts\kit\elements\gchartsPartial.html" />
     <Content Include="scripts\kit\elements\helpPartial.html" />
+    <Content Include="scripts\kit\elements\iconsPartial.html" />
     <Content Include="scripts\kit\elements\userimgPartial.html" />
     <Content Include="scripts\kit\elements\alertsPartial.html" />
     <Content Include="scripts\kit\elements\calendarPartial.html" />
-    <Content Include="scripts\kit\elements\iconsPartial.html" />
+    <Content Include="scripts\kit\elements\statusIconsPartial.html" />
     <Content Include="scripts\kit\elements\modalPartial.html" />
     <Content Include="scripts\kit\elements\modalsPartial.html" />
     <Content Include="scripts\kit\elements\progressbarsPartial.html" />

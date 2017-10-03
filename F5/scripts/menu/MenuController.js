@@ -1,6 +1,7 @@
 ﻿angular.module('MenuModule').controller('MenuController', function ($scope, $location, menuFactory, smoothScroll, loader, $window) {
     $scope.menuList = menuFactory.getMenuItems();
-    var url = 'http://localhost/f5/#!';
+    //var url = 'http://localhost/f5/#!';
+    var url = 'http://www.f5it.no/bible/#!';
 
     $scope.dropdown = function (name) {
         menuFactory.setActiveCategory(name)

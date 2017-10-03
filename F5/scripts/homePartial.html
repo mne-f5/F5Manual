@@ -3,7 +3,9 @@
         <div class="col-sm-12 col-lg-6">
             <div class="box img kit">
                 <h2>F5 IT - UI Kit Download & Overview</h2>
-                <button class="btn btn-primary" ng-click="go('/ui-kit')">View & Download</button>
+                <div ng-controller="MenuController">
+                    <button class="btn btn-primary" ng-click="goTo('/ui-kit')">View & Download</button>
+                </div>
             </div>
         </div>
         <div class="col-sm-12 col-lg-6">

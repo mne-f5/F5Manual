@@ -677,6 +677,14 @@ header.app .header-wrapper h3 {
   list-style-type: none;
   display: inline-block;
 }
+.cards-holder .widget {
+  height: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  width: 250px;
+  min-width: 200px;
+  max-width: 300px;
+}
 .error-page,
 .login {
   position: fixed;
@@ -724,10 +732,10 @@ header.app .header-wrapper h3 {
 }
 .wrapped li span,
 .wrapped li p {
-  float: none!important;
+  float: none !important;
 }
 .wrapped li p {
-  display: block!important;
+  display: block !important;
 }
 .wrapped li span {
   text-align: center;

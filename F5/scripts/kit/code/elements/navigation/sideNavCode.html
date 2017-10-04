@@ -13,7 +13,7 @@
             </uib-tab-heading>
             <pre>
             <code class="language-markup">
-                        &lt;aside class="side-navbar side-fixed"&gt;
+                        &lt;aside class="side-navbar side-fixed" ng-class="{'open' : sideOpened}"&gt;
                             &lt;div class="header-section"&gt;
                                 &lt;!--&lt;h3&gt;Page name&lt;/h3&gt;--&gt;
                                 &lt;div class="menu-right hidden-xs hidden-sm"&gt;
@@ -145,7 +145,7 @@
                                 &lt;/ul&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
-                        &lt;div class="btn-holder" ng-click="openMenu('.side-navbar')"&gt;
+                        &lt;div class="btn-holder" ng-click="sideOpened =! sideOpened"&gt;
                             &lt;div class="menu-btn"&gt;
                                 &lt;span&gt;&lt;/span&gt;
                             &lt;/div&gt;

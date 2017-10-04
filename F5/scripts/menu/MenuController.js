@@ -1,7 +1,7 @@
 ﻿angular.module('MenuModule').controller('MenuController', function ($scope, $location, menuFactory, smoothScroll, loader, $window) {
     $scope.menuList = menuFactory.getMenuItems();
-    //var url = 'http://localhost/f5/#!';
-    var url = 'http://www.f5it.no/bible/#!';
+    var url = 'http://localhost/f5/#!';
+    //var url = 'http://www.f5it.no/bible/#!';
 
     $scope.dropdown = function (name) {
         menuFactory.setActiveCategory(name)
@@ -11,6 +11,10 @@
 
         var menu = $('.slide');
         var body = $('body');
+
+        $scope.$on('$routeChangeStart', function (event, current, previous) {
+            
+        });
 
         if (path === '/ui-kit') {
             var prevPath = null;

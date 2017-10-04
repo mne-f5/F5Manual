@@ -13,9 +13,9 @@
             </uib-tab-heading>
             <pre>
             <code class="language-markup">
-                        &lt;section class="navigation top-fixed"&gt;
+                        &lt;section class="navigation top-fixed" ng-class="{'open': navIsOpen}"&gt;
                             &lt;nav&gt;
-                                &lt;div class="btn-holder" ng-click="openMenu('.navigation')"&gt;
+                                &lt;div class="btn-holder" ng-click="navIsOpen =! navIsOpen"&gt;
                                     &lt;div class="menu-btn"&gt;
                                         &lt;span&gt;&lt;/span&gt;
                                     &lt;/div&gt;

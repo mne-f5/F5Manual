@@ -359,4 +359,12 @@
         $scope.icon = selectedIcon;
     }
 
+
+    /******************************  Change theme colors  *************************************/
+    $scope.changeColor = function () {
+        less.modifyVars(
+            { primary: $scope.primaryColor}
+        );
+    };
+
 });

@@ -3,9 +3,9 @@
         <div class="col-sm-12">
             <h3 class="margin-bottom-32"><strong>Top navigation</strong></h3>
             <div class="ex-1">
-                <section class="navigation">
+                <section class="navigation" ng-class="{'open': navIsOpen}">
                     <nav>
-                        <div class="btn-holder" ng-click="openMenu('.navigation')">
+                        <div class="btn-holder" ng-click="navIsOpen =! navIsOpen">
                             <div class="menu-btn">
                                 <span></span>
                             </div>
@@ -159,7 +159,7 @@
         <div class="col-sm-12">
             <h3><strong>Side navigation</strong></h3>
             <div class="ex-2">
-                <aside class="side-navbar">
+                <aside class="side-navbar" ng-class="{'open' : sideOpened}">
                     <div class="header-section">
                         <!--<h3>Page name</h3>-->
                         <div class="menu-right hidden-xs hidden-sm">
@@ -282,7 +282,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="btn-holder" ng-click="openMenu('.side-navbar')">
+                    <div class="btn-holder" ng-click="sideOpened =! sideOpened">
                         <div class="menu-btn">
                             <span></span>
                         </div>

@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="top-menu-example">
-                <section class="navigation top-fixed">
+                <section class="navigation top-fixed" ng-class="{'open': navIsOpen}">
                     <nav>
-                        <div class="btn-holder" ng-click="openMenu('.navigation')">
+                        <div class="btn-holder" ng-click="navIsOpen =! navIsOpen">
                             <div class="menu-btn">
                                 <span></span>
                             </div>
@@ -155,7 +155,7 @@
                             <div class="content-box" ng-controller="lineChartController">
                                 <h3>Product Sales History</h3>
                                 <div class="chart-container">
-                                    <line-chart data="data"><line-chart />
+                                    <line-chart data="lineData"><line-chart />
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                             <div class="content-box" ng-controller="donutChartController">
                                 <h3>Upload Statistics</h3>
                                 <div class="chart-container">
-                                    <donut-chart data="data"><donut-chart />
+                                    <donut-chart data="donutData"><donut-chart />
                                 </div>
                             </div>
                         </div>

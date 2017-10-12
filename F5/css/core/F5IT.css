@@ -1150,8 +1150,8 @@ textarea {
   font-size: 14px;
   font-weight: 500;
 }
-.table tbody tr:nth-child(odd) {
-  background-color: #f9f9fc;
+.table tbody tr:nth-child(even) {
+  background-color: #f1f4f6;
 }
 .table tbody tr:hover {
   background-color: #dbe0e4;
